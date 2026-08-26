@@ -40,4 +40,4 @@ Kit를 멀티 루트로 연 경우 personal 규칙은 `alwaysApply`가 아니에
 - 타이틀 전용 경로·도메인을 이 Kit personal에 모으지 않아요.
 - Demo를 출시 스키마·필수 설치 경로로 취급하지 않아요.
 
-다음: [PackageLayout.md](PackageLayout.md) · [DocsLite.md](DocsLite.md)
+다음: [PackageLayout.md](PackageLayout.md) · [DocsLite.md](DocsLite.md) · [LocaleDocs.md](LocaleDocs.md)

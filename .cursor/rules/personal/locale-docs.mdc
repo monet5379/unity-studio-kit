@@ -1,0 +1,26 @@
+---
+description: personal 다국어 README — 별도 파일·셀렉터 (요청 시에만)
+alwaysApply: false
+---
+
+# Locale docs (personal)
+
+정본: [`docs/personal/LocaleDocs.md`](../../../docs/personal/LocaleDocs.md)
+
+## Must
+
+- 한 파일 한 언어 (`README.md` + `README.<locale>.md`)
+- 상단 언어 셀렉터 (현재 언어 굵게)
+- 공개면만 번역 (Install · API · Invariants · Out of scope)
+- 정본과 같은 절 구조 · 산문만 번역
+- **사용자 요청 시에만** locale 생성·갱신
+- AI로 옮긴 산문이면 **그 README 하단**에 AI-assisted 한 줄 + 충돌 시 우선순위(다른 locale·코드)
+
+## Must not
+
+- 한 README에 이중언어 병기
+- `docs/README.md`만으로 번역 랜딩
+- notes·내부 메모까지 번역
+- 요청 없이 locale 파일 추가
+- DocsLite보다 문서 무게를 키우는 기본화
+- AI 고지를 셀렉터·배지 옆에 두기

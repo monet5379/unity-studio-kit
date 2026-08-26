@@ -9,5 +9,6 @@
 | [Overview.md](Overview.md) | 개념 | 언제 personal인지 |
 | [PackageLayout.md](PackageLayout.md) | 참조 | 복사 단위 · Demo |
 | [DocsLite.md](DocsLite.md) | 프로세스 | README 중심 문서 |
+| [LocaleDocs.md](LocaleDocs.md) | 프로세스 | 다국어 README (선택) |
 
 Cursor: [`.cursor/rules/personal/`](../../.cursor/rules/personal/) · 글쓰기: [`../common/WritingGuide.md`](../common/WritingGuide.md)

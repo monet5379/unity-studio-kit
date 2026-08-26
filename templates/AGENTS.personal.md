@@ -24,6 +24,7 @@ profile: personal
 <repo>/
 ├── AGENTS.md
 ├── README.md                 ← Install · Invariants · Out of scope
+├── README.<locale>.md        ← 선택. 다국어 (LocaleDocs)
 ├── Assets/
 │   ├── <PackageName>/        ← 설치·복사 단위
 │   └── Demo/                 ← 선택. 놀이터. 비설치
