@@ -11,6 +11,7 @@ Unity 프로젝트를 열 때마다 규칙을 복사하지 않도록, **공통 C
 | AI 규칙(`.cursor`), 공통·프로필 가이드(`docs/`), 새 프로젝트 `AGENTS` 템플릿 | Unity 런타임 코드, UPM 패키지 소스 |
 | personal / game 프로필별 **재사용 규약** | 웹 사이트용 글쓰기 규칙 |
 | | 타이틀 전용 경로·도메인 규칙 (각 게임 repo에 둠) |
+| | 패키지 UI 언어 전환 구현 (에디터·F1·인게임 Prefs·메뉴·문자열). personal [LocaleDocs](docs/personal/LocaleDocs.md)는 README 파일만 |
 
 ## 프로필 고르기
 

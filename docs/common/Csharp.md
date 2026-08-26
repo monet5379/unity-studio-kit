@@ -26,7 +26,8 @@ Cursor: [`csharp-standards.mdc`](../../.cursor/rules/common/csharp-standards.mdc
 
 - 네임스페이스는 **주변 코드·프로젝트 관례**에 맞추세요.
 - Inspector: `[SerializeField] private` (+ 필요 시 읽기 전용 프로퍼티)
-- UI 텍스트: `TextMeshProUGUI`만 — 레거시 `UnityEngine.UI.Text` 금지
+- **플레이어 대면** UI 텍스트: `TextMeshProUGUI`만 — 레거시 `UnityEngine.UI.Text` 금지
+- **개발·데모 IMGUI** (**선택**, 오버레이 작업 시): [DevImgui.md](DevImgui.md) · personal은 [DemoGui.md](../personal/DemoGui.md)
 - 비즈니스·게임 로직 메서드 위: 목적 **한 줄 한국어** 주석 (단순 getter/래퍼는 생략 가능)
 
 ## partial class

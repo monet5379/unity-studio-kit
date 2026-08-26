@@ -1,0 +1,29 @@
+---
+description: "선택 · IMGUI 작업 시 — Title/Content/Button (공통 원칙)"
+globs: "**/*{GUI,Gui,Overlay}*.cs"
+alwaysApply: false
+---
+
+# Dev IMGUI (common)
+
+**선택** — 출시 UI·C# 공통보다 우선순위 낮음. IMGUI를 만질 때만.
+
+정본: [`docs/common/DevImgui.md`](../../../docs/common/DevImgui.md)  
+personal Demo: [`docs/personal/DemoGui.md`](../../../docs/personal/DemoGui.md)
+
+## Must
+
+- 개발·데모 IMGUI는 **Title / Content (/ Sub) / Button** 역할별 `GUIStyle` 사용
+- 스타일·창/버튼 크기는 **한곳**에서만 생성·캐시 (`Ensure*Styles` / `RefreshStyle`)
+- Label·Button 호출에 역할 스타일을 넘김 (skin 기본만 쓰지 않음)
+
+## Must not
+
+- `OnGUI`마다 `new GUIStyle` 반복
+- `GUI.skin.*` 전역 변조로 다른 창까지 변경
+- Title·Content를 단일 스타일로 통일
+- 이 규칙을 플레이어 uGUI(TMP)·출시 HUD에 적용
+
+## Note
+
+플레이어 UI 텍스트는 [`csharp-standards.mdc`](csharp-standards.mdc) (TMP only).

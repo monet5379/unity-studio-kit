@@ -19,12 +19,13 @@ alwaysApply: false
 - 정본은 **README** (Install · Invariants · Out of scope).
 - 설계 md 대량 추가 금지. 필요 시 README 절 또는 `docs/` 한 장.
 - [`docs/personal/DocsLite.md`](../../../docs/personal/DocsLite.md)
-- 다국어는 **선택**. 요청 시에만 — [`docs/personal/LocaleDocs.md`](../../../docs/personal/LocaleDocs.md)
+- README 다국어는 **선택**. 요청 시에만 — [`docs/personal/LocaleDocs.md`](../../../docs/personal/LocaleDocs.md) (UI 언어 구현 아님)
 
 ## 레이아웃
 
 - 복사 단위 `Assets/<PackageName>/` + 선택 `Assets/Demo/` (놀이터, 비설치).
 - [`docs/personal/PackageLayout.md`](../../../docs/personal/PackageLayout.md) · [`package-layout.mdc`](package-layout.mdc)
+- Demo/F1 IMGUI는 **선택** (해당 파일 작업 시만) — [`DemoGui.md`](../../../docs/personal/DemoGui.md) · [`demo-gui.mdc`](demo-gui.mdc)
 
 ## 하지 말 것
 

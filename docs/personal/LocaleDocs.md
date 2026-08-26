@@ -2,6 +2,10 @@
 
 공개 패키지 README를 영문과 **다른 언어**로 보여줄 때 이 문서를 읽어요. GitHub는 locale을 자동으로 바꾸지 않아요. 그래서 **별도 파일**과 상단 **언어 링크**로 전환해요. 필수는 아니에요. 문서 무게에서는 [DocsLite](DocsLite.md)가 이깁니다.
 
+## 이 문서가 아닌 것
+
+에디터·F1·인게임 **UI 언어 전환**(Prefs·메뉴·표시 문자열)은 범위 밖이에요. 이 문서는 **README 파일 로케일**만 다뤄요. Kit는 그 UI 구현·스크립트 템플릿을 제공하지 않아요.
+
 ## 원칙
 
 1. **한 파일 한 언어**예요. 한 README에 두 언어를 섞지 않아요. ([ppt-skills](https://github.com/CacinieP/ppt-skills/commit/5986d74ae9292b4868f4bc6bf8a63abf289b1fb2)처럼 이중언어 README를 파일로 나눈 선례를 따릅니다.)

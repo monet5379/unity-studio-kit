@@ -1,0 +1,29 @@
+---
+description: "선택 · Demo/F1 작업 시 — Title·Content·Button, Demo 경계"
+globs: "**/Demo/**/*.cs"
+alwaysApply: false
+---
+
+# Demo GUI (personal)
+
+**선택** — PackageLayout·Invariants보다 우선순위 낮음. Demo·F1을 만질 때만.
+
+정본: [`docs/personal/DemoGui.md`](../../../docs/personal/DemoGui.md)  
+공통 원칙: [`docs/common/DevImgui.md`](../../../docs/common/DevImgui.md)
+
+`profile: personal`이고 Demo·F1 오버레이를 만지거나 추가할 때.
+
+## Must
+
+- IMGUI 역할: **Title** (패널·섹션) / **Content** (본문·상태) / **Button** (액션); Sub는 선택
+- 스타일은 `EnsureGuiStyles` 등으로 **캐시** — `OnGUI`마다 `new GUIStyle` 금지
+- Demo GUI 코드는 **`Assets/Demo/`** 만 (설치 단위 `Assets/<Package>/`에 넣지 않음)
+- 권장 기본: Title·Button 14 Bold, Content 12 wordWrap (색은 자유)
+
+## Must not
+
+- Runtime 패키지에 Demo IMGUI·스타일 헬퍼를 넣고 소비자에게 강제
+- `GUI.skin` 전역 변조
+- Title/Content를 한 스타일로 통일
+- Dragon `TSGUIData`/`TSGUIEx`/`TSColors` 전체를 personal 필수로 이식
+- 플레이어 TMP/Canvas 규칙과 혼동 (TMP는 출시 UI)

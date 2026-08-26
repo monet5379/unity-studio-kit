@@ -24,3 +24,4 @@ alwaysApply: false
 - 요청 없이 locale 파일 추가
 - DocsLite보다 문서 무게를 키우는 기본화
 - AI 고지를 셀렉터·배지 옆에 두기
+- 이 규칙을 에디터·F1·인게임 UI 언어(Prefs·메뉴·문자열 테이블)에 적용하거나, Kit에 그 구현을 추가하기
