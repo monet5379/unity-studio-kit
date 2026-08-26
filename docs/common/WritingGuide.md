@@ -1,7 +1,8 @@
 # 글쓰기 가이드 (Unity Kit)
 
 이 Kit의 `docs/`와 프로젝트 `AGENTS.md`·README를 쓸 때 따르세요.  
-토스 [테크니컬 라이팅](https://technical-writing.dev/overview.html)의 **유형 · 정보 구조 · 문장**만 Unity 작업에 맞게 축약했어요. 사이트 notes·Jekyll 전용 규칙은 여기에 두지 않아요.
+토스 [테크니컬 라이팅](https://technical-writing.dev/overview.html)([GitHub](https://github.com/toss/technical-writing))의 **유형 · 정보 구조 · 문장**만 Unity 작업에 맞게 축약했어요. 사이트 notes·Jekyll 전용 규칙은 여기에 두지 않아요.  
+원 가이드 © 2024 Viva Republica, Inc. — [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). 고지: [`NOTICE`](../../NOTICE).
 
 에이전트 요약: [`.cursor/rules/common/writing-guide.mdc`](../../.cursor/rules/common/writing-guide.mdc)
 

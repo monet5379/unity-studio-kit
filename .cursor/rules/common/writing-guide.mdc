@@ -7,7 +7,8 @@ alwaysApply: false
 # Writing guide (Unity Kit)
 
 정본: [`docs/common/WritingGuide.md`](../../../docs/common/WritingGuide.md)  
-`docs/**` · 루트 README · `templates/` · 프로젝트 `AGENTS.md`를 쓰거나 고칠 때 적용해요. (사이트 notes·Jekyll 규칙 아님)
+`docs/**` · 루트 README · `templates/` · 프로젝트 `AGENTS.md`를 쓰거나 고칠 때 적용해요. (사이트 notes·Jekyll 규칙 아님)  
+출처: [toss/technical-writing](https://github.com/toss/technical-writing) (CC BY-NC-SA 4.0) — [`NOTICE`](../../../NOTICE)
 
 ## Must
 

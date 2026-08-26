@@ -36,4 +36,5 @@ alwaysApply: true
 
 검증 없는 게으른 코드는 **미완성**이다: 비 trivial 로직 뒤에는 로직이 깨지면 실패하는 **실행 가능한 검증 하나**를 남긴다(assert 기반 자가 검증이나 작은 테스트 파일 하나; 프레임워크·fixture 없음). trivial한 한 줄은 테스트 불필요.
 
-정본 문서: [`docs/common/AgentWorkflow.md`](../../../docs/common/AgentWorkflow.md)
+정본 문서: [`docs/common/AgentWorkflow.md`](../../../docs/common/AgentWorkflow.md)  
+출처: [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) (MIT) — [`NOTICE`](../../../NOTICE)

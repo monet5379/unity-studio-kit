@@ -16,6 +16,8 @@ personal · game 공통으로, 에이전트가 **어디까지 손대고 어떻�
 이해한 뒤 **최소 diff**. YAGNI · 기존 헬퍼 재사용 · 표준 라이브러리 우선.  
 비 trivial 로직 뒤에는 깨지면 실패하는 **실행 가능한 검증 하나**(작은 assert/테스트; 무거운 fixture 불필요)를 남겨요.
 
+규칙 문구는 [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) Cursor 규칙을 한국어로 각색한 거예요 (MIT). 고지: [`NOTICE`](../../NOTICE).
+
 ## 검증
 
 - 가능한 한 작은 단위로 진행해요.

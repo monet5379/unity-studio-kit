@@ -69,3 +69,7 @@ personal / game은 `alwaysApply: false` — `profile:`에 맞는 것만 따르�
 ## License
 
 [MIT](LICENSE) © 2026 Seunghyeon
+
+제3자 ([`NOTICE`](NOTICE)):
+- 포니테일 — [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) (MIT)
+- 글쓰기 가이드 — [toss/technical-writing](https://github.com/toss/technical-writing) (CC BY-NC-SA 4.0)
