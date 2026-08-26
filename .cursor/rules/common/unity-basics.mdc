@@ -1,0 +1,42 @@
+---
+description: Unity 공통 — 에셋·워크스페이스·커밋
+alwaysApply: true
+---
+
+# Unity 공통
+
+## Unity / 에셋
+
+- `.meta` 생성·수정·삭제 금지 (Unity 에디터 관리)
+- 설계 문서는 `Assets/` 밖 (`docs/` 등)
+- 씬·프리팹·ScriptableObject GUID 임의 변경 금지
+
+## 워크스페이스
+
+- Git 저장소 **루트**를 Cursor 워크스페이스로 연다 (Unity 하위 폴더만 열지 않음)
+- Kit 사용 시 프로젝트 + `unity-studio-kit` 멀티 루트 ([README](../../../README.md))
+
+## 작업 범위
+
+- 공통: [`agent-scope.mdc`](agent-scope.mdc)
+- 프로필·타이틀 규칙은 프로젝트 `AGENTS.md` 및 해당 `.cursor/rules`를 따른다
+
+## Git / Commit
+
+- 커밋은 사용자가 **명시적으로 요청할 때만**
+- 형식: `<type>(<scope>): <description>` — feat, fix, docs, refactor, test, chore
+- `git config` 변경 · 요청 없는 destructive git 명령 금지
+
+## Shell / 삭제
+
+- [`shell-destructive-ops.mdc`](shell-destructive-ops.mdc) (cmd 삭제 전면 금지)
+
+## 코딩 철학
+
+- [`ponytail.mdc`](ponytail.mdc)
+
+## 문서
+
+- Kit `docs/` 작성: [`writing-guide.mdc`](writing-guide.mdc) · [`docs/common/WritingGuide.md`](../../../docs/common/WritingGuide.md)
+
+정본 문서: [`docs/common/UnityBasics.md`](../../../docs/common/UnityBasics.md)

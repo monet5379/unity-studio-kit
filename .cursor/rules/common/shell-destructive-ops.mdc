@@ -1,0 +1,110 @@
+---
+description: Shell 파괴적 파일 연산 금지·안전 삭제 절차
+alwaysApply: true
+---
+
+# Shell — 파괴적 파일 연산
+
+에이전트는 파일/폴더를 **영구·재귀 삭제**할 때 아래를 지킨다.
+의도한 한 경로만 지우려다 `cmd` 인용/이스케이프가 깨져 드라이브·상위 폴더·형제 clone이 지워진 사고를 재발시키지 않는다.
+
+## 금지 (명시적)
+
+다음을 **호출하지 않는다**. 인자 조합·플래그와 무관하게 전면 금지.
+사용자 요청이 있어도 대안을 제시하고, 아래 허용 패턴 + 확인 절차로만 진행한다.
+
+### CMD 삭제 — 전부 금지
+
+- `cmd /c rmdir`, `cmd /c rd`
+- `cmd /c del`, `cmd /c erase`
+- 위 명령을 `/s` `/q` 유무와 관계없이 사용 금지
+- PowerShell에서 `cmd /c ...` 를 문자열로 넘기는 모든 형태
+  (`Invoke-Expression`, `Invoke-Command`, `& cmd`, `Start-Process cmd` 등)
+- PowerShell → cmd 로 `\"` 수동 이스케이프하는 중첩 인용
+
+이유: `/s` 만 빠져도 `/q`·다른 플래그·깨진 인용으로 경로가 드라이브 루트 쪽으로
+해석될 수 있다. cmd 삭제 API 자체가 이 환경의 Shell 파이프라인에 취약하다.
+
+### 기타 금지
+
+- 경로가 `"...\Something\"` 처럼 **닫는 따옴표 직전 `\`** 로 끝나는 cmd 인용
+  (쓰지 않더라도 인지: cmd는 `\"` 를 따옴표 이스케이프로 해석)
+- `rm -rf` 및 확인·워크스페이스 검증 없는 `Remove-Item -Recurse -Force`
+- 워크스페이스 밖, 드라이브 루트(`C:\`), `$Recycle.Bin`, **상위·형제 clone 루트** 삭제
+- 휴지통 비우기·Recycle Bin 경로 조작
+
+## 허용 패턴 (폴더/파일 삭제)
+
+1. **절대 경로**만 사용. cwd 의존 상대경로 재귀 삭제 금지.
+2. **PowerShell 네이티브만**. cmd를 끼우지 않는다.
+3. `-LiteralPath` 사용. 경로 trailing `\` 금지. 따옴표는 단일 인용 `'...'` 기본.
+4. 삭제 전 프리플라이트를 **반드시** 수행한 뒤에만 `Remove-Item`.
+
+### 권장 스크립트 형태
+
+```powershell
+$workspaceRoot = 'C:\path\to\repo'   # 실제 워크스페이스(저장소) 루트
+$target = 'C:\path\to\repo\Assets\SomeFolder'
+
+if ($target -notlike "$workspaceRoot\*" -and $target -ne $workspaceRoot) {
+    throw "Target outside workspace: $target"
+}
+if (-not (Test-Path -LiteralPath $target)) {
+    throw "Path does not exist: $target"
+}
+# 채팅에서 사용자 확인 완료 후에만 실행
+Remove-Item -LiteralPath $target -Recurse -Force
+```
+
+`$workspaceRoot`는 추측하지 말고, 현재 Cursor 워크스페이스(저장소 루트) 절대 경로를 쓴다.
+
+## Unity / Git 특별 규칙
+
+- **`Assets/`(및 Addressables 등 에셋 트리) 아래**
+  - Shell로 `.meta`를 생성·수정·삭제하지 않는다.
+  - 추적 중인 에셋/폴더 제거는 **`git rm`**(필요 시 `-r`)을 **우선** 검토한다.
+  - 에디터에서 지우는 것이 가능하면 Shell 삭제보다 에디터를 권장한다.
+- **`Library/` · `Temp/` · `Logs/`**
+  - 캐시이므로 git 관점에서는 삭제해도 되는 축이다.
+  - 그래도 **워크스페이스 하위 절대 경로 + 프리플라이트 + 사용자 확인**은 동일하게 적용한다.
+  - Unity가 잠근 파일은 실패할 수 있다. 실패 시 광역 재시도·상위 경로로 확대하지 않는다.
+- git tracked 일반 파일: 가능하면 `git rm` / `git restore` 등 git 경로를 Shell `Remove-Item`보다 우선한다.
+
+## 사용자 확인 (필수인 경우)
+
+아래면 **실행하지 말고** 채팅에서 확인을 받는다. Shell에서 `Read-Host`로 막지 않는다.
+
+- 재귀 삭제(`-Recurse`) 또는 디렉터리 삭제
+- 대상이 워크스페이스 루트에 가깝거나, `.git` · `docs` · `.cursor` · 스크립트 트리에 닿을 수 있는 경우
+- 한 번에 여러 트리·글로브 삭제
+- 경로 해석이 애매한 경우
+
+### 확인 메시지 템플릿
+
+```text
+다음 경로를 삭제하려 합니다:
+
+    <해석된 절대 경로 전체>
+
+이 경로가:
+- 워크스페이스 하위인가?
+- 의도한 폴더/파일인가?
+- 백업/복구 수단이 있는가? (원격 Git 등)
+
+계속하려면 채팅에 yes 라고 답해 주세요.
+```
+
+사용자가 명확히 승낙하기 전에 `Remove-Item -Recurse`를 실행하지 않는다.
+
+## 대안 (삭제보다 우선)
+
+- 추적 파일 복구/되돌림: `git restore` / `git checkout`
+- 모호한 “정리” 요청: 삭제 대신 `Get-ChildItem` 목록 또는 `Move-Item`만 수행
+- 휴지통을 복구 수단으로 **가정하지 않는다** (`Remove-Item`/`rmdir`은 휴지통을 거치지 않음)
+
+## 한 줄 요약
+
+`cmd` 삭제 명령 = 전면 금지.  
+삭제는 `Remove-Item -LiteralPath` + 워크스페이스 prefix 검증 + `Test-Path` + (재귀 시) 채팅 확인만.
+
+정본 문서: [`docs/common/ShellSafety.md`](../../../docs/common/ShellSafety.md)

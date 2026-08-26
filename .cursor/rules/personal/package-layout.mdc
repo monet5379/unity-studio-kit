@@ -1,0 +1,21 @@
+---
+description: personal — 복사형 패키지·Demo 놀이터 레이아웃
+globs: "**/Assets/**"
+alwaysApply: false
+---
+
+# Package layout (personal)
+
+`profile: personal`일 때. 정본: [`docs/personal/PackageLayout.md`](../../../docs/personal/PackageLayout.md)
+
+## 배치
+
+- **설치 단위:** `Assets/<PackageName>/` (Runtime·Editor·asmdef 유지)
+- **Demo:** `Assets/Demo/` — 참고·재생만. README에 비설치를 명시
+- Demo에 출시 스키마·타이틀 도메인 타입을 넣지 않음
+- 설계 장문은 `Assets/` 밖 (`docs/` 또는 README)
+
+## 유지
+
+- `.meta` Shell 생성·수정·삭제 금지
+- `ThirdParty/` · `Plugins/` 직접 수정 금지

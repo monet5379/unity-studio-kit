@@ -1,0 +1,65 @@
+---
+description: C# 코딩 규칙 (casing·init·partial·성능·주석)
+globs: "**/*.cs"
+alwaysApply: false
+---
+
+# C# 코딩 규칙
+
+정본: [`docs/common/Csharp.md`](../../../docs/common/Csharp.md) · [`naming-semantics.mdc`](naming-semantics.mdc)
+
+## 네이밍 (casing)
+
+- 타입/메서드/프로퍼티: PascalCase
+- 인터페이스: `I` 접두사
+- private/readonly 필드: `_camelCase`
+- 지역 변수/매개변수: camelCase
+- const: `UPPER_SNAKE_CASE`
+- **의미(semantic):** `naming-semantics.mdc`
+
+## 프로퍼티
+
+- **`init` 사용 금지** — `{ get; init; }` 및 객체 이니셜라이저로만 채우는 패턴을 쓰지 않는다.
+- **불변 데이터** — 생성자 + `{ get; }`
+- **가변 데이터** — `{ get; set; }`
+
+```csharp
+// ❌ BAD
+public readonly struct Foo
+{
+    public string Name { get; init; }
+}
+
+// ✅ GOOD
+public readonly struct Foo
+{
+    public Foo(string name) => Name = name;
+    public string Name { get; }
+}
+```
+
+## Unity / C# 관례
+
+- 네임스페이스: **주변 코드·프로젝트 관례**에 맞춘다
+- Inspector: `[SerializeField] private`
+- UI 텍스트: `TextMeshProUGUI`만 (레거시 `UnityEngine.UI.Text` 금지)
+- 비즈니스/게임 로직 메서드 위: 목적 **한 줄 한국어** 주석 (단순 getter/래퍼는 생략 가능)
+
+## partial class
+
+- **base class·interface는 메인 파일 1곳만** — 상속·인터페이스 목록 정본
+- **partial 분할 파일** — `public partial class Foo`만 (상속 반복 금지)
+- 동일 타입 partial은 **동일 asmdef·namespace**
+
+```csharp
+// Foo.cs — 메인
+public partial class Foo : MonoBehaviour, IPoolable { }
+
+// Foo.Bar.cs — partial
+public partial class Foo { }
+```
+
+## hot path · Performance
+
+- Update/FixedUpdate/빈번한 루프: LINQ·불필요한 문자열 할당·박싱·반복 `GetComponent<T>()` 금지
+- `GetComponent<T>()`: Awake 캐싱 또는 지연 캐싱(`??=`)

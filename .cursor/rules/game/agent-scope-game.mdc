@@ -1,0 +1,26 @@
+---
+description: game — 공유 패키지·벤더·문서 스코프 오버레이
+alwaysApply: false
+---
+
+# Agent Scope (game overlay)
+
+`profile: game`일 때. common [`agent-scope.mdc`](../common/agent-scope.mdc) 위에 얹어요.  
+정본: [`docs/game/ProjectSeparation.md`](../../../docs/game/ProjectSeparation.md)
+
+## Out of Scope (추가)
+
+- `ThirdParty/` · `Plugins/` · 벤더 Assets **직접 수정** (어댑터만 `Project/Scripts/ThirdPartyAdapters/`)
+- 공유 Core UPM **소스·`Library/PackageCache`** 직접 수정 — 타이틀에서는 manifest pin·소비 코드만. 구현은 패키지 정본 repo
+- 요청 없는 public API 시그니처·대규모 재구성 (common과 동일)
+
+## Documentation
+
+- 큰 구조·계약 변경 → 해당 `Architecture_<Feature>` 갱신 ([`documentation.mdc`](documentation.mdc))
+- 성능·캐시 추적 중이면 Optimization Changelog도
+- 대규모 리팩터는 Plan과 구현 분리 ([`development-process.mdc`](development-process.mdc))
+
+## Quality
+
+- 관련 asmdef 컴파일·(요청 시) 수동/Play 시나리오
+- behavioral SC를 static 리뷰만으로 닫지 않음

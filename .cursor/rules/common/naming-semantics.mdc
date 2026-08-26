@@ -1,0 +1,31 @@
+---
+description: C# 메서드·API 의미(semantic) 네이밍
+globs: "**/*.cs"
+alwaysApply: false
+---
+
+# Naming Semantics
+
+정본은 본 rule (별도 Docs SSOT 없음).
+
+## Must (신규·수정 코드)
+
+- bool: `Is*` / `Has*` / `Can*` / `Allows*` / `Try*` — `Determine*`, 단순 bool `Check*`/`Validate*` **신규 지양**
+- 이벤트 수신: `On*` — 이후 오케스트레이션: `Handle*`
+- public API: 범용 `Initialize()` / `Cleanup*` **신규 지양** → `Reset*` / `Configure*` / `BindTo*` / `Despawn*` / `Clear*` 등 구체 동사
+- 코루틴: `Begin*`/`Run*`/`Stop*`/`Yield*` — 동일 클래스 `Process*` 오버로드 금지
+- 복수 대상: `*All*` 또는 복수형
+- lazy-init: `Ensure*` · 트랜잭션: `Record*` · 콜백: `Register*`/`Unregister*`
+
+## Must Not (신규)
+
+- `Suicide*`, `Fore*` 같은 비공식 이름
+- 프로젝트에 도메인 delta rule이 있으면 그것을 우선한다
+
+## 우선순위
+
+도메인 delta rule > 본 rule > `csharp-standards.mdc` (casing만)
+
+## 레거시
+
+기존 `Check*`/`Cleanup*`/`Determine*`/`Initialize()` **일괄 rename 금지** — 터치 구간만 본 rule 적용.

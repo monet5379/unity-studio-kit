@@ -1,0 +1,34 @@
+---
+description: game — 검증·스모크·QA는 요청 전까지 제안하지 않음
+alwaysApply: false
+---
+
+# Verification · Smoke · QA (game)
+
+`profile: game`일 때. 정본: [`docs/game/DevelopmentProcess.md`](../../../docs/game/DevelopmentProcess.md) §Verify
+
+사용자가 **명시 요청하기 전까지** 검증·스모크·QA를 **제안·추가·실행하지 마세요.**
+
+## Agent
+
+- 스모크·QA 러너·「테스트해보세요」후속 제안 금지
+- 요청 없이 PR/완료 응답에 Test plan 섹션 넣지 않음
+- 관련 asmdef 컴파일 등 최소 기술 확인은 가능 — 별도 QA 단계로 **제안하지 않음**
+
+## Plan
+
+- Plan에 Tests·QA·수동 시나리오 섹션을 **요청 없이** 추가·강조하지 않음
+
+## 예외
+
+- 사용자가 검증·스모크·QA·Test plan을 **명시 요청**
+- 사용자가 **PR 생성**을 명시 요청 → PR 본문 Test plan 가능
+- 작업 자체가 QA·러너 **구현**인 경우
+
+## Verify와 구분
+
+| | 동작 |
+|---|------|
+| Plan「확인」·behavioral SC | Verify — 코드 리뷰만으로 pass 금지 |
+| 추가 스모크·「테스트해보세요」 | 요청 전 금지 |
+| static SC | 코드·문서 리뷰로 Verify 가능 |

@@ -1,0 +1,32 @@
+---
+description: personal 프로필 — 공개 패키지·실험 (profile personal일 때)
+alwaysApply: false
+---
+
+# Personal 프로필
+
+프로젝트 `AGENTS.md`에 `profile: personal`일 때 이 규칙을 따르세요.  
+정본: [`docs/personal/Overview.md`](../../../docs/personal/Overview.md)
+
+## 프로세스
+
+- **common**(포니테일·스코프·`.meta`·Shell)은 그대로 적용해요.
+- Plan / Architecture / Optimization / 스프린트 Record는 **기본 불필요**. 요청 없이 만들지 마세요.
+- 소규모 수정 = 이해 후 최소 diff. 구조가 커지면 game 프로필 전환을 제안만 해요.
+
+## 문서
+
+- 정본은 **README** (Install · Invariants · Out of scope).
+- 설계 md 대량 추가 금지. 필요 시 README 절 또는 `docs/` 한 장.
+- [`docs/personal/DocsLite.md`](../../../docs/personal/DocsLite.md)
+
+## 레이아웃
+
+- 복사 단위 `Assets/<PackageName>/` + 선택 `Assets/Demo/` (놀이터, 비설치).
+- [`docs/personal/PackageLayout.md`](../../../docs/personal/PackageLayout.md) · [`package-layout.mdc`](package-layout.mdc)
+
+## 하지 말 것
+
+- Demo를 출시 스키마·필수 경로로 취급
+- 타이틀용 Tier·Addressables·팀 Plan 규칙을 personal에 강제
+- game 프로필 규칙과 동시에 “둘 다 필수”로 적용

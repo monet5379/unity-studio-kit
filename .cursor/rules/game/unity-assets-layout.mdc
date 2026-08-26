@@ -1,0 +1,37 @@
+---
+description: game — Unity Assets 폴더 배치
+globs: "**/Assets/**"
+alwaysApply: false
+---
+
+# Unity Assets 레이아웃 (game)
+
+`profile: game`일 때. 정본: [`docs/game/AssetsLayout.md`](../../../docs/game/AssetsLayout.md)
+
+## 최상위
+
+- `Project/` — 팀 소유 (코드·씬·Content·Editor)
+- `Addressables/` — 런타임 로드 JSON·SO (복수형만; `Addressable/` 금지)
+- `Resources/` — 브리지·과도기 (신규 대량 콘텐츠 X)
+- `ThirdParty/`, `Plugins/` — 벤더 (직접 수정 X)
+- 설계 `.md` → `docs/` / `Docs/` (Assets 안 README는 20줄 이내만)
+
+## Project/
+
+- 공유 Core → UPM `Packages/` (Project 아래 Core 임베드 비표준)
+- `Scripts/<Domain>/` — Game asmdef · 1기능 1폴더
+- `Scripts/ThirdPartyAdapters/` — SDK 래퍼
+- `Editor/` · `Content/` · `Scenes/`
+
+## 데이터
+
+- ① enum 1:1 SO → `Addressables/Scriptable/<Category>/`
+- ② Config → `Addressables/Scriptable/Config/`
+- ③ Json → `Addressables/JSON/`
+- Resources·Addressables **동일 파일명 금지**
+
+## 금지
+
+- `.meta` 생성·수정·삭제
+- ThirdParty 직접 수정
+- Core asmdef가 Game 참조

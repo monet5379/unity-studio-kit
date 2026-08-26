@@ -1,0 +1,26 @@
+---
+description: game 프로필 — 출시 타이틀 (profile game일 때)
+alwaysApply: false
+---
+
+# Game 프로필
+
+프로젝트 `AGENTS.md`에 `profile: game`일 때 이 규칙을 따르세요.  
+정본: [`docs/game/Overview.md`](../../../docs/game/Overview.md)
+
+## 프로세스
+
+- **common**(포니테일·스코프·`.meta`·Shell·C#)은 그대로 적용해요.
+- 작업 프레임: [`development-process.mdc`](development-process.mdc) (7단계).
+- QA·스모크 제안: [`verification-qa-defaults.mdc`](verification-qa-defaults.mdc).
+- personal 프로필 규칙과 **동시에 필수로 적용하지 마세요.**
+
+## 문서 · Assets · 경계
+
+- 문서 2분류·README 허브: [`documentation.mdc`](documentation.mdc)
+- Assets: [`unity-assets-layout.mdc`](unity-assets-layout.mdc)
+- Core vs Game · 공유 패키지: [`agent-scope-game.mdc`](agent-scope-game.mdc)
+
+## 타이틀 전용
+
+경로·asmdef 이름·도메인 규칙은 **이 게임 repo**의 `AGENTS.md` · `.cursor/rules/<title>/`만 따르세요. Kit game에 타이틀 특수 규칙을 넣지 마세요.
