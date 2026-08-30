@@ -45,7 +45,7 @@ Kit Assets·문서 관례: `unity-studio-kit/docs/game/AssetsLayout.md` · `Docu
 - 7단계: Define → Design → DoD → Build → Verify → Record (실패 시 Recovery).
 - 구조 변경 시 Architecture · (크면) Plan. Optimization은 추적 필요할 때만.
 - 스모크·QA **제안·실행**은 사용자 요청 전 금지. behavioral SC는 코드 리뷰만으로 pass 금지.
-- 커밋은 사용자 **명시 요청** 시에만. `type(scope): 설명`
+- 커밋은 사용자 **명시 요청** 시에만. Kit [CommitMessages](../docs/common/CommitMessages.md) — `type(scope): 한글 제목`
 
 ### 코딩
 
@@ -62,6 +62,16 @@ Kit Assets·문서 관례: `unity-studio-kit/docs/game/AssetsLayout.md` · `Docu
 | asmdef (Game 등) | `<…>` |
 | 공유 Core 패키지 id | `<com.example.core>` (없으면 —) |
 | 네임스페이스 루트 | `<…>` |
+
+### 커밋 (이 repo)
+
+Kit [CommitMessages](../docs/common/CommitMessages.md)를 따르고, 아래만 이 repo에서 정해요.
+
+| 항목 | 값 |
+|------|-----|
+| 언어 | 한글 (Kit 기본) |
+| scope (정본) | 예: `ui`, `save`, `docs`, `ci` — 레이아웃에 맞게 채움 |
+| 패치노트·버전 경로 | (선택) 예: `docs/patch-note/` |
 
 ### 자주 쓰는 경로
 

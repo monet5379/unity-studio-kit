@@ -1,0 +1,25 @@
+---
+description: 커밋 메시지 — Conventional Commits·한글 기본·scope는 AGENTS
+alwaysApply: false
+---
+
+# 커밋 메시지
+
+정본: [`docs/common/CommitMessages.md`](../../../docs/common/CommitMessages.md)
+
+## Must
+
+- 사용자 **명시 요청** 시에만 커밋
+- `<type>(<scope>): <제목>` — Conventional Commits
+- 제목·설명 **기본 한글** (코드명·API·로그는 영어 OK). `AGENTS.md` 언어 override 우선
+- 주된 의도 type 하나: feat, fix, docs, style, refactor, perf, test, chore
+- 제목 권장 50자 전후·최대 72자. 마침표·버전 접두어(`v0.1.30:`) 금지
+- scope는 선택. **허용 목록은 프로젝트 `AGENTS.md`**
+- 본문은 why 중심(선택). Breaking은 `BREAKING CHANGE:`
+
+## Must not
+
+- `update` / `수정` / `워킹` 등 빈 제목
+- Kit 기본인데 영어만 제목 (영어 override repo 제외)
+- 무관한 대형 변경을 한 커밋에 섞기
+- Kit에 프로젝트 전용 scope·패치노트 경로를 추가하지 않음

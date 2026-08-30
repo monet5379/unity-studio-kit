@@ -24,7 +24,8 @@ alwaysApply: true
 ## Git / Commit
 
 - 커밋은 사용자가 **명시적으로 요청할 때만**
-- 형식: `<type>(<scope>): <description>` — feat, fix, docs, refactor, test, chore
+- 형식·작성법: [`CommitMessages.md`](../../../docs/common/CommitMessages.md) · [`commit-messages.mdc`](commit-messages.mdc)
+- `<type>(<scope>): <한글 제목>` — scope·언어 override는 프로젝트 `AGENTS.md`
 - `git config` 변경 · 요청 없는 destructive git 명령 금지
 
 ## Shell / 삭제

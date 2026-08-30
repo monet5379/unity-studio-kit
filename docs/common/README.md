@@ -6,7 +6,8 @@ personal · game **양쪽**에 쓰는 정본이에요. 프로필 차이는 `docs
 | 문서 | 유형 | 적용 | 내용 |
 |------|------|------|------|
 | [WritingGuide.md](WritingGuide.md) | 프로세스 | docs·AGENTS 작성 시 | Kit 문서 유형·lead·docs/rules |
-| [UnityBasics.md](UnityBasics.md) | 참조 | 항상 | `.meta`, 워크스페이스, 커밋 |
+| [UnityBasics.md](UnityBasics.md) | 참조 | 항상 | `.meta`, 워크스페이스, 커밋(요약) |
+| [CommitMessages.md](CommitMessages.md) | 참조 | 커밋 시 | Conventional Commits·한글 기본·프로젝트 override |
 | [Csharp.md](Csharp.md) | 참조 | C# 작성·수정 시 | 네이밍·프로퍼티·partial·hot path |
 | [ShellSafety.md](ShellSafety.md) | 참조 | 항상 | Shell 삭제 안전 |
 | [AgentWorkflow.md](AgentWorkflow.md) | 개념 | 항상 | 스코프·포니테일·검증 |

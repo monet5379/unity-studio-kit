@@ -16,11 +16,13 @@ personal · game 공통으로, 에셋·워크스페이스·커밋에서 **항상
 ## Git / 커밋
 
 - 커밋은 사용자가 **명시적으로 요청할 때만** 해요.
-- 형식: `<type>(<scope>): <description>` — `feat`, `fix`, `docs`, `refactor`, `test`, `chore`
+- 형식·type·제목 작성법: [CommitMessages.md](CommitMessages.md) ([Conventional Commits](https://www.conventionalcommits.org/))
+- 제목·설명 **기본 한글**. scope 목록·언어 override·패치노트는 프로젝트 `AGENTS.md`
 - 예: `feat(save): 슬롯 백업 경로 분리`, `docs(common): Unity 기본 보강`
 - 요청 없이 `git config` 변경·force push·hard reset 등 파괴적 git 명령을 쓰지 마세요.
 
 ## 관련 규칙
 
 - [`.cursor/rules/common/unity-basics.mdc`](../../.cursor/rules/common/unity-basics.mdc)
+- 커밋 메시지: [CommitMessages.md](CommitMessages.md) · [`.cursor/rules/common/commit-messages.mdc`](../../.cursor/rules/common/commit-messages.mdc)
 - Shell 삭제: [ShellSafety.md](ShellSafety.md)

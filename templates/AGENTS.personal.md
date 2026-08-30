@@ -35,7 +35,7 @@ profile: personal
 
 - Kit **common** + **personal** (Plan/Architecture 기본 불필요, README 정본).
 - `.meta` 생성·수정·삭제 금지. `ThirdParty/` · `Plugins/` 직접 수정 금지.
-- 커밋은 사용자 **명시 요청** 시에만. 형식: `type(scope): 설명`
+- 커밋은 사용자 **명시 요청** 시에만. Kit [CommitMessages](../docs/common/CommitMessages.md) — `type(scope): 한글 제목` (영어 필요 시 아래 override)
 - Demo를 출시 스키마·필수 설치 경로로 취급하지 않음.
 
 ## 이 repo만의 메모 (선택)
@@ -43,3 +43,12 @@ profile: personal
 - 네임스페이스: `<Namespace>`
 - 의존: <예: Newtonsoft.Json>
 - 기타: <불변조건 한두 줄 또는 README 링크>
+
+### 커밋 (이 repo)
+
+Kit [CommitMessages](../docs/common/CommitMessages.md)를 따르고, 아래만 이 repo에서 정해요.
+
+| 항목 | 값 |
+|------|-----|
+| 언어 | 한글 (Kit 기본) · 공개 패키지면 `영어`로 override |
+| scope (정본) | 예: `package`, `demo`, `docs`, `ci` |
