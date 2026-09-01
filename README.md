@@ -8,7 +8,7 @@ Unity 프로젝트를 열 때마다 규칙을 복사하지 않도록, **공통 C
 
 | 하는 일 | 안 하는 일 |
 |---------|------------|
-| AI 규칙(`.cursor`), 공통·프로필 가이드(`docs/`), 새 프로젝트 `AGENTS` 템플릿 | Unity 런타임 코드, UPM 패키지 소스 |
+| AI 규칙(`.cursor`), 공통·프로필 가이드(`docs/`), Cursor skill(`.cursor/skills/`), 새 프로젝트 `AGENTS` 템플릿 | Unity 런타임 코드, UPM 패키지 소스 |
 | personal / game 프로필별 **재사용 규약** | 웹 사이트용 글쓰기 규칙 |
 | | 타이틀 전용 경로·도메인 규칙 (각 게임 repo에 둠) |
 | | 패키지 UI 언어 전환 구현 (에디터·F1·인게임 Prefs·메뉴·문자열). personal [LocaleDocs](docs/personal/LocaleDocs.md)는 README 파일만 |
@@ -52,7 +52,9 @@ profile: personal   # or game
 ```text
 unity-studio-kit/
 ├── docs/common|personal|game/
-├── .cursor/rules/common|personal|game/
+├── .cursor/
+│   ├── rules/common|personal|game/
+│   └── skills/         ← Cursor Agent skill (예: DOTS)
 └── templates/          ← AGENTS 복사본
 ```
 
@@ -66,6 +68,9 @@ personal / game은 `alwaysApply: false` — `profile:`에 맞는 것만 따르�
 | personal | [docs/personal](docs/personal/README.md) |
 | game | [docs/game](docs/game/README.md) |
 | 템플릿 | [templates](templates/README.md) |
+| DOTS skill | [`.cursor/skills/unity-ecs-patterns`](.cursor/skills/unity-ecs-patterns/SKILL.md) |
+
+DOTS·Entities 작업 시 위 skill을 쓰고, hybrid·system group·Entities pin은 **타이틀** `Architecture_*` / `AGENTS.md`가 이깁니다.
 
 ## License
 
@@ -74,3 +79,4 @@ personal / game은 `alwaysApply: false` — `profile:`에 맞는 것만 따르�
 제3자 ([`NOTICE`](NOTICE)):
 - 포니테일 — [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) (MIT)
 - 글쓰기 가이드 — [toss/technical-writing](https://github.com/toss/technical-writing) (CC BY-NC-SA 4.0)
+- DOTS skill — [wshobson/agents — unity-ecs-patterns](https://github.com/wshobson/agents/tree/main/plugins/game-development/skills/unity-ecs-patterns) (MIT)
