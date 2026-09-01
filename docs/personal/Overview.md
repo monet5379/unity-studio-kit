@@ -39,6 +39,6 @@ Kit를 멀티 루트로 연 경우 personal 규칙은 `alwaysApply`가 아니에
 - 팀 스프린트 Plan·Architecture를 personal에 강제하지 않아요.
 - 타이틀 전용 경로·도메인을 이 Kit personal에 모으지 않아요.
 - Demo를 출시 스키마·필수 설치 경로로 취급하지 않아요.
-- 패키지 UI 언어 전환 구현(스크립트·Prefs·메뉴)을 Kit에 두지 않아요. [LocaleDocs](LocaleDocs.md)는 README 파일 로케일만이에요.
+- 패키지 UI 언어 전환 구현(스크립트·Prefs·메뉴)을 Kit에 두지 않아요. [LocaleDocs](LocaleDocs.md)는 README를 **한글만** 두는 규칙이에요 (UI 구현 아님).
 
-다음: [PackageLayout.md](PackageLayout.md) · [DocsLite.md](DocsLite.md) · (선택) [DemoGui.md](DemoGui.md) · [LocaleDocs.md](LocaleDocs.md)
+다음: [PackageLayout.md](PackageLayout.md) · [DocsLite.md](DocsLite.md) · [LocaleDocs.md](LocaleDocs.md) · (선택) [DemoGui.md](DemoGui.md)

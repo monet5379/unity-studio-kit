@@ -45,14 +45,14 @@ Kit `docs/` · README · `templates/` 사람용 본문은 **해요체**로 맞�
 | **개념** | 왜 이 프로필·경계인가 | `docs/*/Overview.md` |
 | **참조** | 표·금지·경로 | AssetsLayout · Csharp · Shell · Documentation 본문 |
 | **How-to** | 단계대로 따라 하기 | (선택) 새 패키지/타이틀 붙이기 한 장 |
-| **프로세스** | 언제 어떤 산출물인가 | DevelopmentProcess · DocsLite · LocaleDocs(선택) |
+| **프로세스** | 언제 어떤 산출물인가 | DevelopmentProcess · DocsLite · LocaleDocs(한글 README) |
 
 프로필 문서 무게:
 
 | | personal | game |
 |---|----------|------|
 | 기본 | README + Invariants ([DocsLite](../personal/DocsLite.md)) | Architecture · Plan ([Documentation](../game/Documentation.md)) |
-| 충돌 시 | DocsLite가 “문서 최소”를 이김 (다국어는 [LocaleDocs](../personal/LocaleDocs.md), 선택) | Documentation · 7단계가 이김 |
+| 충돌 시 | DocsLite가 “문서 최소”를 이김 (README 언어는 [LocaleDocs](../personal/LocaleDocs.md)) | Documentation · 7단계가 이김 |
 
 ## 유형별 골격
 

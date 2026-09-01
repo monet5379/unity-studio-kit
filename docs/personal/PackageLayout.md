@@ -6,7 +6,7 @@
 
 ```text
 <repo>/
-├── README.md              ← Install · Invariants · Out of scope
+├── README.md              ← 한글. Install · Invariants · Out of scope
 ├── LICENSE
 ├── AGENTS.md              ← profile: personal (선택)
 ├── Assets/

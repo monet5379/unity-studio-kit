@@ -1,5 +1,5 @@
 ---
-description: personal 다국어 README — 별도 파일·셀렉터 (요청 시에만)
+description: personal README — 한글 README.md만 (영문·locale 파일 금지)
 alwaysApply: false
 ---
 
@@ -9,19 +9,15 @@ alwaysApply: false
 
 ## Must
 
-- 한 파일 한 언어 (`README.md` + `README.<locale>.md`)
-- 상단 언어 셀렉터 (현재 언어 굵게)
-- 공개면만 번역 (Install · API · Invariants · Out of scope)
-- 정본과 같은 절 구조 · 산문만 번역
-- **사용자 요청 시에만** locale 생성·갱신
-- AI로 옮긴 산문이면 **그 README 하단**에 AI-assisted 한 줄 + 충돌 시 우선순위(다른 locale·코드)
+- 정본은 **한글** `README.md` 하나
+- 코드·식별자·경로·명령은 영어 유지 OK, 산문은 한글
+- AI로 쓴 산문이면 **그 README 하단**에 AI-assisted 한 줄 + 충돌 시 코드 우선
 
 ## Must not
 
-- 한 README에 이중언어 병기
+- 영문 `README.md`를 랜딩 정본으로 두기
+- `README.<locale>.md` (`README.ko.md`, `README.en.md` 등) 생성·유지
+- 한 README에 이중언어 병기 · 상단 언어 셀렉터
 - `docs/README.md`만으로 번역 랜딩
-- notes·내부 메모까지 번역
-- 요청 없이 locale 파일 추가
 - DocsLite보다 문서 무게를 키우는 기본화
-- AI 고지를 셀렉터·배지 옆에 두기
 - 이 규칙을 에디터·F1·인게임 UI 언어(Prefs·메뉴·문자열 테이블)에 적용하거나, Kit에 그 구현을 추가하기
