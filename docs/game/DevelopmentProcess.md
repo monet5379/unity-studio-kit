@@ -5,7 +5,8 @@ game 작업에서 **언제 무엇을 닫는지**를 공통 프레임으로 맞�
 **왜 7단계인가요?** 구현만 반복하면 범위·구조·검증이 뒤섞여요. Define→Record로 “성공했는지 / 닫아도 되는지 / 실패 시 어디로 돌아갈지”를 같은 언어로 맞춰 둬요.
 
 Cursor: [`development-process.mdc`](../../.cursor/rules/game/development-process.mdc) · [`verification-qa-defaults.mdc`](../../.cursor/rules/game/verification-qa-defaults.mdc)  
-관련: [Documentation.md](Documentation.md) · [AgentWorkflow](../common/AgentWorkflow.md)
+관련: [Documentation.md](Documentation.md) · [AgentWorkflow](../common/AgentWorkflow.md)  
+스킬: Design — [`codebase-design`](../../.cursor/skills/codebase-design/SKILL.md) (범위가 크고 사용자가 요청하면 [`improve-codebase-architecture`](../../.cursor/skills/improve-codebase-architecture/SKILL.md)) · Verify static — [`code-review`](../../.cursor/skills/code-review/SKILL.md)
 
 ## 원칙
 
@@ -19,7 +20,7 @@ Cursor: [`development-process.mdc`](../../.cursor/rules/game/development-process
 | # | 단계 | 목적 |
 |---|------|------|
 | 1 | **Define** | 목표·Success Criteria·In/Out |
-| 2 | **Design** | 구조·경계 변경 시에만 — Architecture · Plan (코드 수정안 없음) |
+| 2 | **Design** | 구조·경계 변경 시에만 — Architecture · Plan (코드 수정안 없음). 어휘는 codebase-design. 후보 스캔은 사용자 요청 시 improve-codebase-architecture |
 | 3 | **DoD** | PR·태스크 닫기 조건 (Tier·문서·`.meta` 등) |
 | 4 | **Build** | 작은 단계 구현 |
 | 5 | **Verify** | SC·Plan「확인」대조 |
@@ -30,7 +31,7 @@ Cursor: [`development-process.mdc`](../../.cursor/rules/game/development-process
 
 | 유형 | Verify |
 |------|--------|
-| **static** | 코드·문서·asmdef 리뷰 |
+| **static** | 코드·문서·asmdef 리뷰 — 브랜치·PR이면 [code-review](../../.cursor/skills/code-review/SKILL.md) (Standards / Spec) |
 | **behavioral** | Plan「확인」·런타임 — **코드 리뷰만으로 pass 금지** |
 
 ### Verify vs QA 제안

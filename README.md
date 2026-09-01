@@ -54,7 +54,7 @@ unity-studio-kit/
 ├── docs/common|personal|game/
 ├── .cursor/
 │   ├── rules/common|personal|game/
-│   └── skills/         ← Cursor Agent skill (예: DOTS)
+│   └── skills/         ← Cursor Agent skill (리뷰·Design·DOTS)
 └── templates/          ← AGENTS 복사본
 ```
 
@@ -68,9 +68,13 @@ personal / game은 `alwaysApply: false` — `profile:`에 맞는 것만 따르�
 | personal | [docs/personal](docs/personal/README.md) |
 | game | [docs/game](docs/game/README.md) |
 | 템플릿 | [templates](templates/README.md) |
+| 리뷰 skill | [`.cursor/skills/code-review`](.cursor/skills/code-review/SKILL.md) — Standards / Spec 두 축 |
+| Design 어휘 | [`.cursor/skills/codebase-design`](.cursor/skills/codebase-design/SKILL.md) |
+| 아키텍처 스캔 | [`.cursor/skills/improve-codebase-architecture`](.cursor/skills/improve-codebase-architecture/SKILL.md) — **호출 전용** |
 | DOTS skill | [`.cursor/skills/unity-ecs-patterns`](.cursor/skills/unity-ecs-patterns/SKILL.md) |
 
-DOTS·Entities 작업 시 위 skill을 쓰고, hybrid·system group·Entities pin은 **타이틀** `Architecture_*` / `AGENTS.md`가 이깁니다.
+스킬은 해당 요청·단계에서만 켜요 (규칙 alwaysApply 아님). game Design·Verify static은 [DevelopmentProcess](docs/game/DevelopmentProcess.md).  
+DOTS·Entities는 위 DOTS skill을 쓰고, hybrid·system group·Entities pin은 **타이틀** `Architecture_*` / `AGENTS.md`가 이깁니다.
 
 ## License
 
@@ -80,3 +84,4 @@ DOTS·Entities 작업 시 위 skill을 쓰고, hybrid·system group·Entities pi
 - 포니테일 — [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) (MIT)
 - 글쓰기 가이드 — [toss/technical-writing](https://github.com/toss/technical-writing) (CC BY-NC-SA 4.0)
 - DOTS skill — [wshobson/agents — unity-ecs-patterns](https://github.com/wshobson/agents/tree/main/plugins/game-development/skills/unity-ecs-patterns) (MIT)
+- 리뷰·Design·아키텍처 스킬 — [mattpocock/skills](https://github.com/mattpocock/skills) (MIT)

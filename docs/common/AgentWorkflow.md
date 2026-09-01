@@ -4,6 +4,10 @@ personal · game 공통으로, 에이전트가 **어디까지 손대고 어떻�
 
 규칙: [`agent-scope.mdc`](../../.cursor/rules/common/agent-scope.mdc) · [`ponytail.mdc`](../../.cursor/rules/common/ponytail.mdc)
 
+스킬(`.cursor/skills/`)은 **alwaysApply가 아니에요.** 리뷰·모듈 경계·아키텍처 스캔·DOTS처럼 해당 요청이나 단계에서만 읽어요. 작은 수정은 포니테일만으로 충분해요.
+
+리뷰(변경분) / 지금 구조 설명 / 리팩터 제안은 **한 요청에 섞지 않아요.** 세 가지를 한 번에 처리하는 것은 권장하지 않아요. 같이 오면 작업 전에 하나를 고르게 해요. 절차는 각 스킬 「의도를 섞지 않아요」.
+
 ## 스코프
 
 - 변경 전 In Scope / Out of Scope를 확인해요.
@@ -27,3 +31,5 @@ personal · game 공통으로, 에이전트가 **어디까지 손대고 어떻�
 ## 프로필
 
 프로세스 무게·Plan·배포 규약은 `docs/personal/` · `docs/game/` (및 해당 `.cursor/rules`)에서 정해요.
+
+Cursor 스킬: [`code-review`](../../.cursor/skills/code-review/SKILL.md) · [`codebase-design`](../../.cursor/skills/codebase-design/SKILL.md) · [`improve-codebase-architecture`](../../.cursor/skills/improve-codebase-architecture/SKILL.md) (호출 전용) · [`unity-ecs-patterns`](../../.cursor/skills/unity-ecs-patterns/SKILL.md)

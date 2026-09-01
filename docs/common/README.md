@@ -10,9 +10,9 @@ personal · game **양쪽**에 쓰는 정본이에요. 프로필 차이는 `docs
 | [CommitMessages.md](CommitMessages.md) | 참조 | 커밋 시 | Conventional Commits·한글 기본·프로젝트 override |
 | [Csharp.md](Csharp.md) | 참조 | C# 작성·수정 시 | 네이밍·프로퍼티·partial·hot path |
 | [ShellSafety.md](ShellSafety.md) | 참조 | 항상 | Shell 삭제 안전 |
-| [AgentWorkflow.md](AgentWorkflow.md) | 개념 | 항상 | 스코프·포니테일·검증 |
+| [AgentWorkflow.md](AgentWorkflow.md) | 개념 | 항상 | 스코프·포니테일·검증 · 스킬은 요청·단계 시에만 |
 | [DevImgui.md](DevImgui.md) | 참조 | **선택** · IMGUI 작업 시 | 개발용 Title/Content/Button |
 
 `적용: 선택` 문서는 출시·패키지 계약보다 우선순위가 낮아요. 해당 주제를 만질 때만 보세요.
 
-Cursor 규칙: [`.cursor/rules/common/`](../../.cursor/rules/common/)
+Cursor 규칙: [`.cursor/rules/common/`](../../.cursor/rules/common/) · 스킬: [`.cursor/skills/`](../../.cursor/skills/)
