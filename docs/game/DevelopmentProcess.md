@@ -24,8 +24,19 @@ Cursor: [`development-process.mdc`](../../.cursor/rules/game/development-process
 | 3 | **DoD** | PR·태스크 닫기 조건 (Tier·문서·`.meta` 등) |
 | 4 | **Build** | 작은 단계 구현 |
 | 5 | **Verify** | SC·Plan「확인」대조 |
-| 6 | **Record** | 로그 · Architecture 반영 · Plan archive |
+| 6 | **Record** | 로그 · Architecture 반영 · Plan archive · 아래 write-back |
 | 7 | **Recovery** | 실패 시에만 |
+
+### Record write-back
+
+Verify·Plan을 닫을 때 (해당하면):
+
+- 구조·계약이 바뀌었으면 **Architecture** 갱신
+- Changelog·회귀·Go/No-go면 **Optimization** (없으면 억지 생성 금지)
+- Plan archive는 스프린트 이관용 — 기능 Changelog 대체 아님
+- Investigation을 닫으면 결론을 Architecture 또는 GDD로 **이관** 후 조사 문서 상태만 갱신
+
+**채팅 → 페이지:** 이후 작업이 같은 사실을 다시 물어야 하면 Architecture/GDD/Plan에 한 줄이라도 남겨요. 일회성 디버그 추측은 남기지 않아요.
 
 ### Success Criteria
 
@@ -46,7 +57,7 @@ Build 재시도 전, 위에서 첫 yes:
 
 | | 분류 | 조치 |
 |---|------|------|
-| 도메인·엔진 제약 누락? | 컨텍스트 | Architecture Gotchas · 규칙 1~3줄 |
+| 도메인·엔진 제약 누락? | 컨텍스트 | Architecture 주의점 · 규칙 1~3줄 |
 | 범위 이탈? | 방향 | Define 재고정 · revert |
 | Tier·폴더 위반? | 구조 | Design · 재배치 |
 | 구현 버그만? | — | Build fix (Recovery 아님) |

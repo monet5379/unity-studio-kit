@@ -1,5 +1,5 @@
 ---
-description: game — 문서 2분류·README 허브·Architecture 규칙
+description: game — 문서 2분류·README 허브·Architecture·위키 계약
 globs: "**/docs/**/*.md"
 alwaysApply: false
 ---
@@ -9,11 +9,18 @@ alwaysApply: false
 `profile: game`일 때. 정본: [`docs/game/Documentation.md`](../../../docs/game/Documentation.md)  
 (`Docs/` 대문자 경로 타이틀에도 동일 원칙.)
 
+## 위키 계약
+
+- **읽기:** 해당 `Architecture_*`(+필요 시 GDD)만. 허브 → 링크. `docs/` 전체 alwaysApply 금지.
+- **쓰기:** 구조·계약 → Architecture. Changelog·회귀 → Optimization.
+- **쓰지 말기:** 회의/면접 덤프, enum·API 전체 복사. 타이틀 지식은 타이틀 repo만 (Kit에 쌓지 않음).
+- **불일치:** 코드가 이김. 문서는 맞추거나 불일치를 Architecture에 명시.
+
 ## 2분류
 
 | | 경로 관례 | 내용 |
 |---|----------|------|
-| Architecture | `architecture/Architecture_<Feature>.md` | **현재** 구조·경계·Flow·Invariants |
+| Architecture | `architecture/Architecture_<Feature>.md` | **현재** 구조·경계·흐름·불변조건 |
 | Optimization | `optimization/Optimization_<Feature>.md` | Changelog·회귀 — 추적 필요할 때만 |
 
 - Architecture에 Phase·주차 이력 넣지 않음.
@@ -25,10 +32,11 @@ alwaysApply: false
 - `README.md` = 역할·목차·경계·링크만. 본편 상세 금지.
 - 본편 = 문맥 있는 파일명. 금지: bare `UI.md` / `Combat.md`.
 - 예외: repo 루트 README, `AGENTS.md`, Assets 20줄 README.
+- 목차와 파일 목록이 어긋나면 README 갱신.
 
 ## Architecture 필수 섹션
 
-Overview · Responsibilities & Boundaries · Key Types · Flow · Invariants & Gotchas · Change Guidelines
+개요 · 책임과 경계 · 주요 타입과 관계 · 흐름 · 불변조건과 주의점 · 변경 가이드
 
 ## enum
 

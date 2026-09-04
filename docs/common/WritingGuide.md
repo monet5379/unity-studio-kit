@@ -89,7 +89,7 @@ Kit `docs/` · README · `templates/` 사람용 본문은 **해요체**로 맞�
 
 ### Architecture (game · 타이틀 repo)
 
-필수 섹션은 [Documentation.md](../game/Documentation.md)를 따르세요. lead에 “이 기능이 지금 무엇을 보장하는가”를 넣으세요.
+필수 섹션(한글: 개요 · 책임과 경계 · 주요 타입과 관계 · 흐름 · 불변조건과 주의점 · 변경 가이드)은 [Documentation.md](../game/Documentation.md)를 따르세요. lead에 “이 기능이 지금 무엇을 보장하는가”를 넣으세요.
 
 ## 문장
 

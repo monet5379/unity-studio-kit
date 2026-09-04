@@ -11,7 +11,7 @@ disable-model-invocation: true
 
 구조 마찰을 찾아 **deepening 후보**를 보여 줘요. 목표는 검증하기 쉬운 시임과 에이전트가 찾기 쉬운 모듈이에요. **코드는 이 스킬에서 고치지 않아요.** Build는 사용자가 따로 요청한 뒤입니다.
 
-어휘·원칙은 [`codebase-design`](../codebase-design/SKILL.md)을 **읽고** 그대로 써요 (module, interface, depth, seam, adapter, leverage, locality, 삭제 테스트, 어댑터 1 vs 2). Unity `Component`, Architecture **Boundaries**, public API는 지우지 않아요.
+어휘·원칙은 [`codebase-design`](../codebase-design/SKILL.md)을 **읽고** 그대로 써요 (module, interface, depth, seam, adapter, leverage, locality, 삭제 테스트, 어댑터 1 vs 2). Unity `Component`, Architecture **책임과 경계**, public API는 지우지 않아요.
 
 도메인 이름은 `Architecture_*` / `AGENTS.md` / README에서. **`CONTEXT.md`를 만들지 않아요.** `docs/adr/`를 만들지 않아요.
 
@@ -80,7 +80,7 @@ disable-model-invocation: true
 - **Solution:** 한 문장. 무엇이 바뀌는가 (아직 interface 스케치 없음)
 - **Wins:** leverage · locality. 「이렇게 검증하기 쉬워진다」정도. **테스트 스위트 추가는 요청 전 금지**
 - **강도:** `Strong` / `Worth exploring` / `Speculative`
-- Architecture와 모순되면 카드에 표시. 마찰이 커서 ADR·Invariants를 다시 열 때만. 문서가 금지한 이론상 리팩터를 나열하지 않아요
+- Architecture와 모순되면 카드에 표시. 마찰이 커서 Architecture 불변조건·주의점을 다시 열 때만. 문서가 금지한 이론상 리팩터를 나열하지 않아요
 
 마지막에 **Top recommendation:** 무엇을 먼저 할지와 이유.
 
@@ -96,7 +96,7 @@ grilling / domain-modeling 스킬은 **이 Kit에 없어요.** 제약, 의존 �
 |------|------|
 | `profile: game`, 새 개념·경계 | 기존 `Architecture_*` 갱신을 **제안**. Design을 닫기 전 코드 수정 없음 |
 | `profile: personal` | README Invariants만. Architecture/ADR 트리 금지 |
-| 거절이 **구조적** 이유 | Architecture Gotchas 또는 README에 한 줄 **제안**. `docs/adr/` 신설 금지. 「지금은 가치 없음」같은 일시적 이유는 기록하지 않음 |
+| 거절이 **구조적** 이유 | Architecture 주의점 또는 README에 한 줄 **제안**. `docs/adr/` 신설 금지. 「지금은 가치 없음」같은 일시적 이유는 기록하지 않음 |
 | 다른 interface를 보고 싶다 | [design-it-twice.md](../codebase-design/references/design-it-twice.md) |
 
 이 스킬은 **후보와 Design 대화**까지예요. 리팩터 구현은 사용자가 Build를 시킨 다음, 포니테일 최소 diff.

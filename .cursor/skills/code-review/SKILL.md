@@ -48,7 +48,7 @@ description: >-
 
 ## 프로젝트 override (먼저 확인)
 
-`AGENTS.md`와 이번 diff가 건드린 `Architecture_*` **Invariants**가 킷 기본보다 이깁니다. 문서가 허용하는 패턴은 smell로 올리지 않아요.
+`AGENTS.md`와 이번 diff가 건드린 `Architecture_*` **불변조건과 주의점**이 킷 기본보다 이깁니다. 문서가 허용하는 패턴은 smell로 올리지 않아요.
 
 ## 절차
 
@@ -81,7 +81,7 @@ description: >-
 - 킷: [`Csharp.md`](../../../docs/common/Csharp.md), 포니테일, agent-scope, naming-semantics, [`UnityBasics.md`](../../../docs/common/UnityBasics.md). 커밋 메시지 변경이면 [`CommitMessages.md`](../../../docs/common/CommitMessages.md)
 - `profile: game`: Documentation, AssetsLayout, 7단계, ProjectSeparation
 - `profile: personal`: DocsLite, PackageLayout
-- 프로젝트: `AGENTS.md`, 이번 파일의 Architecture Invariants
+- 프로젝트: `AGENTS.md`, 이번 파일의 Architecture 불변조건과 주의점
 
 그 위에 **smell 베이스라인**(아래). 두 규칙:
 

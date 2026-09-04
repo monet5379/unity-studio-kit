@@ -47,7 +47,7 @@ description: >-
 
 ## 프로젝트 override (먼저 확인)
 
-- `profile: game`: Architecture **Boundaries · Key Types · Invariants**가 이깁니다
+- `profile: game`: Architecture **책임과 경계 · 주요 타입과 관계 · 불변조건과 주의점**이 이깁니다
 - `profile: personal`: README Invariants가 이깁니다
 - 샘플 타입명을 도메인 문서 없이 복사하지 마세요
 
@@ -61,7 +61,7 @@ description: >-
 | **Interface** | 호출자가 올바르게 쓰려면 알아야 하는 전부 — 시그니처뿐 아니라 불변조건, 순서, 실패, 설정, 성능. C# `interface` / 킷 public API보다 넓음 |
 | **Implementation** | 모듈 안쪽 코드. **Adapter**와 구분: 시임이 주제일 때만 adapter |
 | **Depth** | interface 대비 호출자가 얻는 행위의 양. 작을수록 **shallow** |
-| **Seam** | 그 자리를 안 고치고 행동을 바꿀 수 있는 위치. Architecture **Boundaries**와 대응 |
+| **Seam** | 그 자리를 안 고치고 행동을 바꿀 수 있는 위치. Architecture **책임과 경계**와 대응 |
 | **Adapter** | 시임을 채우는 구현. 킷: 벤더는 손대지 않고 **어댑터만 프로젝트에** |
 | **Leverage** | 깊이가 호출자에게 주는 것. interface 하나, 호출 N곳 |
 | **Locality** | 깊이가 유지보수에 주는 것. 변경·버그·검증이 한곳에 모임 |
