@@ -54,7 +54,7 @@ unity-studio-kit/
 ├── docs/common|personal|game/
 ├── .cursor/
 │   ├── rules/common|personal|game/
-│   └── skills/         ← Cursor Agent skill (리뷰·Design·DOTS)
+│   └── skills/         ← Cursor Agent skill (리뷰·Design·DOTS·빌드)
 └── templates/          ← AGENTS 복사본
 ```
 
@@ -72,9 +72,11 @@ personal / game은 `alwaysApply: false` — `profile:`에 맞는 것만 따르�
 | Design 어휘 | [`.cursor/skills/codebase-design`](.cursor/skills/codebase-design/SKILL.md) |
 | 아키텍처 스캔 | [`.cursor/skills/improve-codebase-architecture`](.cursor/skills/improve-codebase-architecture/SKILL.md) — **호출 전용** |
 | DOTS skill | [`.cursor/skills/unity-ecs-patterns`](.cursor/skills/unity-ecs-patterns/SKILL.md) |
+| 빌드 skill | [`.cursor/skills/unity-build-pipeline`](.cursor/skills/unity-build-pipeline/SKILL.md) |
 
 스킬은 해당 요청·단계에서만 켜요 (규칙 alwaysApply 아님). game Design·Verify static은 [DevelopmentProcess](docs/game/DevelopmentProcess.md).  
-DOTS·Entities는 위 DOTS skill을 쓰고, hybrid·system group·Entities pin은 **타이틀** `Architecture_*` / `AGENTS.md`가 이깁니다.
+DOTS·Entities는 위 DOTS skill을 쓰고, hybrid·system group·Entities pin은 **타이틀** `Architecture_*` / `AGENTS.md`가 이깁니다.  
+플레이어 빌드·IL2CPP·stripping·CI `-executeMethod`는 빌드 skill을 쓰고, Unity 루트·타깃·Addressables 프로필은 **타이틀**이 이깁니다.
 
 ## License
 
@@ -84,4 +86,5 @@ DOTS·Entities는 위 DOTS skill을 쓰고, hybrid·system group·Entities pin�
 - 포니테일 — [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) (MIT)
 - 글쓰기 가이드 — [toss/technical-writing](https://github.com/toss/technical-writing) (CC BY-NC-SA 4.0)
 - DOTS skill — [wshobson/agents — unity-ecs-patterns](https://github.com/wshobson/agents/tree/main/plugins/game-development/skills/unity-ecs-patterns) (MIT)
+- 빌드 skill — [gamedev-skills/awesome-gamedev-agent-skills — unity-build-pipeline](https://github.com/gamedev-skills/awesome-gamedev-agent-skills/tree/main/skills/unity/unity-build-pipeline) (Apache-2.0)
 - 리뷰·Design·아키텍처 스킬 — [mattpocock/skills](https://github.com/mattpocock/skills) (MIT)

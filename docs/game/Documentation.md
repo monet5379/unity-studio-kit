@@ -34,6 +34,19 @@ Write-back(Verify/Record·Investigation 이관)은 [DevelopmentProcess](Developm
 
 경로 prefix(`docs/` vs `Docs/`)는 타이틀이 정해요.
 
+## 결정 기록 라우팅
+
+Kit 기본은 **Architecture**와 타이틀 설계 문서(`ClassStructure`, GDD 등)로 결정을 남겨요. `docs/adr/`와 `CONTEXT.md`는 Kit가 만들지 않아요 — 타이틀에 Matt `domain-modeling` 스킬(`.agents/skills/`)이 있을 때만 타이틀 repo에 lazy로 생깁니다.
+
+| 질문 | Architecture (Kit 기본) | ADR (`docs/adr/`, 타이틀 옵션) |
+|------|-------------------------|--------------------------------|
+| 무엇을 담나 | **지금** 구조·경계·불변조건 | **왜** 이 선택을 했는지 |
+| 언제 쓰나 | 구현·경계가 바뀔 때 | 되돌리기 어렵고, 맥락 없으면 놀랍고, 대안이 있었을 때 |
+
+- Kit 스킬·규칙은 타이틀에 `docs/adr/`가 **없으면** ADR 트리를 새로 만들지 않아요.
+- 타이틀에 `docs/adr/` · `CONTEXT.md`가 있으면 작업 전 해당 영역 ADR을 읽고, 작성·형식은 타이틀 `docs/agents/domain.md`와 `.agents/skills/domain-modeling/`을 따릅니다.
+- 구조적 거절·주의는 Architecture **불변조건과 주의점**에 한 줄로 남겨요. ADR 작성 규칙 전체는 Kit에 두지 않아요.
+
 ## 기능 문서 2분류
 
 | 분류 | 담을 것 |

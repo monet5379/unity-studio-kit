@@ -76,6 +76,29 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+## gamedev-skills/awesome-gamedev-agent-skills — unity-build-pipeline
+
+`.cursor/skills/unity-build-pipeline/` (including `references/ci-build-script.md`) is
+adapted from
+[gamedev-skills/awesome-gamedev-agent-skills — unity-build-pipeline](https://github.com/gamedev-skills/awesome-gamedev-agent-skills/tree/main/skills/unity/unity-build-pipeline),
+used under the Apache License, Version 2.0. This Kit rewrites the skill in Korean,
+adds project-override guidance, softens the Unity version pin to Unity 6 (6000.x),
+and drops related-skill links that are not part of this repository.
+
+Copyright 2026 Abhishek Barali and the awesome-gamedev-agent-skills contributors
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
 ## mattpocock/skills — engineering (code-review, codebase-design, improve-codebase-architecture)
 
 `.cursor/skills/code-review/`, `.cursor/skills/codebase-design/`, and

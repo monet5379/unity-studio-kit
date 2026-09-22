@@ -25,3 +25,4 @@ Desktop.ini
 
 # Optional local workspace scratch (shared *.code-workspace stays tracked)
 *.code-workspace.user
+unity-studio-kit.code-workspace

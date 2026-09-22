@@ -27,6 +27,12 @@ alwaysApply: false
 - Optimization에 구조 전체 복사 금지.
 - Plan archive ≠ 기능 Changelog.
 
+## 결정 기록 라우팅
+
+- Kit 기본: 구조·불변조건 → Architecture; 설계 계약 → 타이틀 design 문서.
+- `docs/adr/` · `CONTEXT.md`는 Kit가 **생성하지 않음**. 타이틀에 이미 있을 때만 읽기·작성은 타이틀 `docs/agents/domain.md` · `.agents/skills/domain-modeling/` 정본.
+- 상세: [Documentation.md — 결정 기록 라우팅](../../../docs/game/Documentation.md#결정-기록-라우팅)
+
 ## README 허브
 
 - `README.md` = 역할·목차·경계·링크만. 본편 상세 금지.
