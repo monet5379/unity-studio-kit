@@ -7,7 +7,7 @@ Cursor: [`development-process.mdc`](../../.cursor/rules/game/development-process
 
 ## 진행
 
-`.agents/skills/`가 있으면 그 스킬로 진행해요. 고를 때는 `ask-matt`를 보세요. 스킬 폴더가 없으면 같은 닫기 조건을 대화로 수행해요.
+`.agents/skills/`가 있으면 그 스킬로 진행해요. 고를 때는 타이틀 `.agents/skills/`의 `ask-matt`를 보세요. 스킬 폴더가 없으면 같은 닫기 조건을 대화로 수행해요.
 
 | 상황 | 스킬 |
 |------|------|
@@ -19,7 +19,7 @@ Cursor: [`development-process.mdc`](../../.cursor/rules/game/development-process
 
 `/grill-with-docs`부터 `/to-tickets`까지는 한 컨텍스트에서 이어 가세요. 티켓으로 나눈 뒤의 `/implement`만 티켓마다 새 컨텍스트에서 시작하세요. 리팩터는 `/tdd` 루프 밖이고, `/code-review`에서 봐요.
 
-`/implement`는 `/tdd`로 합의된 seam을 한 조각씩 만들고, `/code-review`(Standards · Spec)로 닫아요. 커밋은 타이틀 `AGENTS.md`를 따릅니다.
+`/implement`는 `/tdd`로 합의된 seam을 한 조각씩 만들고, `/code-review`(Standards · Spec)로 닫아요. 커밋은 타이틀 `AGENTS.md`를 따라요.
 
 common **ponytail**은 Build 스타일(최소 diff)이에요.
 
@@ -27,7 +27,7 @@ common **ponytail**은 Build 스타일(최소 diff)이에요.
 
 ## 스킬·규칙 우선순위
 
-멀티 루트(타이틀 + 이 Kit)에서 이름이 겹치면 아래 순서예요. 위가 이깁니다.
+멀티 루트(타이틀 + 이 Kit)에서 이름이 겹치면 아래 순서예요. 위가 이겨요.
 
 1. 타이틀 `AGENTS.md` override
 2. 타이틀이 명시한 오버레이 (예: `docs/plan/tickets/README.md`)
@@ -111,11 +111,11 @@ behavioral seam(어떤 씬 Play인지)은 타이틀 `AGENTS.md`에 적어요. �
 |------|------|-----------|
 | 도메인·엔진 제약을 빠뜨렸나요? | 컨텍스트 | Architecture Gotchas. 규칙은 1~3줄 |
 | 범위가 벗어났나요? | 방향 | `/grill-with-docs`. 스킬이 없으면 Define을 다시 고정. 필요하면 revert |
-| Tier·폴더를 어겼나요? | 구조 | Architecture·Plan을 다시 맞춘 뒤 재배치 |
+| 폴더를 어겼나요? | 구조 | Architecture·Plan을 다시 맞춘 뒤 재배치 |
 
-컨텍스트·방향·구조는 Record에 한 줄을 남겨요. 구현 버그는 `/diagnosing-bugs`로 고치고, 스킬이 없으면 Build에서 고쳐요. Recovery 로그는 남기지 않아요.
+별도 로그 파일은 두지 않아요. 컨텍스트·방향·구조만 Record에 한 줄 남겨요. 구현 버그는 `/diagnosing-bugs`로 고치고, 스킬이 없으면 Build에서 고쳐요.
 
-`Recovery: 컨텍스트 — 원인: … — 조치: …`
+Record 한 줄 형식: `Recovery: 컨텍스트 — 원인: … — 조치: …`
 
 ## 닫기 어휘
 
@@ -125,7 +125,7 @@ behavioral seam(어떤 씬 Play인지)은 타이틀 `AGENTS.md`에 적어요. �
 |------|------|------|
 | Define | `/grill-with-docs`, 스펙의 Problem·Stories·Out of Scope | 사용자와 이해가 같음. 작은 수정은 대화 한 줄 |
 | Design | `/to-spec`의 Implementation Decisions, Architecture | 구조 문서가 현재와 같음. 구조가 그대로면 생략 |
-| DoD | 티켓 acceptance 또는 Success Criteria, Tier·`.meta` | 티켓이 있으면 `Status: ready-for-agent` |
+| DoD | 티켓 acceptance 또는 Success Criteria, `.meta` | 티켓이 있으면 `Status: ready-for-agent` |
 | Build | `/implement`, `/tdd` | diff와 seam 테스트 |
 | Verify | `/code-review`와 그 작업의 「확인」 | Spec 축과 Success Criteria |
 | Record | 커밋은 타이틀 규칙. 구조·계약이 바뀌면 해당 Architecture·설계 정본·Plan | 바뀐 페이지만. archive 또는 Completed |

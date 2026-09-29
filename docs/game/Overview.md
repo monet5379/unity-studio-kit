@@ -18,10 +18,12 @@
 
 | | personal | game |
 |---|----------|------|
-| 문서 | README + Invariants | Architecture / Optimization · Plan |
+| 문서 | README + Invariants | Architecture · Plan |
 | 프로세스 | ponytail 위주 | 스킬 진행 · 닫기 (Verify·Record·Recovery) |
-| Assets | 복사 단위 + Demo | `Project/` · Addressables · Tier |
+| Assets | 복사 단위 + Demo | `Project/` · Addressables |
 | 공유 패키지 | 복사·단독 | manifest pin · 소스 직접 수정 금지 |
+
+Optimization은 지속 추적이 있을 때만 만들어요.
 
 ## 프로젝트에 적기
 
@@ -36,7 +38,7 @@ profile: game
 
 | 이 Kit (game) | 타이틀·프레임워크 repo |
 |---------------|------------------------|
-| Assets 표준 · Tier 원칙 · 문서 정책 · 개발 프로세스 | 타이틀 enum·경로·스펙 위치 |
+| Assets 표준 · 문서 정책 · 개발 프로세스 | 타이틀 enum·경로·스펙 위치 |
 | Cursor game 규칙 요약 | 프레임워크 Architecture 본편·배포 태그 전문 |
 
-다음: [AssetsLayout.md](AssetsLayout.md) · [Documentation.md](Documentation.md) · [DevelopmentProcess.md](DevelopmentProcess.md)
+다음: [AssetsLayout.md](AssetsLayout.md) · [ProjectSeparation.md](ProjectSeparation.md) · [Documentation.md](Documentation.md) · [DevelopmentProcess.md](DevelopmentProcess.md)

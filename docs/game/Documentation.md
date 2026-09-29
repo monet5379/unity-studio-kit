@@ -4,7 +4,7 @@
 
 **왜 나누나요?** 현재 구조(Architecture)와 변경 이력·회귀(Optimization)를 한 파일에 섞으면, “지금 코드가 어떤지”와 “언제 왜 바뀌었는지”가 흐려져요. Plan archive는 스프린트 이관용이라 기능 Changelog를 대체하지 않아요.
 
-이 문서는 **글쓰기·기능 문서 형식**의 정본이에요. sibling studio framework(Assets·Namespace 등)를 쓰는 타이틀은 그쪽 process 문서를 **추가** 정본으로 둘 수 있어요. 형식·2분류·골격은 여기(Kit)를 우선하세요.
+이 문서는 **글쓰기·기능 문서 형식**의 정본이에요. 별도 프레임워크 process 문서(Assets·Namespace 등)를 쓰는 타이틀은 그쪽 문서를 **추가** 정본으로 둘 수 있어요. 형식·2분류·골격은 여기(Kit)를 우선하세요.
 
 Cursor: [`documentation.mdc`](../../.cursor/rules/game/documentation.mdc)
 
@@ -32,9 +32,9 @@ Write-back(Verify/Record·Investigation 이관)은 [DevelopmentProcess](Developm
 | Plan | `docs/**/plan/` | 구조 변경·큰 범위 |
 | Investigation | `docs/**/investigations/` | 조사 1건 1파일 |
 | ADR | `docs/**/adr/000N-<slug>.md` | 닫힌 결정·trade-off. 폴더는 첫 ADR 때 생성 |
-| GDD | 타이틀 `docs/**/design/gdd/` | 이 Kit에 두지 않음. 타이틀이 `gdd/` 등으로 **override** 가능 |
-| Technical Design | 타이틀 `docs/**/design/` (파일명은 override) | GDD 없이 API·불변조건이 계약일 때. 예: `ClassStructure.md` |
-| explorations / references | `docs/**/design/explorations/` · `design/references/` | GDD와 분리 · 구현 근거 아님 |
+| GDD | `gdd/` (prefix는 타이틀) | 이 Kit에 두지 않음 |
+| Technical Design | `design/` (파일명은 타이틀) | GDD 없이 API·불변조건이 계약일 때. 예: `ClassStructure.md` |
+| explorations / references | `explorations/` · `references/` | GDD와 분리 · 구현 근거 아님 |
 | reports | `docs/**/reports/` | 주간 보고 등 — 필수 아님 |
 | notes / interview | `docs/**/notes/` · `interview/` | **실행 정본 아님** · [WritingGuide](../common/WritingGuide.md) 톤 예외 |
 | Process | 이 Kit `docs/game/` · common | Assets · Separation · 개발 프로세스 |
@@ -50,7 +50,7 @@ Write-back(Verify/Record·Investigation 이관)은 [DevelopmentProcess](Developm
 지금 구조·계약        → architecture/
 ```
 
-ADR은 짧아도 돼요. 한 단락으로 “무엇을, 왜”만 적어도 됩니다. 상세 조건(역전 비용·맥락 없이 보면 이상함·실제 trade-off)은 타이틀의 domain-modeling 스킬 `ADR-FORMAT`을 따르고, Kit에는 경로만 둡니다. Investigation은 아직 열린 질문, ADR은 이미 닫힌 결정이에요.
+ADR은 짧아도 돼요. 한 단락으로 “무엇을, 왜”만 적어도 돼요. 상세 조건(역전 비용·맥락 없이 보면 이상함·실제 trade-off)은 타이틀 `.agents/skills/`의 domain-modeling 스킬 `ADR-FORMAT`을 따르고, Kit에는 경로만 둬요. Investigation은 아직 열린 질문, ADR은 이미 닫힌 결정이에요.
 
 ## 씬·프리팹과 Editor
 
@@ -71,47 +71,47 @@ ADR은 짧아도 돼요. 한 단락으로 “무엇을, 왜”만 적어도 됩�
 
 제목은 `# Architecture: <Feature>`로 맞춰요.
 
-**소제목**은 `## 한글 (English)` 형식이에요. Kit 영문 식별자는 괄호 안에 둡니다.  
-**목적 설명**은 각 `##` 골격 소제목 바로 아래에 **이탤릭 한 줄**로 적어요. `### 포함 범위`/`### 제외 범위`에는 넣지 않습니다. 본문 lead·불릿과 구분하는 용도입니다.
+**소제목**은 `## 한글 (English)` 형식이에요. Kit 영문 식별자는 괄호 안에 둬요.  
+**목적 설명**은 각 `##` 골격 소제목 바로 아래에 **이탤릭 한 줄**로 적어요. `### 포함 범위`/`### 제외 범위`에는 넣지 않아요. 본문 lead·불릿과 구분하는 용도예요.
 
-### 필수 골격 (이 순서)
+### 골격 (이 순서). 에디터 흐름과 관련 문서는 없으면 생략해요.
 
 ```markdown
 # Architecture: <Feature>
 
 ## 개요 (Overview)
 
-*이 기능이 **지금 무엇을 보장하는지** lead로 요약합니다. 형제 Architecture 링크도 여기에 둡니다.*
+*이 기능이 **지금 무엇을 보장하는지** lead로 요약해요. 형제 Architecture 링크도 여기에 둬요.*
 
 ## 책임과 경계 (Responsibilities & Boundaries)
 
-*이 문서가 **소유하는 범위**와 **다른 문서로 넘기는 것**을 구분합니다.*
+*이 문서가 **소유하는 범위**와 **다른 문서로 넘기는 것**을 구분해요.*
 
 ### 포함 범위 (In Scope)
 ### 제외 범위 (Out of Scope)
 
 ## 주요 타입과 관계 (Key Types & Relationships)
 
-*타입 트리·관계·역할 표로 구조를 설명합니다. API는 대표만 적고, enum 전수·코드 덤프는 넣지 않습니다.*
+*타입 트리·관계·역할 표로 구조를 설명해요. API는 대표만 적고, enum 전수·코드 덤프는 넣지 않아요.*
 
 ## 흐름 (Flow)
 
-*런타임·에디터에서 **어떤 순서로 동작하는지** 짧은 번호 단계로 적습니다.*
+*런타임·에디터에서 **어떤 순서로 동작하는지** 짧은 번호 단계로 적어요.*
 
 ### 런타임 흐름 (Runtime Flow)
 ### 에디터 흐름 (Editor Flow)
 
 ## 불변조건과 주의점 (Invariants & Gotchas)
 
-* **깨지면 버그인 계약**과 **자주 터지는 함정**을 모읍니다.*
+*깨지면 버그인 계약과 자주 터지는 함정을 모아요.*
 
 ## 변경 가이드 (Change Guidelines)
 
-*이 기능을 수정할 때 **확인할 체크리스트**와 **주요 코드 경로**를 둡니다.*
+*이 기능을 수정할 때 **확인할 체크리스트**와 **주요 코드 경로**를 둬요.*
 
 ## 관련 문서 (See also)
 
-*같은 주제를 다루는 **다른 Architecture·Plan·Investigation** 링크입니다.*
+*같은 주제를 다루는 **다른 Architecture·Plan·Investigation** 링크예요.*
 ```
 
 - **개요 (Overview)** — lead에 “이 기능이 지금 무엇을 보장하는가”. 형제 Architecture 링크.
@@ -120,7 +120,7 @@ ADR은 짧아도 돼요. 한 단락으로 “무엇을, 왜”만 적어도 됩�
 - **흐름 (Flow)** — 짧은 번호 단계. Editor 흐름이 없으면 `### 에디터 흐름 (Editor Flow)` 생략. 흐름이 여러 개면 `### 런타임 흐름 — <주제> (Runtime Flow)`처럼 한글 주제를 넣어요.
 - **불변조건과 주의점 (Invariants & Gotchas)** — 깨면 버그인 계약 / 자주 터지는 함정.
 - **변경 가이드 (Change Guidelines)** — 체크리스트 + 주요 코드 경로 표.
-- **관련 문서 (See also)** (선택) — 관련 `Architecture_*.md` 등.
+- **관련 문서 (See also)** — 관련 `Architecture_*.md` 등. 없으면 생략해요.
 
 ### 작성·갱신
 
@@ -172,11 +172,11 @@ ADR은 짧아도 돼요. 한 단락으로 “무엇을, 왜”만 적어도 됩�
 
 ## 설계 정본
 
-타이틀 `AGENTS.md`에 **설계 정본 경로**를 적어요. GDD와 Technical Design 중 하나, 또는 둘 다 둘 수 있어요. 본문은 타이틀 repo에만 둡니다.
+타이틀 `AGENTS.md`에 **설계 정본 경로**를 적어요. GDD와 Technical Design 중 하나, 또는 둘 다 둘 수 있어요. 본문은 타이틀 repo에만 둬요.
 
 | 패턴 | 경로 예 | 적합한 때 |
 |------|---------|-----------|
-| GDD | `design/gdd/` + `locked` | 기획·밸런스·스토리가 계약 |
+| GDD | `gdd/` + `locked` | 기획·밸런스·스토리가 계약 |
 | Technical Design | `design/ClassStructure.md` 등 | API·불변조건·클래스 구조가 계약 |
 
 파일 이름은 타이틀이 정해요. `ClassStructure.md`는 예시예요.
@@ -205,7 +205,7 @@ ADR은 짧아도 돼요. 한 단락으로 “무엇을, 왜”만 적어도 됩�
 | `open` | 미결 |
 | `parked` | 보류·탈락 (이유 한 줄) |
 
-구현·Play DoD·Architecture 계약의 근거는 **`locked`(또는 팀 Decision)** 만 쓰세요. Prefrod→Soft Ship 일정 잠금 순서는 타이틀이 정해요.
+구현·Play DoD·Architecture 계약의 근거는 **`locked`(또는 팀 Decision)** 만 쓰세요. Preprod→Soft Ship 일정 잠금 순서는 타이틀이 정해요.
 
 ## README 허브
 
