@@ -17,7 +17,7 @@ alwaysApply: false
 | 버그 | `/diagnosing-bugs` |
 | 구현을 닫기 직전 | `/code-review` |
 
-티켓으로 나눈 `/implement`만 새 컨텍스트예요. 커밋은 타이틀 `AGENTS.md`를 따릅니다.
+티켓으로 나눈 `/implement`만 새 컨텍스트예요. 커밋은 타이틀 `AGENTS.md`를 따라요.
 
 ## 우선순위
 
@@ -44,8 +44,8 @@ alwaysApply: false
 |------|------|------|
 | 도메인·엔진 제약을 빠뜨렸나요? | 컨텍스트 | Gotchas · 규칙 보강 |
 | 범위가 벗어났나요? | 방향 | Define 재고정 · revert |
-| Tier·폴더를 어겼나요? | 구조 | Design · 재배치 |
+| 폴더를 어겼나요? | 구조 | Design · 재배치 |
 
-구현 버그는 `/diagnosing-bugs` 또는 Build fix. Recovery 로그 없음.
+구현 버그는 `/diagnosing-bugs` 또는 Build fix. 별도 로그 파일 없음 — Record 한 줄만.
 
 Record 예: `Recovery: [컨텍스트|방향|구조] — 원인: … — 조치: …`

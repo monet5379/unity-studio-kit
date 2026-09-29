@@ -38,3 +38,4 @@ alwaysApply: false
 - Editor Setup으로 씬·프리팹 생성·배선 ([`unity-basics.mdc`](../common/unity-basics.mdc))
 - ThirdParty 직접 수정
 - Core asmdef가 Game 참조
+- 레거시 `Assets/Scripts/`에 신규 기능 추가 (표준은 `Project/Scripts/`)

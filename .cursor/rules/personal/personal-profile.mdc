@@ -30,5 +30,5 @@ alwaysApply: false
 ## 하지 말 것
 
 - Demo를 출시 스키마·필수 경로로 취급
-- 타이틀용 Tier·Addressables·팀 Plan 규칙을 personal에 강제
+- 타이틀 Assets·Addressables·팀 Plan 규칙을 personal에 강제
 - game 프로필 규칙과 동시에 “둘 다 필수”로 적용
