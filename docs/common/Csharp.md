@@ -14,13 +14,39 @@ Cursor: [`csharp-standards.mdc`](../../.cursor/rules/common/csharp-standards.mdc
 | 지역 변수·매개변수 | camelCase |
 | `const` | `UPPER_SNAKE_CASE` |
 
-의미(semantic) 동사·접두사는 [`naming-semantics.mdc`](../../.cursor/rules/common/naming-semantics.mdc).
+## 네이밍 (의미)
+
+동사·접두사는 아래 표를 따르세요. 프로젝트에 도메인 delta rule이 있으면 그 규칙이 이 표보다 우선해요. 우선순위는 도메인 delta rule > 이 표 > casing이에요. `Check*` / `Cleanup*` / `Determine*` / `Initialize()` 는 손댄 구간만 맞추고, 일괄 rename은 하지 않아요.
+
+| 대상 | 써요 | 새로 쓰지 않아요 |
+|------|------|------------------|
+| bool | `Is*` · `Has*` · `Can*` · `Allows*` · `Try*` | `Determine*`, 단순 bool `Check*` / `Validate*` |
+| 이벤트 | 수신 `On*`, 이어서 `Handle*` | |
+| public API | `Reset*` · `Configure*` · `BindTo*` · `Despawn*` · `Clear*` 등 구체 동사 | 범용 `Initialize()` · `Cleanup*` |
+| 코루틴 | `Begin*` · `Run*` · `Stop*` · `Yield*` | 같은 클래스의 `Process*` 오버로드 |
+| 여러 대상 | `*All*` 또는 복수형 | |
+| 기타 | lazy-init `Ensure*` · 트랜잭션 `Record*` · 콜백 `Register*` / `Unregister*` | `Suicide*` · `Fore*` |
 
 ## 프로퍼티
 
-- `{ get; init; }` **사용 금지**
+- `{ get; init; }` **사용 금지**. 객체 이니셜라이저로만 채우는 패턴도 쓰지 않아요.
 - 불변: 생성자 + `{ get; }`
 - 가변: `{ get; set; }`
+
+```csharp
+// 금지
+public readonly struct Foo
+{
+    public string Name { get; init; }
+}
+
+// 불변
+public readonly struct Foo
+{
+    public Foo(string name) => Name = name;
+    public string Name { get; }
+}
+```
 
 ## Unity / C# 관례
 
