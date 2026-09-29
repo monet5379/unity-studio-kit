@@ -22,7 +22,7 @@
 | 목표  | 규칙을 외우게 하지 않고, **다음에 무엇을 하면 되는지** 바로 알게 해요.             |
 
 
-Kit `docs/` · README · `templates/` 사람용 본문은 **해요체**로 맞춰 두었어요. 새로 쓰거나 고칠 때도 해요체를 유지하세요. (에이전트 강제 규칙 중 `ponytail`·`shell-destructive-ops` 등 긴 `.mdc`는 요약 톤을 유지할 수 있어요.)
+Kit `docs/` · README · `templates/` 사람용 본문은 **해요체**로 맞춰 두었어요. 새로 쓰거나 고칠 때도 해요체를 유지하세요. (에이전트 강제 규칙 중 `ponytail` 같은 긴 `.mdc`는 요약 톤을 유지할 수 있어요.)
 
 **톤 예외:** `notes/` · `interview/` (및 타이틀 `AGENTS.md`에 명시한 경로)는 구어체·평서체를 허용해요. Architecture · Optimization · GDD `locked` 본편은 해요체를 유지하세요.
 
@@ -72,7 +72,7 @@ Kit `docs/` · README · `templates/` 사람용 본문은 **해요체**로 맞�
 | **개념**     | 왜 이 프로필·경계인가 | `docs/*/Overview.md`                             |
 | **참조**     | 표·금지·경로      | AssetsLayout · Csharp · Shell · Documentation 본문 |
 | **How-to** | 단계대로 따라 하기   | (선택) 새 패키지/타이틀 붙이기 한 장                           |
-| **프로세스**   | 언제 어떤 산출물인가  | DevelopmentProcess · DocsLite · LocaleDocs(선택)   |
+| **프로세스**   | 언제 어떤 산출물인가  | DevelopmentProcess · AgentWorkflow · DocsLite · LocaleDocs(한글 README) |
 
 
 프로필 문서 무게:
@@ -81,7 +81,7 @@ Kit `docs/` · README · `templates/` 사람용 본문은 **해요체**로 맞�
 |      | personal                                                                 | game                                                            |
 | ---- | ------------------------------------------------------------------------ | --------------------------------------------------------------- |
 | 기본   | README + Invariants ([DocsLite](../personal/DocsLite.md))                | Architecture · Plan ([Documentation](../game/Documentation.md)) |
-| 충돌 시 | DocsLite가 “문서 최소”를 이김 (다국어는 [LocaleDocs](../personal/LocaleDocs.md), 선택) | Documentation · DevelopmentProcess가 이김                            |
+| 충돌 시 | DocsLite가 “문서 최소”를 이김 (README 언어는 [LocaleDocs](../personal/LocaleDocs.md)) | Documentation · DevelopmentProcess가 이김                          |
 
 
 

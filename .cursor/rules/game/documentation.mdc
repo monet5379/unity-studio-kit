@@ -1,5 +1,5 @@
 ---
-description: game — 문서 2분류·Architecture 골격·ADR·설계 정본·README 허브
+description: game — 문서 2분류·Architecture 골격·ADR·설계 정본·README 허브·위키 계약
 globs: "**/docs/**/*.md"
 alwaysApply: false
 ---
@@ -11,11 +11,18 @@ alwaysApply: false
 
 열린 프로젝트 루트 `AGENTS.md`의 `profile:`이 이 규칙과 같을 때만 적용하세요. 다른 프로필이거나, 이 Kit 저장소(`unity-studio-kit/docs`, `unity-studio-kit` 자체)를 고칠 때는 이 파일을 무시하세요.
 
+## 위키 계약
+
+- **읽기:** 해당 `Architecture_*`(+필요 시 GDD)만. 허브 → 링크. `docs/` 전체 alwaysApply 금지.
+- **쓰기:** 구조·계약 → Architecture. Changelog·회귀 → Optimization.
+- **쓰지 말기:** 회의/면접 덤프, enum·API 전체 복사. 타이틀 지식은 타이틀 repo만 (Kit에 쌓지 않음).
+- **불일치:** 코드가 이김. 문서는 맞추거나 불일치를 Architecture에 명시.
+
 ## 2분류
 
 | | 경로 관례 | 내용 |
 |---|----------|------|
-| Architecture | `architecture/Architecture_<Feature>.md` | **현재** 구조·경계·Flow·Invariants |
+| Architecture | `architecture/Architecture_<Feature>.md` | **현재** 구조·경계·흐름·불변조건 |
 | Optimization | `optimization/Optimization_<Feature>.md` | Changelog·회귀 — 추적 필요할 때만 |
 | ADR | `adr/000N-<slug>.md` | 닫힌 결정. 조사는 `investigations/` |
 | 설계 정본 | GDD `gdd/` 또는 Technical Design (`design/`, 파일명은 타이틀) | Architecture에 전문 복사 금지 |
@@ -48,6 +55,7 @@ alwaysApply: false
 - `README.md` = 역할·목차·경계·링크만. 본편 상세 금지.
 - 본편 = 문맥 있는 파일명. 금지: bare `UI.md` / `Combat.md`. 파일 1개 폴더에 README로 본편 몰아넣기 금지.
 - 예외: repo 루트 README, `AGENTS.md`, Assets 20줄 README, `notes/`·`interview/`.
+- 목차와 파일 목록이 어긋나면 README 갱신.
 
 ## enum
 

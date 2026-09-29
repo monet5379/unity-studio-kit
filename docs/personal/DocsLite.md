@@ -21,10 +21,9 @@ personal에서는 Architecture·Plan 없이도 계약을 남길 수 있게, **RE
 | 실험 메모 | `docs/notes/` 짧은 md (프로세스 강제 없음) |
 | 구조가 커져 타이틀에 가까움 | **game** 프로필로 전환을 검토 |
 
-## 다국어 (선택)
+## README 언어
 
-공개 README를 다른 언어로 둘 때는 **별도 파일**과 상단 언어 링크만 씁니다. 
-공개면만 번역하고, 필수는 아니에요. 상세: [LocaleDocs.md](LocaleDocs.md).
+공개 README 정본은 **한글 `README.md` 하나**예요. 영문·`README.<locale>.md`·언어 셀렉터는 두지 않아요. 상세: [LocaleDocs.md](LocaleDocs.md).
 
 ## 에이전트
 

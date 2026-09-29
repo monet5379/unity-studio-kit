@@ -8,6 +8,21 @@
 
 Cursor: [`documentation.mdc`](../../.cursor/rules/game/documentation.mdc)
 
+## 에이전트 위키 계약
+
+타이틀 `docs/`는 **위키처럼** 쓰되, 통째로 컨텍스트에 넣지 않아요. 타이틀 지식은 **그 타이틀 repo**에만 두고, 이 Kit에 쌓지 않아요.
+
+| | 규칙 |
+|--|------|
+| **읽을 때** | 기능 작업 전 해당 `Architecture_*`(+필요 시 GDD)만. 허브 README → 링크된 페이지만 |
+| **쓸 때** | 구조·계약이 바뀌면 Architecture 갱신. Changelog·회귀면 Optimization |
+| **쓰지 말 때** | 회의·면접 로그 통째 붙여넣기, enum/API 전체 복사, Notion/채팅 덤프 |
+| **컨텍스트** | `docs/` 전체를 alwaysApply 하지 않음. 진입은 허브·`AGENTS.md` |
+
+**불일치:** 코드와 문서가 다르면 **코드가 이김**. 문서는 맞추거나 “현재 구현은 계약을 충족하지 않음”을 Architecture에 명시해요.
+
+Write-back(Verify/Record·Investigation 이관)은 [DevelopmentProcess](DevelopmentProcess.md) Record를 따르고, 경로·목차는 타이틀 `docs/**/README.md` · `AGENTS.md`가 정본이에요.
+
 ## 문서 종류
 
 | 종류 | 위치 (관례) | 비고 |
@@ -45,7 +60,7 @@ ADR은 짧아도 돼요. 한 단락으로 “무엇을, 왜”만 적어도 됩�
 
 | 분류 | 담을 것 |
 |------|---------|
-| **Architecture** | 구조·경계·Flow·Invariants·Change Guidelines — Phase·주차 이력 **넣지 않음** |
+| **Architecture** | 구조·경계·흐름·불변조건·변경 가이드 — Phase·주차 이력 **넣지 않음** |
 | **Optimization** | Changelog(SSOT)·회귀·Go/No-go — 구조 전체 복사 **하지 않음** |
 
 - 단순·안정 기능은 Architecture만 (Optimization 억지 생성 금지).
@@ -115,6 +130,8 @@ ADR은 짧아도 돼요. 한 단락으로 “무엇을, 왜”만 적어도 됩�
 - 인접 기능 로직을 복사하지 마세요 — 제외 범위 + 관련 문서(See also).
 - 본문은 **한국어**. 타입·경로·API·enum 식별자는 **영문 원문**.
 - 분량 권장: 기능 문서가 한두 쪽을 크게 넘기면 분할하거나 Optimization으로 이관하세요 (가이드이지 강제 페이지 수는 아니에요).
+- `last-verified` / 관련 asmdef 경로는 **선택** — 자주 어긋나는 페이지만.
+- 폴더 README 목차와 파일 목록이 어긋나면 **README를 갱신**해요.
 
 ## Optimization 운영
 
