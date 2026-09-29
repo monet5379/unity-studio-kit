@@ -12,19 +12,22 @@ alwaysApply: false
 
 ## Must
 
+- **적용:** Kit `docs/`·`templates/` + game 타이틀 `docs/`·`Docs/`·`AGENTS.md`
 - **docs = 사람 정본**, **`.mdc` = 짧은 요약** + docs 링크. 장문 규칙은 docs에만.
 - **해요체**로 통일. (Kit docs·templates 사람용 본문은 해요체 기준.)
+- **톤 예외:** `notes/`·`interview/`(AGENTS 명시 경로) — 구어체·평서 허용. 본편 Architecture·Optimization·GDD locked는 해요체
+- **game 정본 사다리:** 코드 ≥ Architecture ≥ 설계 정본 (GDD `locked` 또는 Technical Design)
 - 문서 첫머리에 **lead** (이 페이지가 무엇을 결정·가능하게 하는가, 2~4문장).
 - **한 페이지 한 주제.** 주 유형 하나: 시작하기 / 개념 / 참조 / How-to / 프로세스.
 - 주어 분명. 표는 스캔용 — 표만으로 끝내지 않음.
-- personal 문서 최소 ↔ game Architecture·7단계 충돌 시 각 프로필 문서가 이김.
+- personal 문서 최소 ↔ game Architecture·DevelopmentProcess 충돌 시 각 프로필 문서가 이김.
 
 ## Must not
 
 - `.mdc`에 docs 전문 복제
 - 모든 참조 문서를 에세이로 팽창
 - personal과 game 규칙을 동시에 필수로 강제하는 서술
-- 신규·수정 구간에 합니다체 유지 (가이드와 어긋남)
+- 신규·수정 구간에 합니다체 유지 (톤 예외 경로 제외)
 
 ## 골격 힌트
 

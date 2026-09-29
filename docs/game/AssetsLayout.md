@@ -49,6 +49,7 @@ Project/
 ## 금지
 
 - `.meta` 생성·수정·삭제 (Shell 포함)
+- Editor에서 씬·프리팹을 생성·수정·배선하는 Setup 스크립트 ([UnityBasics](../common/UnityBasics.md) 씬·프리팹 정본)
 - ThirdParty·Plugins 직접 수정 (어댑터만 `Project/Scripts/ThirdPartyAdapters/`)
 - 레거시 `Assets/Scripts/`에 신규 기능 추가 (표준은 `Project/Scripts/`)
 

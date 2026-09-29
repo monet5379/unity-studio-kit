@@ -1,5 +1,5 @@
 ---
-description: game — 문서 2분류·README 허브·Architecture·위키 계약
+description: game — 문서 2분류·Architecture 골격·ADR·설계 정본·README 허브
 globs: "**/docs/**/*.md"
 alwaysApply: false
 ---
@@ -9,34 +9,45 @@ alwaysApply: false
 `profile: game`일 때. 정본: [`docs/game/Documentation.md`](../../../docs/game/Documentation.md)  
 (`Docs/` 대문자 경로 타이틀에도 동일 원칙.)
 
-## 위키 계약
-
-- **읽기:** 해당 `Architecture_*`(+필요 시 GDD)만. 허브 → 링크. `docs/` 전체 alwaysApply 금지.
-- **쓰기:** 구조·계약 → Architecture. Changelog·회귀 → Optimization.
-- **쓰지 말기:** 회의/면접 덤프, enum·API 전체 복사. 타이틀 지식은 타이틀 repo만 (Kit에 쌓지 않음).
-- **불일치:** 코드가 이김. 문서는 맞추거나 불일치를 Architecture에 명시.
+열린 프로젝트 루트 `AGENTS.md`의 `profile:`이 이 규칙과 같을 때만 적용하세요. 다른 프로필이거나, 이 Kit 저장소(`unity-studio-kit/docs`, `unity-studio-kit` 자체)를 고칠 때는 이 파일을 무시하세요.
 
 ## 2분류
 
 | | 경로 관례 | 내용 |
 |---|----------|------|
-| Architecture | `architecture/Architecture_<Feature>.md` | **현재** 구조·경계·흐름·불변조건 |
+| Architecture | `architecture/Architecture_<Feature>.md` | **현재** 구조·경계·Flow·Invariants |
 | Optimization | `optimization/Optimization_<Feature>.md` | Changelog·회귀 — 추적 필요할 때만 |
+| ADR | `adr/000N-<slug>.md` | 닫힌 결정. 조사는 `investigations/` |
+| 설계 정본 | GDD `gdd/` 또는 Technical Design (`design/`, 파일명은 타이틀) | Architecture에 전문 복사 금지 |
 
-- Architecture에 Phase·주차 이력 넣지 않음.
+- Architecture에 Phase·주차·티켓 이력 넣지 않음. 진행 상태는 architecture README 또는 Plan·티켓.
 - Optimization에 구조 전체 복사 금지.
 - Plan archive ≠ 기능 Changelog.
+- 코드 ≥ Architecture ≥ 설계 정본. 외부 PDF·브리프는 비정본.
+- 씬·프리팹 배선·Editor Setup 금지는 [`unity-basics.mdc`](../common/unity-basics.mdc). Validator는 읽기만.
+
+## Architecture Must
+
+- 제목 `# Architecture: <Feature>`. 소제목 `## 한글 (English)`. 골격 각 소제목 아래 *이탤릭 목적 한 줄* → 본문. 순서: 개요(Overview) → 책임과 경계(In/Out) → 주요 타입 → 흐름(Runtime; Editor 없으면 생략) → 불변조건 → 변경 가이드 → 관련 문서(선택).
+- `*Refactoring.md`는 현재 정본 아님.
+- 구조 바뀐 절만 갱신. 「확인 필요」. 인접 기능 복사 금지.
+- 본문 한국어 · 타입/경로 영문.
+
+## Optimization Must
+
+- 결정 트리: Investigation → Refactoring+Plan → Optimization Changelog → Architecture.
+- 구조 변경 시 Architecture + Changelog 맨 위; 성능만이면 Optimization + Architecture 해당 절.
+- 「완료」는 측정·문서 상태와 맞출 것.
+
+## GDD 태그
+
+`locked` / `draft` / `vision` / `open` / `parked`. 구현 근거는 locked(또는 Decision)만. GDD가 없으면 Technical Design이 같은 사다리예요.
 
 ## README 허브
 
 - `README.md` = 역할·목차·경계·링크만. 본편 상세 금지.
-- 본편 = 문맥 있는 파일명. 금지: bare `UI.md` / `Combat.md`.
-- 예외: repo 루트 README, `AGENTS.md`, Assets 20줄 README.
-- 목차와 파일 목록이 어긋나면 README 갱신.
-
-## Architecture 필수 섹션
-
-개요 · 책임과 경계 · 주요 타입과 관계 · 흐름 · 불변조건과 주의점 · 변경 가이드
+- 본편 = 문맥 있는 파일명. 금지: bare `UI.md` / `Combat.md`. 파일 1개 폴더에 README로 본편 몰아넣기 금지.
+- 예외: repo 루트 README, `AGENTS.md`, Assets 20줄 README, `notes/`·`interview/`.
 
 ## enum
 

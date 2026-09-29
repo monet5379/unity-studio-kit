@@ -13,6 +13,8 @@ alwaysApply: false
 
 `profile: personal`이고 Demo·F1 오버레이를 만지거나 추가할 때.
 
+`Assets/Demo/`에서는 이 규칙이 [`dev-imgui.mdc`](../common/dev-imgui.mdc)보다 우선합니다.
+
 ## Must
 
 - IMGUI 역할: **Title** (패널·섹션) / **Content** (본문·상태) / **Button** (액션); Sub는 선택

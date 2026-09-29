@@ -10,6 +10,7 @@ alwaysApply: true
 - `.meta` 생성·수정·삭제 금지 (Unity 에디터 관리)
 - 설계 문서는 `Assets/` 밖 (`docs/` 등)
 - 씬·프리팹·ScriptableObject GUID 임의 변경 금지
+- 씬·프리팹·`[SerializeField]` 배선 정본은 에디터 YAML. Editor Setup으로 생성·수정·배선 금지 (`new GameObject` · `SerializedObject` 주입 · `[InitializeOnLoad]` · Setup 메뉴). 검증은 읽기만
 
 ## 워크스페이스
 
