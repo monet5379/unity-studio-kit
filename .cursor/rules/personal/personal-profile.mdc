@@ -10,7 +10,7 @@ alwaysApply: false
 
 ## 프로세스
 
-- **common**(포니테일·스코프·`.meta`·Shell)은 그대로 적용해요.
+- **common**(포니테일·스코프·`.meta`·Shell·C#)은 그대로 적용해요.
 - Plan / Architecture / Optimization / 스프린트 Record는 **기본 불필요**. 요청 없이 만들지 마세요.
 - 소규모 수정 = 이해 후 최소 diff. 구조가 커지면 game 프로필 전환을 제안만 해요.
 
@@ -30,5 +30,5 @@ alwaysApply: false
 ## 하지 말 것
 
 - Demo를 출시 스키마·필수 경로로 취급
-- 타이틀용 Tier·Addressables·팀 Plan 규칙을 personal에 강제
+- 타이틀 Assets·Addressables·팀 Plan 규칙을 personal에 강제
 - game 프로필 규칙과 동시에 “둘 다 필수”로 적용

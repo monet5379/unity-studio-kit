@@ -34,7 +34,7 @@ alwaysApply: true
 
 문제 이해(요청을 끝까지 읽고 실제 flow를 추적한 뒤 단을 고른다 — 이해 없는 작은 diff는 효율을 가장한 게으름일 뿐이다), 신뢰 경계에서의 입력 검증, 데이터 손실을 막는 오류 처리, 보안, 접근성, 실제 하드웨어가 요구하는 보정(플랫폼은 스펙상 이상적이지 않다 — 시계는 어긋나고 센서는 틀린다), **명시적으로 요청된 것**은 생략하지 않는다.
 
-검증 없는 게으른 코드는 **미완성**이다: 비 trivial 로직 뒤에는 로직이 깨지면 실패하는 **실행 가능한 검증 하나**를 남긴다(assert 기반 자가 검증이나 작은 테스트 파일 하나; 프레임워크·fixture 없음). trivial한 한 줄은 테스트 불필요.
+검증 없는 게으른 코드는 **미완성**이다: 비 trivial 로직 뒤에는 로직이 깨지면 실패하는 **실행 가능한 검증 하나**를 남긴다(assert 기반 자가 검증이나 작은 테스트 파일 하나; 프레임워크·fixture 없음). trivial한 한 줄은 테스트 불필요. 이 검증은 코드 안의 assert·작은 테스트다. Play·스모크·QA 제안은 game이면 [`../game/verification-qa-defaults.mdc`](../game/verification-qa-defaults.mdc)를 따른다.
 
 정본 문서: [`docs/common/AgentWorkflow.md`](../../../docs/common/AgentWorkflow.md)  
 출처: [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) (MIT) — [`NOTICE`](../../../NOTICE)

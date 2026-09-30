@@ -6,7 +6,7 @@ alwaysApply: false
 
 # C# 코딩 규칙
 
-정본: [`docs/common/Csharp.md`](../../../docs/common/Csharp.md) · [`naming-semantics.mdc`](naming-semantics.mdc)
+정본: [`docs/common/Csharp.md`](../../../docs/common/Csharp.md)
 
 ## 네이밍 (casing)
 
@@ -15,7 +15,7 @@ alwaysApply: false
 - private/readonly 필드: `_camelCase`
 - 지역 변수/매개변수: camelCase
 - const: `UPPER_SNAKE_CASE`
-- **의미(semantic):** `naming-semantics.mdc`
+- **의미(semantic):** Csharp.md 「네이밍 (의미)」 · [`naming-semantics.mdc`](naming-semantics.mdc)
 
 ## 프로퍼티
 

@@ -21,7 +21,7 @@ Unity 프로젝트를 열 때마다 규칙을 복사하지 않도록, **공통 C
 |----|------|-----------|
 | **common** | 모든 Unity 작업 | `.meta`, C#, ponytail, Shell, 커밋 |
 | **personal** | 공개 패키지·실험·데모 | README + Invariants |
-| **game** | 출시·팀 타이틀 | Architecture · Plan · 7단계 |
+| **game** | 출시·팀 타이틀 | Architecture · Plan · 개발 프로세스 |
 
 프로젝트 루트 `AGENTS.md`에 적어요.
 

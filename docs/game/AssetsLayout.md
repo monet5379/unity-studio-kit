@@ -34,7 +34,9 @@ Project/
 ```
 
 - **공유 Core**는 UPM `Packages/<shared-core>/` — `Assets/Project/Core/`에 임베드하지 않는 것을 표준으로 해요.
-- 의존: Core ← (선택 Battle) ← Game ← ThirdParty / Develop. **Core가 Game을 참조하지 않아요.**
+- Game이 Core를 참조해요. Core는 Game을 참조하지 않아요.
+- 장르 공통 전투 층이 있으면 Game이 그 층을 참조하고, 그 층이 Core를 참조해요.
+- `ThirdPartyAdapters`와 `Develop`는 Game 쪽에 둬요.
 
 ## 런타임 데이터 (3층)
 
@@ -49,6 +51,7 @@ Project/
 ## 금지
 
 - `.meta` 생성·수정·삭제 (Shell 포함)
+- Editor에서 씬·프리팹을 생성·수정·배선하는 Setup 스크립트 ([UnityBasics](../common/UnityBasics.md) 씬·프리팹 정본)
 - ThirdParty·Plugins 직접 수정 (어댑터만 `Project/Scripts/ThirdPartyAdapters/`)
 - 레거시 `Assets/Scripts/`에 신규 기능 추가 (표준은 `Project/Scripts/`)
 

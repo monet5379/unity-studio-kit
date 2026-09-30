@@ -8,6 +8,8 @@ alwaysApply: false
 
 `profile: personal`일 때. 정본: [`docs/personal/PackageLayout.md`](../../../docs/personal/PackageLayout.md)
 
+열린 프로젝트 루트 `AGENTS.md`의 `profile:`이 이 규칙과 같을 때만 적용하세요. 다른 프로필이거나, 이 Kit 저장소(`unity-studio-kit/docs`, `unity-studio-kit` 자체)를 고칠 때는 이 파일을 무시하세요. [`unity-assets-layout.mdc`](../game/unity-assets-layout.mdc)와 동시에 붙으면 `AGENTS.md`의 profile 하나만 따르세요.
+
 ## 배치
 
 - **설치 단위:** `Assets/<PackageName>/` (Runtime·Editor·asmdef 유지)

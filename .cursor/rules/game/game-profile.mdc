@@ -11,7 +11,7 @@ alwaysApply: false
 ## 프로세스
 
 - **common**(포니테일·스코프·`.meta`·Shell·C#)은 그대로 적용해요.
-- 작업 프레임: [`development-process.mdc`](development-process.mdc) (7단계).
+- 작업 프레임: [`development-process.mdc`](development-process.mdc) (스킬 진행 · 닫기).
 - QA·스모크 제안: [`verification-qa-defaults.mdc`](verification-qa-defaults.mdc).
 - personal 프로필 규칙과 **동시에 필수로 적용하지 마세요.**
 

@@ -8,6 +8,8 @@ alwaysApply: false
 
 `profile: game`일 때. 정본: [`docs/game/AssetsLayout.md`](../../../docs/game/AssetsLayout.md)
 
+열린 프로젝트 루트 `AGENTS.md`의 `profile:`이 이 규칙과 같을 때만 적용하세요. 다른 프로필이거나, 이 Kit 저장소(`unity-studio-kit/docs`, `unity-studio-kit` 자체)를 고칠 때는 이 파일을 무시하세요. [`package-layout.mdc`](../personal/package-layout.mdc)와 동시에 붙으면 `AGENTS.md`의 profile 하나만 따르세요.
+
 ## 최상위
 
 - `Project/` — 팀 소유 (코드·씬·Content·Editor)
@@ -33,5 +35,7 @@ alwaysApply: false
 ## 금지
 
 - `.meta` 생성·수정·삭제
+- Editor Setup으로 씬·프리팹 생성·배선 ([`unity-basics.mdc`](../common/unity-basics.mdc))
 - ThirdParty 직접 수정
 - Core asmdef가 Game 참조
+- 레거시 `Assets/Scripts/`에 신규 기능 추가 (표준은 `Project/Scripts/`)

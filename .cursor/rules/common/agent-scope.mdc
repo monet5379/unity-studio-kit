@@ -28,8 +28,9 @@ alwaysApply: true
 
 ## Quality Gates
 
-- 가능한 한 **작은 단위**로 진행·검증하세요.
-- 변경 후 Unity **관련 asmdef** 컴파일·테스트·수동 시나리오를 확인하세요.
+- 가능한 한 **작은 단위**로 진행하세요.
+- 변경 후 관련 asmdef **컴파일**만 확인하세요.
+- 인라인 검증은 [`ponytail.mdc`](ponytail.mdc). Play·스모크·QA 제안은 프로필 규칙 (game: [`../game/verification-qa-defaults.mdc`](../game/verification-qa-defaults.mdc)).
 
 ## Documentation
 

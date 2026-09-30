@@ -42,8 +42,10 @@ Kit Assets·문서 관례: `unity-studio-kit/docs/game/AssetsLayout.md` · `Docu
 
 ### 프로세스 · 문서
 
-- 7단계: Define → Design → DoD → Build → Verify → Record (실패 시 Recovery).
-- 구조 변경 시 Architecture · (크면) Plan. Optimization은 추적 필요할 때만.
+- 진행·닫기: `unity-studio-kit/docs/game/DevelopmentProcess.md`. 스킬이 있으면 그 체인으로 진행하고, 없으면 같은 닫기 조건을 대화로 수행해요.
+- 산출물은 규모에 비례해요. 작은 수정은 대화 한 줄로 Define해요. Plan·Architecture는 구조가 바뀔 때만 갱신해요.
+- 글쓰기 WritingGuide · 형식 Documentation(Architecture 골격·ADR·설계 정본).
+- 구조·계약 변경 시 해당 Architecture · 설계 정본 · (크면) Plan. Optimization은 추적 필요할 때만. 티켓 Record는 바뀐 페이지만.
 - 스모크·QA **제안·실행**은 사용자 요청 전 금지. behavioral SC는 코드 리뷰만으로 pass 금지.
 - 커밋은 사용자 **명시 요청** 시에만. Kit [CommitMessages](../docs/common/CommitMessages.md) — `type(scope): 한글 제목`
 
@@ -59,6 +61,15 @@ Kit Assets·문서 관례: `unity-studio-kit/docs/game/AssetsLayout.md` · `Docu
 | Unity 루트 | `<UnityProjectFolder>/` |
 | 게임 스크립트 | 예: `Assets/Project/Scripts/` |
 | 문서 루트 | 예: `Docs/<title>/` 또는 `docs/project/` |
+| Kit 글쓰기 | `unity-studio-kit/docs/common/WritingGuide.md` |
+| Kit 문서 정책 | `unity-studio-kit/docs/game/Documentation.md` |
+| 톤 예외 경로 | 예: `docs/interview/` · `Docs/notes/` 또는 — |
+| GDD 경로 | 예: `docs/project/gdd/` 또는 — |
+| 설계 정본 (Technical Design) | 예: `docs/design/ClassStructure.md` 또는 — |
+| Issue tracker | `.scratch/<feature>/` 또는 `docs/plan/tickets/<feature>/` |
+| Optimization | 추적 시 `docs/.../optimization/` · 소규모면 — |
+| behavioral seam | 예: `Demo.unity` Play 또는 — |
+| 측정·「완료」제약 | (타이틀이 채움, 없으면 —) |
 | asmdef (Game 등) | `<…>` |
 | 공유 Core 패키지 id | `<com.example.core>` (없으면 —) |
 | 네임스페이스 루트 | `<…>` |

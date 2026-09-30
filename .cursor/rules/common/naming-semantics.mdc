@@ -6,7 +6,7 @@ alwaysApply: false
 
 # Naming Semantics
 
-정본은 본 rule (별도 Docs SSOT 없음).
+정본: [`docs/common/Csharp.md`](../../../docs/common/Csharp.md) 「네이밍 (의미)」.
 
 ## Must (신규·수정 코드)
 
@@ -24,7 +24,7 @@ alwaysApply: false
 
 ## 우선순위
 
-도메인 delta rule > 본 rule > `csharp-standards.mdc` (casing만)
+도메인 delta rule > Csharp.md 의미 표 > `csharp-standards.mdc` (casing만)
 
 ## 레거시
 
