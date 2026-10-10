@@ -1,6 +1,6 @@
 # Assets 레이아웃 (game)
 
-타이틀에서 파일이 어디로 가야 하는지 **폴더 결정**을 할 때 보세요. 공유 Core vs Game 코드 경계는 [ProjectSeparation.md](ProjectSeparation.md)예요.
+타이틀에서 파일이 어디로 가야 하는지 **폴더 결정**을 할 때 보세요. Core · Game · Editor asmdef **경계와 왜 나누는지**는 [ProjectSeparation.md](ProjectSeparation.md)예요.
 
 Cursor: [`unity-assets-layout.mdc`](../../.cursor/rules/game/unity-assets-layout.mdc)  
 설계 `.md`는 Unity 밖 `docs/`(또는 `Docs/`). Assets 안 README는 **20줄 이내**만.
@@ -27,14 +27,14 @@ Project/
 │   ├── <Domain>/
 │   ├── ThirdPartyAdapters/  ← SDK 래퍼만
 │   └── Develop/             ← 디버그 UI 등 (선택)
-├── Editor/                  ← 게임 전용 Editor asmdef
+├── Editor/                  ← 게임 전용 Editor asmdef (Runtime과 분리 이유 → ProjectSeparation.md)
 ├── Content/                 ← 아트·연출 (스크립트 X)
 ├── Scenes/
 └── Tests/                   ← 선택
 ```
 
 - **공유 Core**는 UPM `Packages/<shared-core>/` — `Assets/Project/Core/`에 임베드하지 않는 것을 표준으로 해요.
-- Game이 Core를 참조해요. Core는 Game을 참조하지 않아요.
+- Game이 Core를 참조해요. Core는 Game을 참조하지 않아요. Game Editor asmdef는 Game·Core Runtime을 참조할 수 있지만, Runtime은 Editor asmdef를 참조하지 않아요.
 - 장르 공통 전투 층이 있으면 Game이 그 층을 참조하고, 그 층이 Core를 참조해요.
 - `ThirdPartyAdapters`와 `Develop`는 Game 쪽에 둬요.
 

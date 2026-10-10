@@ -19,7 +19,7 @@ alwaysApply: false
 
 - 문서 2분류·README 허브: [`documentation.mdc`](documentation.mdc)
 - Assets: [`unity-assets-layout.mdc`](unity-assets-layout.mdc)
-- Core vs Game · 공유 패키지: [`agent-scope-game.mdc`](agent-scope-game.mdc)
+- Core · Game · Editor asmdef · 공유 패키지: [`agent-scope-game.mdc`](agent-scope-game.mdc) · [`ProjectSeparation.md`](../../../docs/game/ProjectSeparation.md)
 
 ## 타이틀 전용
 

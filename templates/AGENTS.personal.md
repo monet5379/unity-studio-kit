@@ -34,7 +34,7 @@ profile: personal
 
 - Kit **common** + **personal** (Plan/Architecture 기본 불필요, README 정본).
 - `.meta` 생성·수정·삭제 금지. `ThirdParty/` · `Plugins/` 직접 수정 금지.
-- 커밋은 사용자 **명시 요청** 시에만. Kit [CommitMessages](../docs/common/CommitMessages.md) — `type(scope): 한글 제목` (영어 필요 시 아래 override)
+- 커밋은 사용자 **명시 요청** 시에만. Kit [CommitMessages](../docs/common/CommitMessages.md) — `type(scope): 한글 제목` + **본문(why) 필수** (영어 필요 시 아래 override)
 - Demo를 출시 스키마·필수 설치 경로로 취급하지 않음.
 
 ## 이 repo만의 메모 (선택)

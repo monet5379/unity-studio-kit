@@ -7,7 +7,7 @@
 ## 대상
 
 - 캠페인·출시 대상 게임
-- 공유 Core UPM + 타이틀 Game asmdef
+- 공유 Core UPM + 타이틀 Game asmdef + Editor asmdef (경계·이유: [ProjectSeparation.md](ProjectSeparation.md))
 - Architecture · Plan · 검증 대조가 의미 있는 규모
 
 ## 대상이 아닌 것

@@ -14,7 +14,7 @@ alwaysApply: false
 - 인터페이스: `I` 접두사
 - private/readonly 필드: `_camelCase`
 - 지역 변수/매개변수: camelCase
-- const: `UPPER_SNAKE_CASE`
+- const (field·local): PascalCase — all access modifiers; see Csharp.md · MS identifier names
 - **의미(semantic):** Csharp.md 「네이밍 (의미)」 · [`naming-semantics.mdc`](naming-semantics.mdc)
 
 ## 프로퍼티

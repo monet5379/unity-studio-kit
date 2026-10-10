@@ -12,7 +12,7 @@ Cursor: [`csharp-standards.mdc`](../../.cursor/rules/common/csharp-standards.mdc
 | 인터페이스 | `I` 접두사 |
 | private / readonly 필드 | `_camelCase` |
 | 지역 변수·매개변수 | camelCase |
-| `const` | `UPPER_SNAKE_CASE` |
+| `const` (필드·지역 상수) | PascalCase — `private` / `internal` / `public` 동일. [Microsoft C# identifier names](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names) |
 
 ## 네이밍 (의미)
 

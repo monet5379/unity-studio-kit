@@ -8,7 +8,7 @@
 |------|------|------|
 | [Overview.md](Overview.md) | 개념 | 언제 game인지 |
 | [AssetsLayout.md](AssetsLayout.md) | 참조 | `Assets/` 배치 |
-| [ProjectSeparation.md](ProjectSeparation.md) | 개념 | Core vs Game |
+| [ProjectSeparation.md](ProjectSeparation.md) | 개념 | Core · Game · Editor asmdef 경계와 이유 |
 | [Documentation.md](Documentation.md) | 참조 | 2분류 · Architecture 골격 · ADR · 설계 정본 · README 허브 · 위키 계약 |
 | [DevelopmentProcess.md](DevelopmentProcess.md) | 프로세스 | 스킬 우선순위 · 티켓 트래커 · Verify · Record · Recovery |
 

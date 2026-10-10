@@ -23,7 +23,8 @@ alwaysApply: false
 - 공유 Core → UPM `Packages/` (Project 아래 Core 임베드 비표준)
 - `Scripts/<Domain>/` — Game asmdef · 1기능 1폴더
 - `Scripts/ThirdPartyAdapters/` — SDK 래퍼
-- `Editor/` · `Content/` · `Scenes/`
+- `Editor/` — Game Editor asmdef · Runtime 역참조 금지 (왜: [`ProjectSeparation.md`](../../../docs/game/ProjectSeparation.md))
+- `Content/` · `Scenes/`
 
 ## 데이터
 
@@ -37,5 +38,5 @@ alwaysApply: false
 - `.meta` 생성·수정·삭제
 - Editor Setup으로 씬·프리팹 생성·배선 ([`unity-basics.mdc`](../common/unity-basics.mdc))
 - ThirdParty 직접 수정
-- Core asmdef가 Game 참조
+- Core asmdef가 Game 참조 · Runtime asmdef가 Editor asmdef 참조
 - 레거시 `Assets/Scripts/`에 신규 기능 추가 (표준은 `Project/Scripts/`)

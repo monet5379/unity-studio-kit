@@ -1,5 +1,5 @@
 ---
-description: 커밋 메시지 — Conventional Commits·한글 기본·scope는 AGENTS
+description: 커밋 메시지 — Conventional Commits·한글 기본·본문(why) 필수·scope는 AGENTS
 alwaysApply: false
 ---
 
@@ -15,10 +15,11 @@ alwaysApply: false
 - 주된 의도 type 하나: feat, fix, docs, style, refactor, perf, test, chore
 - 제목 권장 50자 전후·최대 72자. 마침표·버전 접두어(`v0.1.30:`) 금지
 - scope는 선택. **허용 목록은 프로젝트 `AGENTS.md`**
-- 본문은 why 중심(선택). Breaking은 `BREAKING CHANGE:`
+- **본문 필수** — why 중심 1문장 이상. 제목과 빈 줄로 구분. Breaking은 `BREAKING CHANGE:`
 
 ## Must not
 
+- 제목만·본문 없음
 - `update` / `수정` / `워킹` 등 빈 제목
 - Kit 기본인데 영어만 제목 (영어 override repo 제외)
 - 무관한 대형 변경을 한 커밋에 섞기
