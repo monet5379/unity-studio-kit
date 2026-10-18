@@ -102,9 +102,9 @@ Kit의 `.cursor/rules` · `docs/` · `templates/` · `.cursor/skills`를 한 바
 
 | ID | skill | 등급 | 메모 |
 |----|-------|------|------|
-| 5.1 | [code-review](../../.cursor/skills/code-review/SKILL.md) — Standards / Spec | | |
-| 5.2 | [codebase-design](../../.cursor/skills/codebase-design/SKILL.md) | | |
-| 5.3 | [improve-codebase-architecture](../../.cursor/skills/improve-codebase-architecture/SKILL.md) | | |
+| 5.1 | 타이틀 `.agents/skills/code-review` — Standards / Spec (Kit 중복 없음) | | |
+| 5.2 | 타이틀 `.agents/skills/codebase-design` | | |
+| 5.3 | 타이틀 `.agents/skills/improve-codebase-architecture` — **호출 전용** | | |
 | 5.4 | [unity-ecs-patterns](../../.cursor/skills/unity-ecs-patterns/SKILL.md) | | |
 | 5.5 | [unity-build-pipeline](../../.cursor/skills/unity-build-pipeline/SKILL.md) | | |
 | 5.∑ | DevelopmentProcess · game-profile · code-review의 Verify/Design/리뷰 **용어 일치** | | |

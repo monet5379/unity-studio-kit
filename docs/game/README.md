@@ -12,4 +12,4 @@
 | [Documentation.md](Documentation.md) | 참조 | 2분류 · Architecture 골격 · ADR · 설계 정본 · README 허브 · 위키 계약 |
 | [DevelopmentProcess.md](DevelopmentProcess.md) | 프로세스 | 스킬 우선순위 · 티켓 트래커 · Verify · Record · Recovery |
 
-Cursor: [`.cursor/rules/game/`](../../.cursor/rules/game/) · 글쓰기: [`../common/WritingGuide.md`](../common/WritingGuide.md) · 스킬: [code-review](../../.cursor/skills/code-review/SKILL.md) · [codebase-design](../../.cursor/skills/codebase-design/SKILL.md) · [improve-codebase-architecture](../../.cursor/skills/improve-codebase-architecture/SKILL.md)
+Cursor: [`.cursor/rules/game/`](../../.cursor/rules/game/) · 글쓰기: [`../common/WritingGuide.md`](../common/WritingGuide.md) · Matt engineering 스킬: 타이틀 `.agents/skills/` (`/code-review`, `/codebase-design`, `/improve-codebase-architecture`) · Kit Unity 스킬: [unity-ecs-patterns](../../.cursor/skills/unity-ecs-patterns/SKILL.md) · [unity-build-pipeline](../../.cursor/skills/unity-build-pipeline/SKILL.md)

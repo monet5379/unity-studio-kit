@@ -35,7 +35,7 @@ common **ponytail**은 Build 스타일(최소 diff)이다.
 4. 이 Kit `docs/game/` · `.cursor/rules/game/`
 5. 이 Kit `docs/common/`
 
-같은 이름 스킬이 Kit와 `.agents/skills/`에 둘 다 있으면 **타이틀 `.agents/skills/`** 를 쓴다. Kit 본문은 타이틀 repo에서 수정하지 않는다. 오버레이는 Kit 규칙을 지우는 게 아니라, Record 범위처럼 **더 구체적인 제약**을 더하는 것이다.
+Matt engineering 스킬(`code-review`, `codebase-design`, `improve-codebase-architecture`)은 **Kit `.cursor/skills/`에 두지 않는다.** game Unity 각색본은 타이틀 **`.agents/skills/`** 가 정본이다. Kit Unity 전용 스킬(`unity-ecs-patterns`, `unity-build-pipeline`)만 Kit에 둔다. Kit 본문은 타이틀 repo에서 수정하지 않는다. 오버레이는 Kit 규칙을 지우는 게 아니라, Record 범위처럼 **더 구체적인 제약**을 더하는 것이다.
 
 ## Issue tracker
 

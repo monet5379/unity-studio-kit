@@ -68,9 +68,7 @@ personal / game은 `alwaysApply: false` — `profile:`에 맞는 것만 따른�
 | personal | [docs/personal](docs/personal/README.md) |
 | game | [docs/game](docs/game/README.md) |
 | 템플릿 | [templates](templates/README.md) |
-| 리뷰 skill | [`.cursor/skills/code-review`](.cursor/skills/code-review/SKILL.md) — Standards / Spec 두 축 |
-| Design 어휘 | [`.cursor/skills/codebase-design`](.cursor/skills/codebase-design/SKILL.md) |
-| 아키텍처 스캔 | [`.cursor/skills/improve-codebase-architecture`](.cursor/skills/improve-codebase-architecture/SKILL.md) — **호출 전용** |
+| Matt engineering 스킬 | 타이틀 `.agents/skills/` — `code-review` · `codebase-design` · `improve-codebase-architecture` (Kit `.cursor/skills/`에 중복 없음) |
 | DOTS skill | [`.cursor/skills/unity-ecs-patterns`](.cursor/skills/unity-ecs-patterns/SKILL.md) |
 | 빌드 skill | [`.cursor/skills/unity-build-pipeline`](.cursor/skills/unity-build-pipeline/SKILL.md) |
 

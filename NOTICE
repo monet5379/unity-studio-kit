@@ -101,13 +101,12 @@ limitations under the License.
 
 ## mattpocock/skills — engineering (code-review, codebase-design, improve-codebase-architecture)
 
-`.cursor/skills/code-review/`, `.cursor/skills/codebase-design/`, and
-`.cursor/skills/improve-codebase-architecture/` are adapted from
-[mattpocock/skills](https://github.com/mattpocock/skills) engineering skills,
-used under the MIT License. This Kit rewrites them in Korean, remaps spec and
-standards sources to Unity Kit profiles (Architecture / Plan / README), drops
-CONTEXT.md / ADR / issue-tracker setup, adds Unity smell suppressions, and
-replaces the HTML architecture report with a chat-card flow.
+These engineering skills are **not** shipped under Kit `.cursor/skills/`. Game
+titles vendor and adapt them in **`.agents/skills/`** from
+[mattpocock/skills](https://github.com/mattpocock/skills), used under the MIT
+License. Typical title adaptations: Korean prose, Unity Kit spec/standards
+sources (Architecture / Plan / README), local issue tracker, Unity smell
+suppressions, chat-card architecture review instead of default HTML.
 
 MIT License
 
