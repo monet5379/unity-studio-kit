@@ -1,6 +1,6 @@
 # 문서 정책 (game)
 
-타이틀에서 어떤 문서를 만들고, Architecture와 Optimization을 어떻게 나눌지 정한다. Kit 글쓰기 공통 규칙은 [WritingGuide](../common/WritingGuide.md), personal의 README 최소 규칙은 [DocsLite](../personal/DocsLite.md)이다.
+타이틀에서 어떤 문서를 만들고, Architecture와 Optimization을 어떻게 나눌지 정한다. Kit 글쓰기 공통 규칙은 [WritingGuide](../common/WritingGuide.md). **Architecture 작성 규약**은 personal [`Architecture_*`](../personal/DocsLite.md#architecture)에도 동일하게 적용한다. personal README 계약은 [DocsLite](../personal/DocsLite.md)를 본다.
 
 **왜 나누는가:** 현재 구조(Architecture)와 변경 이력·회귀(Optimization)를 한 파일에 섞으면, “지금 코드가 어떤지”와 “언제 왜 바뀌었는지”가 흐려집니다. Plan archive는 스프린트 이관용이라 기능 Changelog를 대체하지 않는다.
 

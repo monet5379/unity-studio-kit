@@ -11,14 +11,14 @@ alwaysApply: false
 ## 프로세스
 
 - **common**(포니테일·스코프·`.meta`·Shell·C#)은 그대로 적용한다.
-- Plan / Architecture / Optimization / 스프린트 Record는 **기본 불필요**. 요청 없이 만들지 않는다.
+- Plan / Optimization / ADR / 스프린트 Record는 **기본 불필요**. 요청 없이 만들지 않는다.
+- 구조가 있는 repo는 **README + `Architecture_*`** — [`documentation.mdc`](documentation.mdc) · [`DocsLite.md`](../../../docs/personal/DocsLite.md).
 - 소규모 수정 = 이해 후 최소 diff. 구조가 커지면 game 프로필 전환을 제안만 한다.
 
 ## 문서
 
-- 정본은 **README** (Install · Invariants · Out of scope).
-- 설계 md 대량 추가 금지. 필요 시 README 절 또는 `docs/` 한 장.
-- [`docs/personal/DocsLite.md`](../../../docs/personal/DocsLite.md)
+- **README** = Install · Invariants · Out of scope. **Architecture** = 구조·흐름 ([`DocsLite.md`](../../../docs/personal/DocsLite.md) · [`documentation.mdc`](documentation.mdc)).
+- README에 Architecture 본편 복사 금지 — 링크만.
 - README는 **한글** `README.md`만 — [`docs/personal/LocaleDocs.md`](../../../docs/personal/LocaleDocs.md) (UI 언어 구현 아님)
 
 ## 레이아웃

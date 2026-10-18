@@ -76,10 +76,10 @@ Kit의 `.cursor/rules` · `docs/` · `templates/` · `.cursor/skills`를 한 바
 |----|---------------|------|------|
 | 4A.1 | [personal-profile.mdc](../../.cursor/rules/personal/personal-profile.mdc) · [Overview.md](../personal/Overview.md) | | |
 | 4A.2 | [package-layout.mdc](../../.cursor/rules/personal/package-layout.mdc) · [PackageLayout.md](../personal/PackageLayout.md) | | |
-| 4A.3 | [DocsLite.md](../personal/DocsLite.md) | | |
+| 4A.3 | [DocsLite.md](../personal/DocsLite.md) · [documentation.mdc](../../.cursor/rules/personal/documentation.mdc) | | |
 | 4A.4 | [locale-docs.mdc](../../.cursor/rules/personal/locale-docs.mdc) · [LocaleDocs.md](../personal/LocaleDocs.md) | | |
 | 4A.5 | [demo-gui.mdc](../../.cursor/rules/personal/demo-gui.mdc) · [DemoGui.md](../personal/DemoGui.md) · **선택** | | |
-| 4A.∑ | game Plan·Architecture·Verify가 personal에 **끌려 오지 않음** | | |
+| 4A.∑ | game Plan·Verify·DevelopmentProcess가 personal에 **끌려 오지 않음** (Architecture 골격은 공유) | | |
 
 ---
 
@@ -125,7 +125,8 @@ Kit의 `.cursor/rules` · `docs/` · `templates/` · `.cursor/skills`를 한 바
 
 | 시나리오 | 켜지는 규칙 (예상) | 실제와 일치? | 메모 |
 |----------|-------------------|--------------|------|
-| personal — README만 수정 | | ☐ | |
+| personal — README 계약만 수정 | | ☐ | |
+| personal — Architecture + 코드 | | ☐ | |
 | game — Architecture 한 장 + 티켓 | | ☐ | |
 | Shell로 `Assets/` 정리 시도 | | ☐ | |
 

@@ -48,7 +48,7 @@ description: >-
 ## 프로젝트 override (먼저 확인)
 
 - `profile: game`: Architecture **책임과 경계 · 주요 타입과 관계 · 불변조건과 주의점**이 이긴다
-- `profile: personal`: README Invariants가 이긴다
+- `profile: personal`: Architecture ≥ README Invariants (계약 문구는 README SSOT)
 - 샘플 타입명을 도메인 문서 없이 복사하지 않는다
 
 ## 어휘

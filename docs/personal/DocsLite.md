@@ -1,32 +1,45 @@
-# 문서 (personal · 가볍게)
+# 문서 (personal)
 
-personal에서는 Architecture·Plan 없이도 계약을 남길 수 있게, **README를 정본**으로 둔다. game 문서 정책을 여기 강제하지 않는다.
+personal 공개 패키지·실험 repo는 **README 계약**과 **Architecture 본편**을 나눈다. Architecture **파일 형식·골격**은 [game Documentation — Architecture 작성 규약](../game/Documentation.md#architecture-작성-규약)과 같다. Plan·Optimization·ADR·GDD는 game 기본이며 personal에는 **요청 없이 만들지 않는다**.
 
+**왜 나누는가:** GitHub 랜딩 README는 설치·불변조건·범위 밖만 빠르게 읽히게 두고, 구조·흐름·타입·변경 가이드는 `Architecture_*`에 모아 **코드와 함께 갱신**한다.
 
-**왜 README만인가요?** 
-공개 패키지·실험은 설치·불변조건만 있으면 소비자가 바로 이해한다. Plan·Architecture 트리를 기본으로 두면 문서 비용이 이득보다 커져요.
+## 정본 사다리
 
+```text
+코드 ≥ Architecture (구조·흐름) ≥ README (Install · Invariants · Out of scope)
+```
 
-## 기본
+- **README** — 소비자·clone 직후 계약. 불변조건 전문은 README에 둔다.
+- **Architecture** — 현재 구조·경계·흐름·변경 가이드. README에 긴 API·부트 순서·표를 **복사하지 않는다** — Architecture로 링크한다.
+- 코드와 Architecture가 어긋나면 **코드가 이김** (game [위키 계약](../game/Documentation.md#에이전트-위키-계약)과 동일).
 
-- **정본은 README**이다. Architecture / Plan / Optimization 문서는 기본으로 만들지 않는다.
-- 계약이 있으면 README에 **Invariants** 절로 적는다. 표·짧은 불릿이면 충분한다.
-- 스크린샷·부가 설명만 `docs/`에 둔다. Assets 안에 긴 설계 md를 넣지 않는다.
+## 기본 산출물
 
-## 언제 조금만 더 쓰나
+| 산출물 | 경로 (관례) | personal |
+| --- | --- | --- |
+| README | repo 루트 `README.md` | **필수** — Install · Invariants · Out of scope |
+| Architecture 허브 | `docs/**/architecture/README.md` | 본편 2개 이상이면 **필수** |
+| Architecture 본편 | `docs/**/architecture/Architecture_<Feature>.md` | **필수** (기능·모듈당 1파일) |
+| Optimization | `optimization/Optimization_*.md` | 추적 필요할 때만 |
+| Plan · ADR · GDD | `plan/` · `adr/` · `gdd/` | game — personal 기본 없음 |
 
-| 상황 | 해도 됨 |
-|------|---------|
-| API·실패 시나리오가 김 | README 절 추가 또는 `docs/` 한 장 |
-| 실험 메모 | `docs/notes/` 짧은 md (프로세스 강제 없음) |
-| 구조가 커져 타이틀에 가까움 | **game** 프로필로 전환을 검토 |
+한 기능만 있는 작은 실험이면 `Architecture_<Package>.md` **한 장** + README로 충분하다. 본편이 늘면 허브 README 목차를 맞춘다.
 
-## README 언어
+## README
 
-공개 README 정본은 **한글 `README.md` 하나**이다. 영문·`README.<locale>.md`·언어 셀렉터는 두지 않는다. 상세: [LocaleDocs.md](LocaleDocs.md).
+- [LocaleDocs](LocaleDocs.md) — 한글 `README.md` 하나.
+- 계약은 **Invariants** (또는 **불변조건**) 절 — 표·짧은 불릿.
+- 구조 설명·타입 표·시퀀스는 Architecture에 두고 README는 **한 줄 + 링크**.
+
+## Architecture
+
+- 제목 `# Architecture: <Feature>`, 소제목 `## 한글 (English)`, 섹션 아래 *이탤릭 목적 한 줄* — [game Documentation](../game/Documentation.md#architecture-작성-규약) 전문.
+- Architecture 본편에 Phase·주차·티켓 이력을 넣지 않는다.
+- `Assets/` 안 긴 설계 md 금지 — `docs/`만.
 
 ## 에이전트
 
-- 요청 없이 Plan·아키텍처 파일 트리·스프린트 문서를 만들지 않는다.
-- 문서 요청이 있으면 README·Invariants를 먼저 갱신한다.
-- 큰 구조 변경이어도 personal에서는 “짧은 README 갱신”이 기본이다.
+- **구조·경계·공개 API·부트/로드 흐름**을 바꾸면 해당 `Architecture_*`를 갱신한다. 계약(불변조건)이 바뀌면 **README 먼저**.
+- 요청 없이 Plan·Optimization·ADR 트리·스프린트 Record를 만들지 않는다.
+- 새 패키지·공개 repo를 문서화할 때 README + `docs/architecture/Architecture_*.md` (+ 필요 시 허브 README)를 **기본 세트**로 둔다.

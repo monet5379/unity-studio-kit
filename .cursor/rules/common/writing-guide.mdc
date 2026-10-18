@@ -20,7 +20,7 @@ alwaysApply: false
 - 문서 첫머리에 **lead** (이 페이지가 무엇을 결정·가능하게 하는가, 2~4문장).
 - **한 페이지 한 주제.** 주 유형 하나: 시작하기 / 개념 / 참조 / How-to / 프로세스.
 - 주어 분명. 표는 스캔용 — 표만으로 끝내지 않음.
-- personal 문서 최소 ↔ game Architecture·DevelopmentProcess 충돌 시 각 프로필 문서가 이김.
+- personal DocsLite ↔ game Documentation·DevelopmentProcess 충돌 시 각 프로필 문서가 이김 (personal도 Architecture 골격은 game Documentation과 동일).
 
 ## Must not
 

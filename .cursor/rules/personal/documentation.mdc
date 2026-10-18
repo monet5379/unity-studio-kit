@@ -1,0 +1,33 @@
+---
+description: personal — README 계약 + Architecture 골격 (profile personal일 때)
+globs: "**/docs/**/*.md,**/README.md"
+alwaysApply: false
+---
+
+# Documentation (personal)
+
+`profile: personal`일 때. 정본: [`docs/personal/DocsLite.md`](../../../docs/personal/DocsLite.md)  
+Architecture 형식·골격: [`docs/game/Documentation.md`](../../../docs/game/Documentation.md#architecture-작성-규약)
+
+열린 프로젝트 루트 `AGENTS.md`의 `profile:`이 personal일 때만 적용한다. Kit 저장소(`unity-studio-kit/docs`) 편집 시 game [`documentation.mdc`](../game/documentation.mdc)와 중복 적용하지 않는다.
+
+## 정본
+
+- **README** — Install · Invariants · Out of scope (계약).
+- **Architecture_*** — 구조·흐름·변경 가이드. README에 기능 설명 장문 복제 금지.
+
+`코드 ≥ Architecture ≥ README` (계약 문구는 README가 SSOT, 구현은 코드).
+
+## Architecture Must
+
+game Documentation [Architecture Must](../game/documentation.mdc)와 동일: `# Architecture: <Feature>`, 골격 순서, 250줄 분할 검토, enum 전수 복사 금지.
+
+## personal Must not
+
+- Plan · ADR · GDD · Optimization을 요청 없이 생성
+- game Documentation 전체(Plan·GDD·Optimization 운영)를 personal에 필수로 적용
+- README에 Architecture 본편 수준의 타입·흐름 표 복사
+
+## README 허브
+
+repo 루트 README = 제품·설치·계약. `docs/architecture/README.md` = Architecture 목차만 (game [README 허브](../game/Documentation.md#readme-허브)와 동일 원칙).

@@ -71,7 +71,7 @@ description: >-
 1. 사용자가 준 경로
 2. 커밋 메시지의 이슈 번호 (`#123`, `Closes #45` 등) — `gh`가 되면 본문을 가져와요. 실패해도 스킬을 중단하지 않는다. `docs/agents/issue-tracker.md`는 이 Kit에 없다
 3. `profile: game` — 브랜치·기능과 맞는 Plan, diff가 건드린 기능의 `Architecture_*`, 대화의 Define·Success Criteria
-4. `profile: personal` — README Invariants, 있으면 `docs/` 한 장
+4. `profile: personal` — README Invariants, diff가 건드린 `Architecture_*`
 5. 없음 → Spec 축을 생략하고 보고서에 `no spec available`
 
 ### 3. Standards 출처
@@ -80,7 +80,7 @@ description: >-
 
 - 킷: [`Csharp.md`](../../../docs/common/Csharp.md), 포니테일, agent-scope, naming-semantics, [`UnityBasics.md`](../../../docs/common/UnityBasics.md). 커밋 메시지 변경이면 [`CommitMessages.md`](../../../docs/common/CommitMessages.md)
 - `profile: game`: Documentation, AssetsLayout, 7단계, ProjectSeparation
-- `profile: personal`: DocsLite, PackageLayout
+- `profile: personal`: DocsLite, documentation.mdc (personal), PackageLayout
 - 프로젝트: `AGENTS.md`, 이번 파일의 Architecture 불변조건과 주의점
 
 그 위에 **smell 베이스라인**(아래). 두 규칙:

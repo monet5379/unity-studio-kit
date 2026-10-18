@@ -8,7 +8,8 @@
 |------|------|------|------|
 | [Overview.md](Overview.md) | 개념 | 프로필 선택 시 | 언제 personal인지 |
 | [PackageLayout.md](PackageLayout.md) | 참조 | 패키지·Demo 배치 시 | 복사 단위 · Demo |
-| [DocsLite.md](DocsLite.md) | 프로세스 | 문서 작업 시 | README 중심 문서 |
+| [DocsLite.md](DocsLite.md) | 프로세스 | 문서 작업 시 | README (계약) + Architecture |
+| [documentation.mdc](../../.cursor/rules/personal/documentation.mdc) | 요약 | `docs/**` · README | personal Architecture 골격 |
 | [LocaleDocs.md](LocaleDocs.md) | 프로세스 | README 작성·갱신 시 | 한글 `README.md`만 (UI 언어 아님) |
 | [DemoGui.md](DemoGui.md) | 참조 | **선택** · Demo/F1 작업 시 | IMGUI 스타일 · Demo 경계 |
 

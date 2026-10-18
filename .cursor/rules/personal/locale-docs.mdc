@@ -19,5 +19,5 @@ alwaysApply: false
 - `README.<locale>.md` (`README.ko.md`, `README.en.md` 등) 생성·유지
 - 한 README에 이중언어 병기 · 상단 언어 셀렉터
 - `docs/README.md`만으로 번역 랜딩
-- DocsLite보다 문서 무게를 키우는 기본화
+- README에 Architecture 본편(타입·흐름 장문) 복사
 - 이 규칙을 에디터·F1·인게임 UI 언어(Prefs·메뉴·문자열 테이블)에 적용하거나, Kit에 그 구현을 추가하기

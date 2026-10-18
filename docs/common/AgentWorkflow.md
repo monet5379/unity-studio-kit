@@ -19,7 +19,7 @@ personal · game 공통으로, 에이전트가 **어디까지 손대고 어떻�
 ## 정본 우선순위
 
 - 프로젝트 `AGENTS.md` override > Kit profile(personal / game) > Kit common. override는 AGENTS의 override 표에 적힌 값만 해당한다.
-- 코드 > 프로젝트 정본 문서 (game: Architecture ≥ 설계 정본 · personal: README Invariants). game의 스킬·규칙 사다리는 [DevelopmentProcess](../game/DevelopmentProcess.md#스킬·규칙-우선순위).
+- 코드 > 프로젝트 정본 문서 (game: Architecture ≥ 설계 정본 · personal: Architecture ≥ README Invariants). game의 스킬·규칙 사다리는 [DevelopmentProcess](../game/DevelopmentProcess.md#스킬·규칙-우선순위).
 
 ## 포니테일
 

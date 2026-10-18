@@ -24,15 +24,19 @@ profile: personal
 <repo>/
 ├── AGENTS.md
 ├── README.md                 ← 한글. Install · Invariants · Out of scope
+├── docs/
+│   ├── architecture/
+│   │   ├── README.md         ← Architecture 허브 (본편 2+일 때)
+│   │   └── Architecture_<Feature>.md
+│   └── notes/                ← 선택 (짧은 메모)
 ├── Assets/
 │   ├── <PackageName>/        ← 설치·복사 단위
 │   └── Demo/                 ← 선택. 놀이터. 비설치
-└── docs/                     ← 선택 (스크린샷·짧은 메모)
 ```
 
 ## 에이전트가 지킬 것
 
-- Kit **common** + **personal** (Plan/Architecture 기본 불필요, README 정본).
+- Kit **common** + **personal** (README 계약 + `Architecture_*`; Plan/Optimization/ADR는 요청 시만).
 - `.meta` 생성·수정·삭제 금지. `ThirdParty/` · `Plugins/` 직접 수정 금지.
 - 커밋은 사용자 **명시 요청** 시에만. Kit CommitMessages (`unity-studio-kit/docs/common/CommitMessages.md`) — `type(scope): 한글 제목` + **본문(why) 필수** (영어 필요 시 아래 override)
 - Demo를 출시 스키마·필수 설치 경로로 취급하지 않음.

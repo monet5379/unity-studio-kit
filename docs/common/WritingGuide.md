@@ -80,8 +80,8 @@ Kit `docs/` · README · `templates/` 사람용 본문은 **한다체**로 맞�
 
 |      | personal                                                                 | game                                                            |
 | ---- | ------------------------------------------------------------------------ | --------------------------------------------------------------- |
-| 기본   | README + Invariants ([DocsLite](../personal/DocsLite.md))                | Architecture · Plan ([Documentation](../game/Documentation.md)) |
-| 충돌 시 | DocsLite가 “문서 최소”를 이김 (README 언어는 [LocaleDocs](../personal/LocaleDocs.md)) | Documentation · DevelopmentProcess가 이김                          |
+| 기본   | README (계약) + Architecture ([DocsLite](../personal/DocsLite.md))         | Architecture · Plan ([Documentation](../game/Documentation.md)) |
+| 충돌 시 | personal [DocsLite](../personal/DocsLite.md) · README 언어는 [LocaleDocs](../personal/LocaleDocs.md) | Documentation · DevelopmentProcess가 이김                          |
 
 
 

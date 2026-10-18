@@ -23,7 +23,7 @@ disable-model-invocation: true
 ## 사용하지 않을 때
 
 - 핫픽스, 한 줄 버그픽스, 포니테일 최소 diff
-- `profile: personal` 기본 작업 — 명시 요청 전 금지. Architecture/ADR 트리 생성 금지
+- `profile: personal` — Plan/ADR 트리는 명시 요청 전 금지. `Architecture_*` 갱신·분할은 구조 작업 시 허용 ([DocsLite](../../../docs/personal/DocsLite.md))
 - 「코드 좀 봐줘」— [`code-review`](../code-review/SKILL.md)
 - 에이전트가 먼저 전 저장소를 스캔할 때 (`disable-model-invocation`)
 
@@ -95,7 +95,7 @@ grilling / domain-modeling 스킬은 **이 Kit에 없다.** 제약, 의존 분�
 | 상황 | 동작 |
 |------|------|
 | `profile: game`, 새 개념·경계 | 기존 `Architecture_*` 갱신을 **제안**. Design을 닫기 전 코드 수정 없음 |
-| `profile: personal` | README Invariants만. Architecture/ADR 트리 금지 |
+| `profile: personal` | README (계약) + `Architecture_*`. ADR/plan/ 트리 금지 |
 | 거절이 **구조적** 이유 | Architecture 주의점 또는 README에 한 줄 **제안**. `docs/adr/` 신설 금지. 「지금은 가치 없음」같은 일시적 이유는 기록하지 않음 |
 | 다른 interface를 보고 싶다 | [design-it-twice.md](../codebase-design/references/design-it-twice.md) |
 

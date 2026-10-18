@@ -1,6 +1,6 @@
 # README 언어 (personal · 한글)
 
-공개 패키지 README는 **한글 `README.md` 하나**가 정본이다. GitHub 랜딩도 이 파일만 보여 준다. 영문·다른 locale 파일·언어 셀렉터는 두지 않는다. 문서 무게에서는 [DocsLite](DocsLite.md)가 이긴다.
+공개 패키지 README는 **한글 `README.md` 하나**가 정본이다. GitHub 랜딩도 이 파일만 보여 준다. 영문·다른 locale 파일·언어 셀렉터는 두지 않는다. 구조·흐름은 README가 아니라 [Architecture](DocsLite.md#architecture)에 둔다.
 
 ## 이 문서가 아닌 것
 
@@ -37,4 +37,4 @@ AI로 쓴 한글 산문이 있으면 **그 README 하단**(License 근처)에 �
 
 - personal 공개 README를 쓰거나 고칠 때는 **한글 `README.md`만** 갱신한다.
 - locale 파일·영문 README·셀렉터를 **새로 만들지 않는다.**
-- 문서 최소에서는 [DocsLite](DocsLite.md)가 이긴다.
+- README에 Architecture 본편을 복사하지 않는다 — [DocsLite](DocsLite.md).

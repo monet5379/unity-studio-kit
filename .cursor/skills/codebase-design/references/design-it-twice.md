@@ -45,4 +45,4 @@ Cursor **Task** `generalPurpose`를 **3개 이상** 동시에. 각자 **전혀 �
 
 비교 후 **한 안을 추천**한다. 다른 안의 조각이 맞으면 하이브리드를 제안하되, 메뉴만 나열하지 않는다.
 
-도메인 이름은 기존 Architecture / AGENTS / README에서만 가져와요. 새 용어가 필요하면 game은 Architecture 갱신을 **제안**하고, personal은 README Invariants만.
+도메인 이름은 기존 Architecture / AGENTS / README에서만 가져와요. 새 용어가 필요하면 Architecture(또는 personal README Invariants) 갱신을 **제안**한다.
