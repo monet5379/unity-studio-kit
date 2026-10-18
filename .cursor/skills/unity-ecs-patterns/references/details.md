@@ -1,12 +1,12 @@
 # unity-ecs-patterns — 상세 패턴과 예제
 
-ECS 입문부터 생산 코드까지 Pattern 1~8과 performance tips예요. **코드 블록은 그대로** 두었고, 설명·제목만 한글이에요.
+ECS 입문부터 생산 코드까지 Pattern 1~8과 performance tips이다. **코드 블록은 그대로** 두었고, 설명·제목만 한글이다.
 
 ## 패턴
 
 ### Pattern 1: 기본 ECS 구성
 
-`IComponentData`, tag, buffer, shared component 예제예요.
+`IComponentData`, tag, buffer, shared component 예제이다.
 
 ```csharp
 using Unity.Entities;
@@ -53,7 +53,7 @@ public struct TeamId : ISharedComponentData
 
 ### Pattern 2: ISystem (권장)
 
-`SystemAPI.Query` foreach와 `IJobEntity` + `ScheduleParallel` 두 가지 이동 예제예요.
+`SystemAPI.Query` foreach와 `IJobEntity` + `ScheduleParallel` 두 가지 이동 예제이다.
 
 ```csharp
 using Unity.Entities;
@@ -120,7 +120,7 @@ public partial struct MoveJob : IJobEntity
 
 ### Pattern 3: Entity Query
 
-`EntityQueryBuilder`, `SystemAPI.Query`, `WithEntityAccess`, 배열 추출 예제예요. hot path에서 매 프레임 `ToEntityArray`는 비용이 크니 프로덕션에서는 Architecture gotcha를 확인하세요.
+`EntityQueryBuilder`, `SystemAPI.Query`, `WithEntityAccess`, 배열 추출 예제이다. hot path에서 매 프레임 `ToEntityArray`는 비용이 크니 프로덕션에서는 Architecture gotcha를 확인한다.
 
 ```csharp
 [BurstCompile]
@@ -170,7 +170,7 @@ public partial struct QueryExamplesSystem : ISystem
 
 ### Pattern 4: Entity Command Buffer (structural change)
 
-create/destroy/add/remove는 ECB로 지연합니다. `BeginSimulationEntityCommandBufferSystem`과 parallel ECB 예제예요.
+create/destroy/add/remove는 ECB로 지연한다. `BeginSimulationEntityCommandBufferSystem`과 parallel ECB 예제이다.
 
 ```csharp
 // Structural changes (create/destroy/add/remove) require command buffers
@@ -227,7 +227,7 @@ public partial struct ParallelSpawnJob : IJobEntity
 
 ### Pattern 5: Aspect (component 묶기)
 
-관련 component를 Aspect로 묶고 system에서 순회하는 예제예요. Aspect에 로직을 넣을지는 타이틀 Architecture invariants를 따르세요.
+관련 component를 Aspect로 묶고 system에서 순회하는 예제이다. Aspect에 로직을 넣을지는 타이틀 Architecture invariants를 따른다.
 
 ```csharp
 using Unity.Entities;
@@ -311,7 +311,7 @@ public partial struct CharacterSystem : ISystem
 
 ### Pattern 6: Singleton Component
 
-월드에 하나만 두는 config/state component와 `SystemAPI.GetSingleton` 접근 예제예요.
+월드에 하나만 두는 config/state component와 `SystemAPI.GetSingleton` 접근 예제이다.
 
 ```csharp
 // Singleton: Exactly one entity with this component
@@ -375,7 +375,7 @@ public partial struct ScoreSystem : ISystem
 
 ### Pattern 7: Baking (GameObject → Entity)
 
-Authoring MonoBehaviour와 `Baker`, `TransformUsageFlags`, `DependsOn` 예제예요.
+Authoring MonoBehaviour와 `Baker`, `TransformUsageFlags`, `DependsOn` 예제이다.
 
 ```csharp
 using Unity.Entities;
@@ -450,7 +450,7 @@ public class SpawnerAuthoring : MonoBehaviour
 
 ### Pattern 8: Job + Native Collection
 
-`NativeParallelMultiHashMap`, `IJobParallelFor`, `Allocator.Persistent`와 dispose 예제예요.
+`NativeParallelMultiHashMap`, `IJobParallelFor`, `Allocator.Persistent`와 dispose 예제이다.
 
 ```csharp
 using Unity.Jobs;
@@ -545,7 +545,7 @@ public partial struct SpatialHashSystem : ISystem
 
 ## Performance Tips
 
-Burst, `IJobEntity`, parallel schedule, chunk job, enableable component로 structural change를 줄이는 요약 예제예요.
+Burst, `IJobEntity`, parallel schedule, chunk job, enableable component로 structural change를 줄이는 요약 예제이다.
 
 ```csharp
 // 1. Use Burst everywhere

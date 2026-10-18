@@ -1,8 +1,8 @@
 # Personal 프로필
 
-공개 유틸 패키지나 짧은 Unity 실험에는 **가벼운 규칙**만 필요해요. 이 문서는 personal을 고를지, game으로 올릴지 정할 때 읽어요.
+공개 유틸 패키지나 짧은 Unity 실험에는 **가벼운 규칙**만 필요한다. 이 문서는 personal을 고를지, game으로 올릴지 정할 때 읽는다.
 
-출시 타이틀·팀 Plan·Architecture가 필요하면 [game Overview](../game/Overview.md)로 가세요.
+출시 타이틀·팀 Plan·Architecture가 필요하면 [game Overview](../game/Overview.md)로 간다.
 
 ## 대상
 
@@ -32,13 +32,13 @@ profile: personal
 ```
 
 템플릿: [`templates/AGENTS.personal.md`](../../templates/AGENTS.personal.md)  
-Kit를 멀티 루트로 연 경우 personal 규칙은 `alwaysApply`가 아니에요. 에이전트는 `docs/personal`과 `.cursor/rules/personal`을 따르세요.
+Kit를 멀티 루트로 연 경우 personal 규칙은 `alwaysApply`가 아니다. 에이전트는 `docs/personal`과 `.cursor/rules/personal`을 따른다.
 
 ## 하지 않는 것
 
-- 팀 스프린트 Plan·Architecture를 personal에 강제하지 않아요.
-- 타이틀 전용 경로·도메인을 이 Kit personal에 모으지 않아요.
-- Demo를 출시 스키마·필수 설치 경로로 취급하지 않아요.
-- 패키지 UI 언어 전환 구현(스크립트·Prefs·메뉴)을 Kit에 두지 않아요. [LocaleDocs](LocaleDocs.md)는 README를 **한글만** 두는 규칙이에요 (UI 구현 아님).
+- 팀 스프린트 Plan·Architecture를 personal에 강제하지 않는다.
+- 타이틀 전용 경로·도메인을 이 Kit personal에 모으지 않는다.
+- Demo를 출시 스키마·필수 설치 경로로 취급하지 않는다.
+- 패키지 UI 언어 전환 구현(스크립트·Prefs·메뉴)을 Kit에 두지 않는다. [LocaleDocs](LocaleDocs.md)는 README를 **한글만** 두는 규칙이다 (UI 구현 아님).
 
 다음: [PackageLayout.md](PackageLayout.md) · [DocsLite.md](DocsLite.md) · [LocaleDocs.md](LocaleDocs.md) · (선택) [DemoGui.md](DemoGui.md)

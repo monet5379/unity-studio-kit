@@ -1,8 +1,8 @@
 # Game 프로필
 
-출시·팀 타이틀은 공유 패키지 경계와 문서·프로세스 무게가 personal과 달라요. 이 문서는 game을 쓸지 정하고, Kit game 문서군으로 들어가기 전에 읽어요.
+출시·팀 타이틀은 공유 패키지 경계와 문서·프로세스 무게가 personal과 다르다. 이 문서는 game을 쓸지 정하고, Kit game 문서군으로 들어가기 전에 읽는다.
 
-유틸·실험만이면 [personal Overview](../personal/Overview.md)를 쓰세요.
+유틸·실험만이면 [personal Overview](../personal/Overview.md)를 쓴다.
 
 ## 대상
 
@@ -23,7 +23,7 @@
 | Assets | 복사 단위 + Demo | `Project/` · Addressables |
 | 공유 패키지 | 복사·단독 | manifest pin · 소스 직접 수정 금지 |
 
-Optimization은 지속 추적이 있을 때만 만들어요.
+Optimization은 지속 추적이 있을 때만 만든다.
 
 ## 프로젝트에 적기
 
@@ -32,7 +32,7 @@ profile: game
 ```
 
 템플릿: [`templates/AGENTS.game.md`](../../templates/AGENTS.game.md)  
-타이틀 전용 경로·도메인은 **이 게임 repo**의 `AGENTS.md` · `.cursor/rules/<title>/`에만 두세요.
+타이틀 전용 경로·도메인은 **이 게임 repo**의 `AGENTS.md` · `.cursor/rules/<title>/`에만 두한다.
 
 ## Kit에 두는 것 / 안 두는 것
 

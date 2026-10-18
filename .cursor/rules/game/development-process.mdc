@@ -7,7 +7,7 @@ alwaysApply: false
 
 `profile: game`일 때. 정본: [`docs/game/DevelopmentProcess.md`](../../../docs/game/DevelopmentProcess.md)
 
-스킬 폴더가 있으면 그 체인으로 진행해요. 없으면 같은 닫기 조건을 대화로 수행해요. 산출물은 규모에 비례해요. [`ponytail`](../common/ponytail.mdc)은 Build 최소 diff예요.
+스킬 폴더가 있으면 그 체인으로 진행한다. 없으면 같은 닫기 조건을 대화로 수행한다. 산출물은 규모에 비례한다. [`ponytail`](../common/ponytail.mdc)은 Build 최소 diff이다.
 
 | 상황 | 스킬 |
 |------|------|
@@ -17,7 +17,7 @@ alwaysApply: false
 | 버그 | `/diagnosing-bugs` |
 | 구현을 닫기 직전 | `/code-review` |
 
-티켓으로 나눈 `/implement`만 새 컨텍스트예요. 커밋은 타이틀 `AGENTS.md`를 따라요.
+티켓으로 나눈 `/implement`만 새 컨텍스트이다. 커밋은 타이틀 `AGENTS.md`를 따른다.
 
 ## 우선순위
 
@@ -42,9 +42,9 @@ alwaysApply: false
 
 | 질문 | 분류 | 조치 |
 |------|------|------|
-| 도메인·엔진 제약을 빠뜨렸나요? | 컨텍스트 | Gotchas · 규칙 보강 |
-| 범위가 벗어났나요? | 방향 | Define 재고정 · revert |
-| 폴더를 어겼나요? | 구조 | Design · 재배치 |
+| 도메인·엔진 제약을 빠뜨렸는가? | 컨텍스트 | Gotchas · 규칙 보강 |
+| 범위가 벗어났는가? | 방향 | Define 재고정 · revert |
+| 폴더를 어겼는가? | 구조 | Design · 재배치 |
 
 구현 버그는 `/diagnosing-bugs` 또는 Build fix. 별도 로그 파일 없음 — Record 한 줄만.
 

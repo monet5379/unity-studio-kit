@@ -1,6 +1,6 @@
 # C#
 
-personal · game 공통 C# 관례예요. 새 코드·수정 구간에 적용하고, 레거시 일괄 rename은 하지 않아요.
+personal · game 공통 C# 관례이다. 새 코드·수정 구간에 적용하고, 레거시 일괄 rename은 하지 않는다.
 
 Cursor: [`csharp-standards.mdc`](../../.cursor/rules/common/csharp-standards.mdc) · [`naming-semantics.mdc`](../../.cursor/rules/common/naming-semantics.mdc)
 
@@ -16,9 +16,9 @@ Cursor: [`csharp-standards.mdc`](../../.cursor/rules/common/csharp-standards.mdc
 
 ## 네이밍 (의미)
 
-동사·접두사는 아래 표를 따르세요. 프로젝트에 도메인 delta rule이 있으면 그 규칙이 이 표보다 우선해요. 우선순위는 도메인 delta rule > 이 표 > casing이에요. `Check*` / `Cleanup*` / `Determine*` / `Initialize()` 는 손댄 구간만 맞추고, 일괄 rename은 하지 않아요.
+동사·접두사는 아래 표를 따른다. 프로젝트에 도메인 delta rule이 있으면 그 규칙이 이 표보다 우선한다. 우선순위는 도메인 delta rule > 이 표 > casing이다. `Check*` / `Cleanup*` / `Determine*` / `Initialize()` 는 손댄 구간만 맞추고, 일괄 rename은 하지 않는다.
 
-| 대상 | 써요 | 새로 쓰지 않아요 |
+| 대상 | 쓴다 | 새로 쓰지 않는다 |
 |------|------|------------------|
 | bool | `Is*` · `Has*` · `Can*` · `Allows*` · `Try*` | `Determine*`, 단순 bool `Check*` / `Validate*` |
 | 이벤트 | 수신 `On*`, 이어서 `Handle*` | |
@@ -29,7 +29,7 @@ Cursor: [`csharp-standards.mdc`](../../.cursor/rules/common/csharp-standards.mdc
 
 ## 프로퍼티
 
-- `{ get; init; }` **사용 금지**. 객체 이니셜라이저로만 채우는 패턴도 쓰지 않아요.
+- `{ get; init; }` **사용 금지**. 객체 이니셜라이저로만 채우는 패턴도 쓰지 않는다.
 - 불변: 생성자 + `{ get; }`
 - 가변: `{ get; set; }`
 
@@ -50,7 +50,7 @@ public readonly struct Foo
 
 ## Unity / C# 관례
 
-- 네임스페이스는 **주변 코드·프로젝트 관례**에 맞추세요.
+- 네임스페이스는 **주변 코드·프로젝트 관례**에 맞추한다.
 - Inspector: `[SerializeField] private` (+ 필요 시 읽기 전용 프로퍼티)
 - **플레이어 대면** UI 텍스트: `TextMeshProUGUI`만 — 레거시 `UnityEngine.UI.Text` 금지
 - **개발·데모 IMGUI** (**선택**, 오버레이 작업 시): [DevImgui.md](DevImgui.md) · personal은 [DemoGui.md](../personal/DemoGui.md)
@@ -58,9 +58,9 @@ public readonly struct Foo
 
 ## partial class
 
-- base class·interface는 **메인 파일 1곳**에만 선언해요.
-- 분할 partial은 `public partial class Foo`만 — 상속 목록 반복 금지예요.
-- 동일 타입 partial은 **동일 asmdef·namespace**예요.
+- base class·interface는 **메인 파일 1곳**에만 선언한다.
+- 분할 partial은 `public partial class Foo`만 — 상속 목록 반복 금지다.
+- 동일 타입 partial은 **동일 asmdef·namespace**이다.
 
 ## hot path
 

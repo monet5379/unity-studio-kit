@@ -1,5 +1,5 @@
 ---
-description: Kit docs·AGENTS 글쓰기 — 유형·lead·합니다체·docs/rules 이원화
+description: Kit docs·AGENTS 글쓰기 — 유형·lead·한다체·docs/rules 이원화
 globs: "**/docs/**/*.md"
 alwaysApply: false
 ---
@@ -7,15 +7,15 @@ alwaysApply: false
 # Writing guide (Unity Kit)
 
 정본: [`docs/common/WritingGuide.md`](../../../docs/common/WritingGuide.md)  
-`docs/**` · 루트 README · `templates/` · 프로젝트 `AGENTS.md`를 쓰거나 고칠 때 적용해요. (사이트 notes·Jekyll 규칙 아님)  
+`docs/**` · 루트 README · `templates/` · 프로젝트 `AGENTS.md`를 쓰거나 고칠 때 적용한다. (사이트 notes·Jekyll 규칙 아님)  
 출처: [toss/technical-writing](https://github.com/toss/technical-writing) (CC BY-NC-SA 4.0) — [`NOTICE`](../../../NOTICE)
 
 ## Must
 
 - **적용:** Kit `docs/`·`templates/` + game 타이틀 `docs/`·`Docs/`·`AGENTS.md`
 - **docs = 사람 정본**, **`.mdc` = 짧은 요약** + docs 링크. 장문 규칙은 docs에만.
-- **합니다체**로 통일. (Kit docs·templates 사람용 본문은 합니다체 기준.)
-- **톤 예외:** `notes/`·`interview/`(AGENTS 명시 경로) — 구어체·평서 허용. 본편 Architecture·Optimization·GDD locked는 합니다체
+- **한다체**로 통일. (Kit docs·templates 사람용 본문은 한다체 기준.) **신규·수정 구간**(한 bullet·한 문단 포함)도 **한다체** — 톤 예외 경로 제외.
+- **톤 예외:** `notes/`·`interview/`(AGENTS 명시 경로) — 구어체·평서 허용. 본편 Architecture·Optimization·GDD locked는 한다체
 - **game 정본 사다리:** 코드 ≥ Architecture ≥ 설계 정본 (GDD `locked` 또는 Technical Design)
 - 문서 첫머리에 **lead** (이 페이지가 무엇을 결정·가능하게 하는가, 2~4문장).
 - **한 페이지 한 주제.** 주 유형 하나: 시작하기 / 개념 / 참조 / How-to / 프로세스.
@@ -27,7 +27,7 @@ alwaysApply: false
 - `.mdc`에 docs 전문 복제
 - 모든 참조 문서를 에세이로 팽창
 - personal과 game 규칙을 동시에 필수로 강제하는 서술
-- 신규·수정 구간에 해요체 유지 (톤 예외 경로 제외)
+- 신규·수정 구간에 **합니다체·해요체** (톤 예외 경로 제외). 손댄 구간은 주변 레거시 톤을 닮지 않는다.
 
 ## 골격 힌트
 

@@ -1,6 +1,6 @@
 # 패키지 레이아웃 (personal)
 
-공개·실험 repo에서 **무엇을 복사 설치 단위로 둘지**를 정해요. 타이틀용 `Project/` · Addressables는 game 프로필이에요.
+공개·실험 repo에서 **무엇을 복사 설치 단위로 둘지**를 정한다. 타이틀용 `Project/` · Addressables는 game 프로필이다.
 
 ## 권장 트리
 
@@ -17,12 +17,12 @@
 
 ## 규칙
 
-- **설치 단위**는 `Assets/<PackageName>/` 한 덩어리예요. asmdef가 있으면 유지한 채 복사해요.
-- **`Assets/Demo/`** 는 참고·재생용이에요. README에 “Demo는 설치하지 않음”을 밝혀 주세요.
-- Demo에 출시 스키마·도메인 enum·타이틀 전용 래퍼를 넣지 마세요. 필요하면 소비 쪽 게임에 둬요.
+- **설치 단위**는 `Assets/<PackageName>/` 한 덩어리이다. asmdef가 있으면 유지한 채 복사한다.
+- **`Assets/Demo/`** 는 참고·재생용이다. README에 “Demo는 설치하지 않음”을 밝혀 주한다.
+- Demo에 출시 스키마·도메인 enum·타이틀 전용 래퍼를 넣지 않는다. 필요하면 소비 쪽 게임에 둔다.
 - Demo F1·IMGUI 스타일은 **선택** (Demo 작업 시) — [DemoGui.md](DemoGui.md)
-- 벤더 `ThirdParty/` · `Plugins/` 는 직접 수정하지 마세요 (common과 동일).
-- `.meta` 는 Unity가 관리해요 (common과 동일).
+- 벤더 `ThirdParty/` · `Plugins/` 는 직접 수정하지 않는다 (common과 동일).
+- `.meta` 는 Unity가 관리한다 (common과 동일).
 
 ## README에 넣을 최소 항목
 

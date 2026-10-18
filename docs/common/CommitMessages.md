@@ -1,7 +1,7 @@
 # 커밋 메시지
 
-personal · game 공통으로, [Conventional Commits](https://www.conventionalcommits.org/) 형식과 **제목·본문 작성법**을 맞춰요.  
-프로젝트마다 다른 **scope 목록·언어 override·패치노트 경로**는 이 문서에 두지 않고, 각 repo `AGENTS.md`에 적어요.
+personal · game 공통으로, [Conventional Commits](https://www.conventionalcommits.org/) 형식과 **제목·본문 작성법**을 맞춘다.  
+프로젝트마다 다른 **scope 목록·언어 override·패치노트 경로**는 이 문서에 두지 않고, 각 repo `AGENTS.md`에 적는다.
 
 에이전트 요약: [`.cursor/rules/common/commit-messages.mdc`](../../.cursor/rules/common/commit-messages.mdc)  
 최소 Git 규칙: [UnityBasics.md](UnityBasics.md)
@@ -19,9 +19,9 @@ personal · game 공통으로, [Conventional Commits](https://www.conventionalco
 ```
 
 - 제목은 **권장 50자 전후, 최대 72자**.
-- `scope`는 선택이에요. 변경 영역이 분명할 때만 붙이에요.
-- **본문은 필수**예요. **왜** 바꿨는지를 1–2문장으로 적어요. 제목과 본문 사이에 빈 줄을 넣어요.
-- 커밋은 사용자가 **명시적으로 요청할 때만** 만들어요. ([UnityBasics](UnityBasics.md))
+- `scope`는 선택이다. 변경 영역이 분명할 때만 붙이다.
+- **본문은 필수**이다. **왜** 바꿨는지를 1–2문장으로 적는다. 제목과 본문 사이에 빈 줄을 넣는다.
+- 커밋은 사용자가 **명시적으로 요청할 때만** 만든다. ([UnityBasics](UnityBasics.md))
 
 ---
 
@@ -38,16 +38,16 @@ personal · game 공통으로, [Conventional Commits](https://www.conventionalco
 | `test` | 테스트 추가·수정 |
 | `chore` | 빌드·설정·잡무 (기능 변경 아님). CI는 보통 `chore(ci):` |
 
-한 커밋에 성격이 섞이면 **주된 의도**의 type 하나를 고르세요.  
+한 커밋에 성격이 섞이면 **주된 의도**의 type 하나를 고른다.  
 예: 기능 추가 + 문서 갱신이면 `feat`, 문서만이면 `docs`.
 
 ---
 
 ## Scope
 
-디렉터리·영역 기준으로 짧게 쓰세요. **허용 scope 목록은 프로젝트 `AGENTS.md`가 정본**이에요.
+디렉터리·영역 기준으로 짧게 쓴다. **허용 scope 목록은 프로젝트 `AGENTS.md`가 정본**이다.
 
-Kit에서는 예시만 둡니다. 애매하면 scope를 생략해도 돼요.
+Kit에서는 예시만 둔다. 애매하면 scope를 생략해도 된다.
 
 | 예시 scope | 대상 (예시) |
 |------------|-------------|
@@ -67,27 +67,27 @@ fix: 타이틀 복귀 시 페이즈가 꼬이던 문제 수정
 
 ## 제목 · 언어
 
-**기본은 한글**이에요. 제목·설명 문장은 한글로 쓰고, 코드명·API·로그 문구는 영어 그대로 둬도 돼요.
+**기본은 한글**이다. 제목·설명 문장은 한글로 쓰고, 코드명·API·로그 문구는 영어 그대로 둬도 된다.
 
-공개 패키지 등에서 영어 커밋이 필요하면 프로젝트 `AGENTS.md`에서 언어를 override하세요.
+공개 패키지 등에서 영어 커밋이 필요하면 프로젝트 `AGENTS.md`에서 언어를 override한다.
 
-- **무엇을/왜**가 한 줄로 드러나게 쓰세요.
-- 명령형·간결한 서술형 모두 허용해요. 예: `…을 추가`, `…을 수정`, `…을 단축`
-- 문장 끝에 마침표를 붙이지 마세요.
-- 제목에 `v0.1.30:` 같은 **버전 접두어는 쓰지 마세요.** 버전은 패치노트·본문·태그·릴리스 산출물로 표현하세요.
+- **무엇을/왜**가 한 줄로 드러나게 쓴다.
+- 명령형·간결한 서술형 모두 허용한다. 예: `…을 추가`, `…을 수정`, `…을 단축`
+- 문장 끝에 마침표를 붙이지 않는다.
+- 제목에 `v0.1.30:` 같은 **버전 접두어는 쓰지 않는다.** 버전은 패치노트·본문·태그·릴리스 산출물로 표현한다.
 
-과거 영어(또는 다른 언어) 커밋은 그대로 둡니다. **이 규칙을 쓴 뒤부터** 위 형식을 따르세요.
+과거 영어(또는 다른 언어) 커밋은 그대로 둔다. **이 규칙을 쓴 뒤부터** 위 형식을 따른다.
 
 ---
 
 ## 본문 · Footer
 
-매 커밋에 본문을 씁니다. 제목이 **무엇**이면, 본문은 **왜**예요.
+매 커밋에 본문을 쓴다. 제목이 **무엇**이면, 본문은 **왜**이다.
 
-- **why** 중심 (파일 나열·diff 요약은 피해요)
-- 최소 1문장. 제목과 같은 문장을 반복하지 마세요
-- 빈 줄로 제목과 본문을 구분해요
-- Breaking change가 있으면 본문 또는 footer에 `BREAKING CHANGE:`로 명시해요
+- **why** 중심 (파일 나열·diff 요약은 피한다)
+- 최소 1문장. 제목과 같은 문장을 반복하지 않는다
+- 빈 줄로 제목과 본문을 구분한다
+- Breaking change가 있으면 본문 또는 footer에 `BREAKING CHANGE:`로 명시한다
 - 이슈 닫기는 footer 예: `Closes #12`
 
 ---
@@ -137,7 +137,7 @@ refactor(save): 백업 경로 조합을 한 헬퍼로 모음
 
 ## Kit에 두지 않는 것
 
-아래는 **이 Kit 정본에 넣지 마세요.** 타이틀·패키지마다 달라요.
+아래는 **이 Kit 정본에 넣지 않는다.** 타이틀·패키지마다 다르다.
 
 | 두지 않음 | 이유 |
 |-----------|------|
@@ -150,7 +150,7 @@ refactor(save): 백업 경로 조합을 한 헬퍼로 모음
 
 ## 프로젝트에 둘 것
 
-각 소비 repo의 `AGENTS.md`(또는 타이틀 docs)에 적어 두세요. 템플릿: [`templates/AGENTS.game.md`](../../templates/AGENTS.game.md) · [`templates/AGENTS.personal.md`](../../templates/AGENTS.personal.md)
+각 소비 repo의 `AGENTS.md`(또는 타이틀 docs)에 적어 두한다. 템플릿: [`templates/AGENTS.game.md`](../../templates/AGENTS.game.md) · [`templates/AGENTS.personal.md`](../../templates/AGENTS.personal.md)
 
 ```text
 ## 커밋 (이 repo)
@@ -162,14 +162,14 @@ refactor(save): 백업 경로 조합을 한 헬퍼로 모음
 (선택) 패치노트·버전 표기 경로: <docs/…>
 ```
 
-에이전트·사람은 **형식·type·작성법**은 Kit를, **scope·언어·패치노트**는 이 표만 보면 돼요.
+에이전트·사람은 **형식·type·작성법**은 Kit를, **scope·언어·패치노트**는 이 표만 보면 된다.
 
 ---
 
 ## 강제 도구
 
-commitlint 등 강제 도구는 Kit에 두지 않아요. 규칙 위반이 잦아지면 **그 프로젝트**에서 검토하세요.  
-넣을 때 scope enum 강제는 비추천이에요 (생략·확장이 잦음).
+commitlint 등 강제 도구는 Kit에 두지 않는다. 규칙 위반이 잦아지면 **그 프로젝트**에서 검토한다.  
+넣을 때 scope enum 강제는 비추천이다 (생략·확장이 잦음).
 
 ---
 

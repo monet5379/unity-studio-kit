@@ -5,7 +5,7 @@ alwaysApply: false
 
 # Agent Scope (game overlay)
 
-`profile: game`일 때. common [`agent-scope.mdc`](../common/agent-scope.mdc) 위에 얹어요.  
+`profile: game`일 때. common [`agent-scope.mdc`](../common/agent-scope.mdc) 위에 얹다.  
 정본: [`docs/game/ProjectSeparation.md`](../../../docs/game/ProjectSeparation.md)
 
 ## Out of Scope (추가)

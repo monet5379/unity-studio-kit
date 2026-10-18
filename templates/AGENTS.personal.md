@@ -4,7 +4,7 @@
 profile: personal
 ```
 
-공개 패키지·실험용이에요. Cursor는 **이 repo + unity-studio-kit** 멀티 루트로 여세요.
+공개 패키지·실험용이다. Cursor는 **이 repo + unity-studio-kit** 멀티 루트로 여한다.
 
 | Kit | 경로 |
 |-----|------|
@@ -45,7 +45,7 @@ profile: personal
 
 ### 커밋 (이 repo)
 
-Kit [CommitMessages](../docs/common/CommitMessages.md)를 따르고, 아래만 이 repo에서 정해요.
+Kit [CommitMessages](../docs/common/CommitMessages.md)를 따르고, 아래만 이 repo에서 정한다.
 
 | 항목 | 값 |
 |------|-----|

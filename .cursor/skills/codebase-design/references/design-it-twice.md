@@ -4,7 +4,7 @@
 
 어휘는 [SKILL.md](../SKILL.md). 의존 분류는 [deepening.md](deepening.md).
 
-이 절차는 **코드 수정 없음.** `profile: game`이면 Design 단계(Architecture · Plan)에 해당해요.
+이 절차는 **코드 수정 없음.** `profile: game`이면 Design 단계(Architecture · Plan)에 해당한다.
 
 ## 절차
 
@@ -22,7 +22,7 @@
 
 Cursor **Task** `generalPurpose`를 **3개 이상** 동시에. 각자 **전혀 다른** interface.
 
-공통 브리프: 파일 경로, 결합, deepening 분류, 시임 뒤에 둘 것. [SKILL.md](../SKILL.md) 어휘 + 프로젝트 도메인 이름(`Architecture_*` / `AGENTS.md` / README). `CONTEXT.md`를 만들지 않아요.
+공통 브리프: 파일 경로, 결합, deepening 분류, 시임 뒤에 둘 것. [SKILL.md](../SKILL.md) 어휘 + 프로젝트 도메인 이름(`Architecture_*` / `AGENTS.md` / README). `CONTEXT.md`를 만들지 않는다.
 
 제약만 다르게:
 
@@ -41,8 +41,8 @@ Cursor **Task** `generalPurpose`를 **3개 이상** 동시에. 각자 **전혀 �
 
 ### 3. 제시하고 비교
 
-안을 하나씩 보여 준 뒤 산문으로 비교해요. **depth**(interface leverage), **locality**(변경이 모이는 곳), **seam 위치**(Architecture Boundaries)로 대비.
+안을 하나씩 보여 준 뒤 산문으로 비교한다. **depth**(interface leverage), **locality**(변경이 모이는 곳), **seam 위치**(Architecture Boundaries)로 대비.
 
-비교 후 **한 안을 추천**해요. 다른 안의 조각이 맞으면 하이브리드를 제안하되, 메뉴만 나열하지 않아요.
+비교 후 **한 안을 추천**한다. 다른 안의 조각이 맞으면 하이브리드를 제안하되, 메뉴만 나열하지 않는다.
 
 도메인 이름은 기존 Architecture / AGENTS / README에서만 가져와요. 새 용어가 필요하면 game은 Architecture 갱신을 **제안**하고, personal은 README Invariants만.

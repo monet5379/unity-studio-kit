@@ -9,8 +9,8 @@ description: >-
 
 # Unity Build Pipeline
 
-Unity 6 LTS 플레이어 빌드를 설정·스크립트·자동화해요. 씬 목록, 플랫폼 타깃,
-스크립팅 백엔드, stripping, headless/CI를 다뤄요. API는 **Unity 6 (6000.x)** 기준이에요.
+Unity 6 LTS 플레이어 빌드를 설정·스크립트·자동화한다. 씬 목록, 플랫폼 타깃,
+스크립팅 백엔드, stripping, headless/CI를 다뤄요. API는 **Unity 6 (6000.x)** 기준이다.
 타이틀이 pin한 에디터 버전이 있으면 그쪽을 따릅니다.
 
 ## 사용할 때
@@ -31,8 +31,8 @@ Unity 6 LTS 플레이어 빌드를 설정·스크립트·자동화해요. 씬 �
 
 워크스페이스에 `AGENTS.md`·Architecture·기존 Editor 빌드 스크립트가 있으면:
 
-- Unity 프로젝트 루트, 씬 경로, Addressables 프로필, 타깃 플랫폼(예: Switch → Win64 proxy)은 **프로젝트가 이깁니다**
-- 이 스킬은 **범용 빌드 패턴**만 제공해요. 샘플 씬/`MyGameRuntime` 이름을 도메인 확인 없이 복사하지 마세요
+- Unity 프로젝트 루트, 씬 경로, Addressables 프로필, 타깃 플랫폼(예: Switch → Win64 proxy)은 **프로젝트가 이긴다**
+- 이 스킬은 **범용 빌드 패턴**만 제공한다. 샘플 씬/`MyGameRuntime` 이름을 도메인 확인 없이 복사하지 않는다
 
 ## 핵심 워크플로
 
@@ -123,4 +123,4 @@ Unity -batchmode -quit -nographics \
 
 ## 출처
 
-[gamedev-skills/awesome-gamedev-agent-skills — unity-build-pipeline](https://github.com/gamedev-skills/awesome-gamedev-agent-skills/tree/main/skills/unity/unity-build-pipeline) (Apache-2.0, Copyright © 2026 Abhishek Barali and contributors)에서 각색했어요. Kit 변경·고지: 저장소 [`NOTICE`](../../../NOTICE).
+[gamedev-skills/awesome-gamedev-agent-skills — unity-build-pipeline](https://github.com/gamedev-skills/awesome-gamedev-agent-skills/tree/main/skills/unity/unity-build-pipeline) (Apache-2.0, Copyright © 2026 Abhishek Barali and contributors)에서 각색했다. Kit 변경·고지: 저장소 [`NOTICE`](../../../NOTICE).

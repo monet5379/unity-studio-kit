@@ -13,7 +13,7 @@ alwaysApply: false
 
 `profile: personal`이고 Demo·F1 오버레이를 만지거나 추가할 때.
 
-`Assets/Demo/`에서는 이 규칙이 [`dev-imgui.mdc`](../common/dev-imgui.mdc)보다 우선합니다.
+`Assets/Demo/`에서는 이 규칙이 [`dev-imgui.mdc`](../common/dev-imgui.mdc)보다 우선한다.
 
 ## Must
 

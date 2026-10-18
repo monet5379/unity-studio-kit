@@ -8,7 +8,7 @@ description: >-
 
 # Unity ECS Patterns
 
-Unity DOTS(Data-Oriented Technology Stack) — Entity Component System, Job System, Burst Compiler 생산 패턴이에요.
+Unity DOTS(Data-Oriented Technology Stack) — Entity Component System, Job System, Burst Compiler 생산 패턴이다.
 
 ## 사용할 때
 
@@ -29,8 +29,8 @@ Unity DOTS(Data-Oriented Technology Stack) — Entity Component System, Job Syst
 
 워크스페이스에 **Architecture_*** 문서나 `AGENTS.md` ECS override가 있으면:
 
-- hybrid 경계, system group, subscene, Entities package pin은 **프로젝트 Architecture가 이깁니다**
-- 이 skill은 **범용 DOTS 패턴**만 제공해요. 샘플 타입명(`EnemyTag`, `GameConfig` 등)을 도메인 문서 없이 그대로 복사하지 마세요
+- hybrid 경계, system group, subscene, Entities package pin은 **프로젝트 Architecture가 이긴다**
+- 이 skill은 **범용 DOTS 패턴**만 제공한다. 샘플 타입명(`EnemyTag`, `GameConfig` 등)을 도메인 문서 없이 그대로 복사하지 않는다
 
 ## 핵심 개념
 
@@ -80,7 +80,7 @@ Pattern 1(component) ~ Pattern 8(Native collection)과 performance tips:
 
 → [references/details.md](references/details.md)
 
-ECS 코드를 구현·리뷰할 때 위 파일을 읽어요. 이 파일만으로는 코드 생성에 부족합니다.
+ECS 코드를 구현·리뷰할 때 위 파일을 읽는다. 이 파일만으로는 코드 생성에 부족한다.
 
 ## 검증
 
@@ -93,4 +93,4 @@ ECS 변경 후:
 
 ## 출처
 
-[wshobson/agents — unity-ecs-patterns](https://github.com/wshobson/agents/tree/main/plugins/game-development/skills/unity-ecs-patterns) (MIT, Copyright © 2024 Seth Hobson)에서 각색했어요. Kit 변경·고지: 저장소 [`NOTICE`](../../../NOTICE).
+[wshobson/agents — unity-ecs-patterns](https://github.com/wshobson/agents/tree/main/plugins/game-development/skills/unity-ecs-patterns) (MIT, Copyright © 2024 Seth Hobson)에서 각색했다. Kit 변경·고지: 저장소 [`NOTICE`](../../../NOTICE).

@@ -4,7 +4,7 @@
 profile: game
 ```
 
-출시·팀 타이틀용이에요. Cursor는 **이 repo + unity-studio-kit** 멀티 루트로 여세요.
+출시·팀 타이틀용이다. Cursor는 **이 repo + unity-studio-kit** 멀티 루트로 여한다.
 
 | Kit | 경로 |
 |-----|------|
@@ -12,7 +12,7 @@ profile: game
 | 글쓰기 | `unity-studio-kit/docs/common/WritingGuide.md` |
 | 프로필 | `unity-studio-kit/docs/game/` · `.cursor/rules/game/` |
 
-타이틀 전용 규칙·경로는 **이 파일**과 (있으면) `.cursor/rules/<title>/`에만 둬요. Kit를 수정하지 마세요.
+타이틀 전용 규칙·경로는 **이 파일**과 (있으면) `.cursor/rules/<title>/`에만 둔다. Kit를 수정하지 않는다.
 
 ## 프로젝트 개요
 
@@ -42,8 +42,8 @@ Kit Assets·문서 관례: `unity-studio-kit/docs/game/AssetsLayout.md` · `Docu
 
 ### 프로세스 · 문서
 
-- 진행·닫기: `unity-studio-kit/docs/game/DevelopmentProcess.md`. 스킬이 있으면 그 체인으로 진행하고, 없으면 같은 닫기 조건을 대화로 수행해요.
-- 산출물은 규모에 비례해요. 작은 수정은 대화 한 줄로 Define해요. Plan·Architecture는 구조가 바뀔 때만 갱신해요.
+- 진행·닫기: `unity-studio-kit/docs/game/DevelopmentProcess.md`. 스킬이 있으면 그 체인으로 진행하고, 없으면 같은 닫기 조건을 대화로 수행한다.
+- 산출물은 규모에 비례한다. 작은 수정은 대화 한 줄로 Define한다. Plan·Architecture는 구조가 바뀔 때만 갱신한다.
 - 글쓰기 WritingGuide · 형식 Documentation(Architecture 골격·ADR·설계 정본).
 - 구조·계약 변경 시 해당 Architecture · 설계 정본 · (크면) Plan. Optimization은 추적 필요할 때만. 티켓 Record는 바뀐 페이지만.
 - 스모크·QA **제안·실행**은 사용자 요청 전 금지. behavioral SC는 코드 리뷰만으로 pass 금지.
@@ -76,7 +76,7 @@ Kit Assets·문서 관례: `unity-studio-kit/docs/game/AssetsLayout.md` · `Docu
 
 ### 커밋 (이 repo)
 
-Kit [CommitMessages](../docs/common/CommitMessages.md)를 따르고, 아래만 이 repo에서 정해요.
+Kit [CommitMessages](../docs/common/CommitMessages.md)를 따르고, 아래만 이 repo에서 정한다.
 
 | 항목 | 값 |
 |------|-----|

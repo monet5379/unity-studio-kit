@@ -1,13 +1,13 @@
 # 개발 프로세스 (game)
 
-game 작업에서 어떻게 진행하고, 언제 닫는지예요. 스킬이 있으면 그 체인으로 진행하고, Define·Design·DoD·Build·Verify·Record·Recovery는 닫기 어휘예요. 산출물 무게는 규모에 비례해요.
+game 작업에서 어떻게 진행하고, 언제 닫는지이다. 스킬이 있으면 그 체인으로 진행하고, Define·Design·DoD·Build·Verify·Record·Recovery는 닫기 어휘이다. 산출물 무게는 규모에 비례한다.
 
 Cursor: [`development-process.mdc`](../../.cursor/rules/game/development-process.mdc) · [`verification-qa-defaults.mdc`](../../.cursor/rules/game/verification-qa-defaults.mdc)  
 관련: [Documentation.md](Documentation.md) · [AgentWorkflow](../common/AgentWorkflow.md)
 
 ## 진행
 
-`.agents/skills/`가 있으면 그 스킬로 진행해요. 고를 때는 타이틀 `.agents/skills/`의 `ask-matt`를 보세요. 스킬 폴더가 없으면 같은 닫기 조건을 대화로 수행해요.
+`.agents/skills/`가 있으면 그 스킬로 진행한다. 고를 때는 타이틀 `.agents/skills/`의 `ask-matt`를 본다. 스킬 폴더가 없으면 같은 닫기 조건을 대화로 수행한다.
 
 | 상황 | 스킬 |
 |------|------|
@@ -17,17 +17,17 @@ Cursor: [`development-process.mdc`](../../.cursor/rules/game/development-process
 | 버그·회귀 | `/diagnosing-bugs` |
 | 구현을 닫기 직전 | `/code-review` |
 
-`/grill-with-docs`부터 `/to-tickets`까지는 한 컨텍스트에서 이어 가세요. 티켓으로 나눈 뒤의 `/implement`만 티켓마다 새 컨텍스트에서 시작하세요. 리팩터는 `/tdd` 루프 밖이고, `/code-review`에서 봐요.
+`/grill-with-docs`부터 `/to-tickets`까지는 한 컨텍스트에서 이어 간다. 티켓으로 나눈 뒤의 `/implement`만 티켓마다 새 컨텍스트에서 시작한다. 리팩터는 `/tdd` 루프 밖이고, `/code-review`에서 본다.
 
-`/implement`는 `/tdd`로 합의된 seam을 한 조각씩 만들고, `/code-review`(Standards · Spec)로 닫아요. 커밋은 타이틀 `AGENTS.md`를 따라요.
+`/implement`는 `/tdd`로 합의된 seam을 한 조각씩 만들고, `/code-review`(Standards · Spec)로 닫는다. 커밋은 타이틀 `AGENTS.md`를 따른다.
 
-common **ponytail**은 Build 스타일(최소 diff)이에요.
+common **ponytail**은 Build 스타일(최소 diff)이다.
 
-스펙·티켓 경로와 스킬 우선순위는 아래를 따르고, 타이틀 `AGENTS.md`가 경로를 override해요.
+스펙·티켓 경로와 스킬 우선순위는 아래를 따르고, 타이틀 `AGENTS.md`가 경로를 override한다.
 
 ## 스킬·규칙 우선순위
 
-멀티 루트(타이틀 + 이 Kit)에서 이름이 겹치면 아래 순서예요. 위가 이겨요.
+멀티 루트(타이틀 + 이 Kit)에서 이름이 겹치면 아래 순서이다. 위가 이긴다.
 
 1. 타이틀 `AGENTS.md` override
 2. 타이틀이 명시한 오버레이 (예: `docs/plan/tickets/README.md`)
@@ -35,11 +35,11 @@ common **ponytail**은 Build 스타일(최소 diff)이에요.
 4. 이 Kit `docs/game/` · `.cursor/rules/game/`
 5. 이 Kit `docs/common/`
 
-같은 이름 스킬이 Kit와 `.agents/skills/`에 둘 다 있으면 **타이틀 `.agents/skills/`** 를 써요. Kit 본문은 타이틀 repo에서 수정하지 않아요. 오버레이는 Kit 규칙을 지우는 게 아니라, Record 범위처럼 **더 구체적인 제약**을 더하는 거예요.
+같은 이름 스킬이 Kit와 `.agents/skills/`에 둘 다 있으면 **타이틀 `.agents/skills/`** 를 쓴다. Kit 본문은 타이틀 repo에서 수정하지 않는다. 오버레이는 Kit 규칙을 지우는 게 아니라, Record 범위처럼 **더 구체적인 제약**을 더하는 것이다.
 
 ## Issue tracker
 
-GitHub Issues는 필수가 아니에요. 사용자가 명시하기 전에는 `gh issue create`로 스펙을 올리지 않아요.
+GitHub Issues는 필수가 아니다. 사용자가 명시하기 전에는 `gh issue create`로 스펙을 올리지 않는다.
 
 | 모드 | 경로 | 적합한 때 |
 |------|------|-----------|
@@ -56,17 +56,17 @@ docs/plan/tickets/<feature-slug>/
 ```
 
 - 기능당 디렉터리 하나. 티켓은 파일 하나 (합본 금지).
-- 번호는 `01`부터. `Blocked by: NN`으로 의존을 적어요.
-- `00`은 사람 선행만. 뒤 티켓을 막지 않아요.
+- 번호는 `01`부터. `Blocked by: NN`으로 의존을 적는다.
+- `00`은 사람 선행만. 뒤 티켓을 막지 않는다.
 - triage는 티켓 상단 `Status:` ([템플릿](../../templates/docs/agents/triage-labels.md)).
 - 대화·Play 결과는 `## Comments`.
-- `plan/Schedule.md` · `schedule/`은 macro(목표·완료 기준), `tickets/`는 `/implement` 단위예요.
+- `plan/Schedule.md` · `schedule/`은 macro(목표·완료 기준), `tickets/`는 `/implement` 단위이다.
 
 뼈대: [`templates/docs/agents/issue-tracker.md`](../../templates/docs/agents/issue-tracker.md) · [`templates/docs/plan/tickets/README.md`](../../templates/docs/plan/tickets/README.md)
 
 ## 티켓 운영
 
-스펙을 새로 쓸지, 티켓 Comments만 쓸지, 문서를 어디까지 고칠지예요.
+스펙을 새로 쓸지, 티켓 Comments만 쓸지, 문서를 어디까지 고칠지이다.
 
 | 상황 | 한다 | 하지 않는다 |
 |------|------|-------------|
@@ -79,11 +79,11 @@ docs/plan/tickets/<feature-slug>/
 | 다음 티켓 | 현 티켓의 behavioral 완료 기준이 닫힌 뒤 | 코드 WIP·Play 미검증으로 넘기기 |
 | 하루·스프린트 끝 | 계약이 바뀐 페이지만 write-back | Architecture 일괄 재작성 |
 
-behavioral seam(어떤 씬 Play인지)은 타이틀 `AGENTS.md`에 적어요. 새 유닛 테스트 seam은 합의 없이 열지 않아요. 계약이 바뀌면 설계 정본(GDD `locked` 또는 Technical Design)과 해당 Architecture, 필요하면 ADR을 갱신해요.
+behavioral seam(어떤 씬 Play인지)은 타이틀 `AGENTS.md`에 적는다. 새 유닛 테스트 seam은 합의 없이 열지 않는다. 계약이 바뀌면 설계 정본(GDD `locked` 또는 Technical Design)과 해당 Architecture, 필요하면 ADR을 갱신한다.
 
 ## 닫기
 
-작은 수정은 대화 한 줄로 Define해요. Plan과 Architecture는 구조가 바뀔 때만 갱신해요. Plan 파일은 범위가 클 때만 만들어요. 스펙의 Problem·Stories·In/Out이 Define이에요.
+작은 수정은 대화 한 줄로 Define한다. Plan과 Architecture는 구조가 바뀔 때만 갱신한다. Plan 파일은 범위가 클 때만 만든다. 스펙의 Problem·Stories·In/Out이 Define이다.
 
 | 닫힘 | 조건 |
 |------|------|
@@ -97,29 +97,29 @@ behavioral seam(어떤 씬 Play인지)은 타이틀 `AGENTS.md`에 적어요. �
 | 유형 | 대조 |
 |------|------|
 | **static** | 코드·문서·asmdef 리뷰 |
-| **behavioral** | Plan「확인」·런타임. 코드 리뷰만으로 pass하지 않아요 |
+| **behavioral** | Plan「확인」·런타임. 코드 리뷰만으로 pass하지 않는다 |
 
-- Verify(대조)는 그 작업의 Success Criteria가 있으면 해요.
-- 스모크·QA 러너·「테스트해보세요」제안·실행은 사용자 명시 요청 전 금지예요.
-- Build 중 asmdef 컴파일 등 최소 기술 확인은 해요.
+- Verify(대조)는 그 작업의 Success Criteria가 있으면 한다.
+- 스모크·QA 러너·「테스트해 보라」제안·실행은 사용자 명시 요청 전 금지다.
+- Build 중 asmdef 컴파일 등 최소 기술 확인은 한다.
 
 ## Recovery
 
-실패하면 재시도 전에 아래 표에서 처음 해당하는 질문을 고르세요.
+실패하면 재시도 전에 아래 표에서 처음 해당하는 질문을 고른다.
 
 | 질문 | 분류 | 돌아갈 곳 |
 |------|------|-----------|
-| 도메인·엔진 제약을 빠뜨렸나요? | 컨텍스트 | Architecture Gotchas. 규칙은 1~3줄 |
-| 범위가 벗어났나요? | 방향 | `/grill-with-docs`. 스킬이 없으면 Define을 다시 고정. 필요하면 revert |
-| 폴더를 어겼나요? | 구조 | Architecture·Plan을 다시 맞춘 뒤 재배치 |
+| 도메인·엔진 제약을 빠뜨렸는가? | 컨텍스트 | Architecture Gotchas. 규칙은 1~3줄 |
+| 범위가 벗어났는가? | 방향 | `/grill-with-docs`. 스킬이 없으면 Define을 다시 고정. 필요하면 revert |
+| 폴더를 어겼는가? | 구조 | Architecture·Plan을 다시 맞춘 뒤 재배치 |
 
-별도 로그 파일은 두지 않아요. 컨텍스트·방향·구조만 Record에 한 줄 남겨요. 구현 버그는 `/diagnosing-bugs`로 고치고, 스킬이 없으면 Build에서 고쳐요.
+별도 로그 파일은 두지 않는다. 컨텍스트·방향·구조만 Record에 한 줄 남긴다. 구현 버그는 `/diagnosing-bugs`로 고치고, 스킬이 없으면 Build에서 고친다.
 
 Record 한 줄 형식: `Recovery: 컨텍스트 — 원인: … — 조치: …`
 
 ## 닫기 어휘
 
-이름은 닫기 체크리스트예요. 실행은 위 진행이에요.
+이름은 닫기 체크리스트이다. 실행은 위 진행이다.
 
 | 어휘 | 스킬 | 닫힘 |
 |------|------|------|

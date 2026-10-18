@@ -1,16 +1,16 @@
 # 문서 정책 (game)
 
-타이틀에서 어떤 문서를 만들고, Architecture와 Optimization을 어떻게 나눌지 정합니다. Kit 글쓰기 공통 규칙은 [WritingGuide](../common/WritingGuide.md), personal의 README 최소 규칙은 [DocsLite](../personal/DocsLite.md)입니다.
+타이틀에서 어떤 문서를 만들고, Architecture와 Optimization을 어떻게 나눌지 정한다. Kit 글쓰기 공통 규칙은 [WritingGuide](../common/WritingGuide.md), personal의 README 최소 규칙은 [DocsLite](../personal/DocsLite.md)이다.
 
-**왜 나누는가:** 현재 구조(Architecture)와 변경 이력·회귀(Optimization)를 한 파일에 섞으면, “지금 코드가 어떤지”와 “언제 왜 바뀌었는지”가 흐려집니다. Plan archive는 스프린트 이관용이라 기능 Changelog를 대체하지 않습니다.
+**왜 나누는가:** 현재 구조(Architecture)와 변경 이력·회귀(Optimization)를 한 파일에 섞으면, “지금 코드가 어떤지”와 “언제 왜 바뀌었는지”가 흐려집니다. Plan archive는 스프린트 이관용이라 기능 Changelog를 대체하지 않는다.
 
-이 문서는 **글쓰기·기능 문서 형식**의 정본입니다. 별도 프레임워크 process 문서(Assets·Namespace 등)를 쓰는 타이틀은 그쪽 문서를 **추가** 정본으로 둘 수 있습니다. 형식·2분류·골격은 여기(Kit)를 우선합니다.
+이 문서는 **글쓰기·기능 문서 형식**의 정본이다. 별도 프레임워크 process 문서(Assets·Namespace 등)를 쓰는 타이틀은 그쪽 문서를 **추가** 정본으로 둘 수 있다. 형식·2분류·골격은 여기(Kit)를 우선한다.
 
-Cursor: [`documentation.mdc`](../../.cursor/rules/game/documentation.mdc). 규칙 본문은 이 문서에만 둡니다. `.mdc`와 타이틀 `AGENTS.md`에는 요약 한 줄과 링크, 타이틀 전용 경로만 둡니다.
+Cursor: [`documentation.mdc`](../../.cursor/rules/game/documentation.mdc). 규칙 본문은 이 문서에만 둔다. `.mdc`와 타이틀 `AGENTS.md`에는 요약 한 줄과 링크, 타이틀 전용 경로만 둔다.
 
 ## 에이전트 위키 계약
 
-타이틀 `docs/`는 **위키처럼** 쓰되, 통째로 컨텍스트에 넣지 않습니다. 타이틀 지식은 **그 타이틀 repo**에만 두고, 이 Kit에 쌓지 않습니다.
+타이틀 `docs/`는 **위키처럼** 쓰되, 통째로 컨텍스트에 넣지 않는다. 타이틀 지식은 **그 타이틀 repo**에만 두고, 이 Kit에 쌓지 않는다.
 
 | | 규칙 |
 |--|------|
@@ -19,9 +19,9 @@ Cursor: [`documentation.mdc`](../../.cursor/rules/game/documentation.mdc). 규�
 | **쓰지 말 때** | 회의·면접 로그 통째 붙여넣기, enum/API 전체 복사, Notion/채팅 덤프 |
 | **컨텍스트** | `docs/` 전체를 alwaysApply 하지 않음. 진입은 허브·`AGENTS.md` |
 
-**불일치:** 코드와 문서가 다르면 **코드가 이깁니다**. 문서를 맞추거나 “현재 구현은 계약을 충족하지 않음”을 Architecture에 명시합니다.
+**불일치:** 코드와 문서가 다르면 **코드가 이긴다**. 문서를 맞추거나 “현재 구현은 계약을 충족하지 않음”을 Architecture에 명시한다.
 
-Write-back(Verify/Record·Investigation 이관)은 [DevelopmentProcess](DevelopmentProcess.md) Record를 따르고, 경로·목차는 타이틀 `docs/**/README.md` · `AGENTS.md`가 정본입니다.
+Write-back(Verify/Record·Investigation 이관)은 [DevelopmentProcess](DevelopmentProcess.md) Record를 따르고, 경로·목차는 타이틀 `docs/**/README.md` · `AGENTS.md`가 정본이다.
 
 ## 문서 종류
 
@@ -40,13 +40,13 @@ Write-back(Verify/Record·Investigation 이관)은 [DevelopmentProcess](Developm
 | notes / interview | `docs/**/notes/` · `interview/` | **실행 정본 아님** · [WritingGuide](../common/WritingGuide.md) 톤 예외 |
 | Process | 이 Kit `docs/game/` · common | Assets · Separation · 개발 프로세스 |
 
-경로 prefix(`docs/` vs `Docs/`)와 타이틀 하위 폴더(`project/`, `<title>/` 등)는 타이틀이 정합니다.
+경로 prefix(`docs/` vs `Docs/`)와 타이틀 하위 폴더(`project/`, `<title>/` 등)는 타이틀이 정한다.
 
-Refactoring 문서는 `architecture/`에 두지 않습니다. `Architecture_*` 접두사를 쓰면 위키 계약의 “해당 `Architecture_*`만 읽기”에 걸려 진행 중 설계가 현재 구조로 읽힙니다. 리팩터가 끝나면 결과를 `Architecture_<Feature>.md`에 반영하고, Refactoring 문서는 Plan과 같은 방식으로 archive하거나 삭제합니다.
+Refactoring 문서는 `architecture/`에 두지 않는다. `Architecture_*` 접두사를 쓰면 위키 계약의 “해당 `Architecture_*`만 읽기”에 걸려 진행 중 설계가 현재 구조로 읽힌다. 리팩터가 끝나면 결과를 `Architecture_<Feature>.md`에 반영하고, Refactoring 문서는 Plan과 같은 방식으로 archive하거나 삭제한다.
 
 ### 어디에 쓸지 (결정 트리)
 
-조사·결정·현재 구조를 한 파일에 섞지 않습니다.
+조사·결정·현재 구조를 한 파일에 섞지 않는다.
 
 ```text
 지금 당장 원인을 찾는 중인가?
@@ -70,21 +70,21 @@ Refactoring 문서는 `architecture/`에 두지 않습니다. `Architecture_*` �
 
 ## 씬·프리팹과 Editor
 
-씬·프리팹·UI·`[SerializeField]` 배선의 정본과 Setup 스크립트 금지는 [UnityBasics](../common/UnityBasics.md)입니다. game에서 Validator를 두면 **읽기만** 하고, 누락은 실패 메시지로 안내합니다. 검증 메뉴·클래스 이름은 타이틀 `Architecture_*`에 적고, 이 Kit에 복사하지 않습니다.
+씬·프리팹·UI·`[SerializeField]` 배선의 정본과 Setup 스크립트 금지는 [UnityBasics](../common/UnityBasics.md)이다. game에서 Validator를 두면 **읽기만** 하고, 누락은 실패 메시지로 안내한다. 검증 메뉴·클래스 이름은 타이틀 `Architecture_*`에 적고, 이 Kit에 복사하지 않는다.
 
 ## 결정 기록 라우팅
 
-ADR 규칙은 이 절에만 둡니다. Kit 기본은 **Architecture**와 타이틀 설계 문서(`ClassStructure`, GDD 등)로 결정을 남깁니다.
+ADR 규칙은 이 절에만 둔다. Kit 기본은 **Architecture**와 타이틀 설계 문서(`ClassStructure`, GDD 등)로 결정을 남깁니다.
 
 | 질문 | Architecture (Kit 기본) | ADR (`docs/adr/`, 타이틀 옵션) |
 |------|-------------------------|--------------------------------|
 | 무엇을 담나 | **지금** 구조·경계·불변조건 | **왜** 이 선택을 했는지 |
 | 언제 쓰나 | 구현·경계가 바뀔 때 | 되돌리기 어렵고, 맥락 없으면 놀랍고, 대안이 있었을 때 |
 
-- `docs/adr/`와 `CONTEXT.md`는 Kit가 만들지 않습니다. 타이틀에 domain-modeling 스킬(`.agents/skills/`)이 있을 때만 타이틀 repo에 lazy로 생기고, 폴더는 첫 ADR 때 만듭니다.
-- 타이틀에 `docs/adr/` · `CONTEXT.md`가 있으면 작업 전 해당 영역 ADR을 읽습니다. 작성·형식은 타이틀 `docs/agents/domain.md`와 `.agents/skills/domain-modeling/`(`ADR-FORMAT`)을 따릅니다.
-- ADR은 짧아도 됩니다. 한 단락으로 “무엇을, 왜”만 적어도 충분합니다.
-- Investigation은 아직 열린 질문, ADR은 이미 닫힌 결정입니다.
+- `docs/adr/`와 `CONTEXT.md`는 Kit가 만들지 않는다. 타이틀에 domain-modeling 스킬(`.agents/skills/`)이 있을 때만 타이틀 repo에 lazy로 생기고, 폴더는 첫 ADR 때 만든다.
+- 타이틀에 `docs/adr/` · `CONTEXT.md`가 있으면 작업 전 해당 영역 ADR을 읽는다. 작성·형식은 타이틀 `docs/agents/domain.md`와 `.agents/skills/domain-modeling/`(`ADR-FORMAT`)을 따릅니다.
+- ADR은 짧아도 된다. 한 단락으로 “무엇을, 왜”만 적어도 충분한다.
+- Investigation은 아직 열린 질문, ADR은 이미 닫힌 결정이다.
 - ADR이 없는 타이틀은 구조적 거절·주의를 Architecture **불변조건과 주의점**에 한 줄로 남깁니다.
 
 ## 기능 문서 2분류
@@ -94,39 +94,39 @@ ADR 규칙은 이 절에만 둡니다. Kit 기본은 **Architecture**와 타이�
 | **Architecture** | 구조·경계·흐름·불변조건·변경 가이드 — Phase·주차 이력 **넣지 않음** |
 | **Optimization** | Changelog(SSOT)·회귀·Go/No-go — 구조 전체 복사 **하지 않음** |
 
-- 단순·안정 기능은 Architecture만 둡니다 (Optimization 억지 생성 금지).
+- 단순·안정 기능은 Architecture만 둔다 (Optimization 억지 생성 금지).
 - 구조·계약 변경과 성능 변경의 갱신 순서는 [Optimization 운영](#optimization-운영)을 따릅니다.
 
 ## Architecture 작성 규약
 
-제목은 `# Architecture: <Feature>`로 맞춥니다.
+제목은 `# Architecture: <Feature>`로 맞춘다.
 
-**소제목**은 `## 한글 (English)` 형식입니다. Kit 영문 식별자는 괄호 안에 둡니다.  
-**목적 설명**은 각 `##` 골격 소제목 바로 아래에 **이탤릭 한 줄**로 적습니다. `### 포함 범위`/`### 제외 범위`에는 넣지 않습니다. 본문 lead·불릿과 구분하는 용도입니다.
+**소제목**은 `## 한글 (English)` 형식이다. Kit 영문 식별자는 괄호 안에 둔다.  
+**목적 설명**은 각 `##` 골격 소제목 바로 아래에 **이탤릭 한 줄**로 적는다. `### 포함 범위`/`### 제외 범위`에는 넣지 않는다. 본문 lead·불릿과 구분하는 용도이다.
 
-### 골격 (이 순서). 에디터 흐름과 관련 문서는 없으면 생략합니다.
+### 골격 (이 순서). 에디터 흐름과 관련 문서는 없으면 생략한다.
 
 ```markdown
 # Architecture: <Feature>
 
 ## 개요 (Overview)
 
-*이 기능이 **지금 무엇을 보장하는지** lead로 요약합니다. 형제 Architecture 링크도 여기에 둡니다.*
+*이 기능이 **지금 무엇을 보장하는지** lead로 요약한다. 형제 Architecture 링크도 여기에 둔다.*
 
 ## 책임과 경계 (Responsibilities & Boundaries)
 
-*이 문서가 **소유하는 범위**와 **다른 문서로 넘기는 것**을 구분합니다.*
+*이 문서가 **소유하는 범위**와 **다른 문서로 넘기는 것**을 구분한다.*
 
 ### 포함 범위 (In Scope)
 ### 제외 범위 (Out of Scope)
 
 ## 주요 타입과 관계 (Key Types & Relationships)
 
-*타입 트리·관계·역할 표로 구조를 설명합니다. API는 대표만 적고, enum 전수·코드 덤프는 넣지 않습니다.*
+*타입 트리·관계·역할 표로 구조를 설명한다. API는 대표만 적고, enum 전수·코드 덤프는 넣지 않는다.*
 
 ## 흐름 (Flow)
 
-*런타임·에디터에서 **어떤 순서로 동작하는지** 짧은 번호 단계로 적습니다.*
+*런타임·에디터에서 **어떤 순서로 동작하는지** 짧은 번호 단계로 적는다.*
 
 ### 런타임 흐름 (Runtime Flow)
 ### 에디터 흐름 (Editor Flow)
@@ -137,30 +137,30 @@ ADR 규칙은 이 절에만 둡니다. Kit 기본은 **Architecture**와 타이�
 
 ## 변경 가이드 (Change Guidelines)
 
-*이 기능을 수정할 때 **확인할 체크리스트**와 **주요 코드 경로**를 둡니다.*
+*이 기능을 수정할 때 **확인할 체크리스트**와 **주요 코드 경로**를 둔다.*
 
 ## 관련 문서 (See also)
 
-*같은 주제를 다루는 **다른 Architecture·Plan·Investigation** 링크입니다.*
+*같은 주제를 다루는 **다른 Architecture·Plan·Investigation** 링크이다.*
 ```
 
 - **개요 (Overview)** — lead에 “이 기능이 지금 무엇을 보장하는가”. 형제 Architecture 링크.
 - **책임과 경계 (Responsibilities & Boundaries)** — 소유 범위 / 다른 문서로 넘길 것. 클러스터면 경계 표 1개.
 - **주요 타입과 관계 (Key Types & Relationships)** — 트리·관계·타입|역할 표. API는 대표만. enum 전수·코드 덤프 금지.
-- **흐름 (Flow)** — 짧은 번호 단계. Editor 흐름이 없으면 `### 에디터 흐름 (Editor Flow)` 생략. 흐름이 여러 개면 `### 런타임 흐름 — <주제> (Runtime Flow)`처럼 한글 주제를 넣습니다.
+- **흐름 (Flow)** — 짧은 번호 단계. Editor 흐름이 없으면 `### 에디터 흐름 (Editor Flow)` 생략. 흐름이 여러 개면 `### 런타임 흐름 — <주제> (Runtime Flow)`처럼 한글 주제를 넣는다.
 - **불변조건과 주의점 (Invariants & Gotchas)** — 깨면 버그인 계약 / 자주 터지는 함정.
 - **변경 가이드 (Change Guidelines)** — 체크리스트 + 주요 코드 경로 표.
-- **관련 문서 (See also)** — 관련 `Architecture_*.md` 등. 없으면 생략합니다.
+- **관련 문서 (See also)** — 관련 `Architecture_*.md` 등. 없으면 생략한다.
 
 ### 작성·갱신
 
-- 구조·계약이 바뀐 섹션만 갱신합니다. 네이밍만 바뀌면 갱신하지 않습니다.
-- 불확실하면 「확인 필요」라고 적습니다.
-- 인접 기능 로직을 복사하지 않습니다 — 제외 범위 + 관련 문서(See also).
+- 구조·계약이 바뀐 섹션만 갱신한다. 네이밍만 바뀌면 갱신하지 않는다.
+- 불확실하면 「확인 필요」라고 적는다.
+- 인접 기능 로직을 복사하지 않는다 — 제외 범위 + 관련 문서(See also).
 - 본문은 **한국어**. 타입·경로·API·enum 식별자는 **영문 원문**.
-- 분량: 본편이 **250줄**을 넘으면 분할하거나 이력·측정을 Optimization으로 옮길지 검토합니다. 검토 신호이지 강제 상한은 아닙니다.
+- 분량: 본편이 **250줄**을 넘으면 분할하거나 이력·측정을 Optimization으로 옮길지 검토한다. 검토 신호이지 강제 상한은 아니다.
 - `last-verified` / 관련 asmdef 경로는 **선택** — 자주 어긋나는 페이지만.
-- 폴더 README 목차와 파일 목록이 어긋나면 **README를 갱신**합니다.
+- 폴더 README 목차와 파일 목록이 어긋나면 **README를 갱신**한다.
 
 ## Optimization 운영
 
@@ -179,28 +179,28 @@ ADR 규칙은 이 절에만 둡니다. Kit 기본은 **Architecture**와 타이�
 
 1. **구조·계약 변경** → Architecture 갱신 + (Optimization이 있으면) Changelog **맨 위**에 날짜 블록.
 2. **성능·캐시만** → Optimization Changelog + Architecture **해당 절**만 동기화.
-3. 「완료」·플랫폼 단정은 **측정·문서 상태**와 맞춥니다. 기기·스테이지·proxy 제약은 타이틀 AGENTS·optimization README에 적습니다.
+3. 「완료」·플랫폼 단정은 **측정·문서 상태**와 맞춘다. 기기·스테이지·proxy 제약은 타이틀 AGENTS·optimization README에 적는다.
 
 ## 설계 정본
 
-타이틀 `AGENTS.md`에 **설계 정본 경로**를 적습니다. GDD와 Technical Design 중 하나, 또는 둘 다 둘 수 있습니다. 본문은 타이틀 repo에만 둡니다.
+타이틀 `AGENTS.md`에 **설계 정본 경로**를 적는다. GDD와 Technical Design 중 하나, 또는 둘 다 둘 수 있다. 본문은 타이틀 repo에만 둔다.
 
 | 패턴 | 경로 예 | 적합한 때 |
 |------|---------|-----------|
 | GDD | `gdd/` + `locked` | 기획·밸런스·스토리가 계약 |
 | Technical Design | `design/ClassStructure.md` 등 | API·불변조건·클래스 구조가 계약 |
 
-파일 이름은 타이틀이 정합니다. `ClassStructure.md`는 예시입니다.
+파일 이름은 타이틀이 정한다. `ClassStructure.md`는 예시이다.
 
-- **Architecture**는 현재 구현입니다. 설계 정본 전문을 복사해 채우지 않습니다.
-- 외부 PDF·브리프·영상은 확인용입니다. 실행 계약은 repo 문서와 코드입니다.
-- 코드와 문서가 다르면 **코드가 이깁니다**. 문서를 맞추거나, Architecture·설계 정본에 불일치를 적습니다.
+- **Architecture**는 현재 구현이다. 설계 정본 전문을 복사해 채우지 않는다.
+- 외부 PDF·브리프·영상은 확인용이다. 실행 계약은 repo 문서와 코드이다.
+- 코드와 문서가 다르면 **코드가 이긴다**. 문서를 맞추거나, Architecture·설계 정본에 불일치를 적는다.
 
-정본 사다리는 [WritingGuide](../common/WritingGuide.md)와 같습니다. `코드 ≥ Architecture ≥ 설계 정본`.
+정본 사다리는 [WritingGuide](../common/WritingGuide.md)와 같다. `코드 ≥ Architecture ≥ 설계 정본`.
 
 ### GDD를 쓸 때
 
-아래는 **폴더·성숙도 태그**의 최소 공통입니다.
+아래는 **폴더·성숙도 태그**의 최소 공통이다.
 
 | 경로 | 역할 | 구현 근거? |
 |------|------|------------|
@@ -216,16 +216,16 @@ ADR 규칙은 이 절에만 둡니다. Kit 기본은 **Architecture**와 타이�
 | `open` | 미결 |
 | `parked` | 보류·탈락 (이유 한 줄) |
 
-구현·Play DoD·Architecture 계약의 근거는 **`locked`(또는 팀 Decision)** 만 씁니다. Preprod→Soft Ship 일정 잠금 순서는 타이틀이 정합니다.
+구현·Play DoD·Architecture 계약의 근거는 **`locked`(또는 팀 Decision)** 만 쓴다. Preprod→Soft Ship 일정 잠금 순서는 타이틀이 정한다.
 
 ## README 허브
 
 - 폴더 `README.md` = 역할·목차·경계·링크·짧은 공통 규칙만. **본편 상세 금지**.
 - 본편 = `Architecture_<Feature>.md`, GDD `Overview.md`, `GameName-Topic.md` 등 **문맥이 드러나는 이름**.
 - **금지:** 주제만 `UI.md` / `Combat.md`. **파일이 하나뿐인 폴더**에 본편을 전부 `README.md`로 두기.
-- **단일 본편 폴더:** README 없이 본편만 두고, 상위 허브는 그 파일에 **직링크**합니다.
+- **단일 본편 폴더:** README 없이 본편만 두고, 상위 허브는 그 파일에 **직링크**한다.
 - **분할 폴더(본편 2+):** `README.md` = 허브만.
-- Architecture **본편**에 Phase·일차·티켓 이력 표를 넣지 않습니다. 진행 상태가 필요하면 `architecture/README.md` 허브의 짧은 상태표, 또는 Plan·티켓에 둡니다.
+- Architecture **본편**에 Phase·일차·티켓 이력 표를 넣지 않는다. 진행 상태가 필요하면 `architecture/README.md` 허브의 짧은 상태표, 또는 Plan·티켓에 둔다.
 
 ### 예외
 
@@ -238,4 +238,4 @@ ADR 규칙은 이 절에만 둡니다. Kit 기본은 **Architecture**와 타이�
 
 ## enum · ID
 
-문서에 enum·상수·ID **전체 목록을 복사하지 않습니다** — 코드·SO가 정본입니다.
+문서에 enum·상수·ID **전체 목록을 복사하지 않는다** — 코드·SO가 정본이다.

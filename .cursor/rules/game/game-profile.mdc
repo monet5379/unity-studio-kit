@@ -5,15 +5,15 @@ alwaysApply: false
 
 # Game 프로필
 
-프로젝트 `AGENTS.md`에 `profile: game`일 때 이 규칙을 따르세요.  
+프로젝트 `AGENTS.md`에 `profile: game`일 때 이 규칙을 따른다.  
 정본: [`docs/game/Overview.md`](../../../docs/game/Overview.md)
 
 ## 프로세스
 
-- **common**(포니테일·스코프·`.meta`·Shell·C#)은 그대로 적용해요.
+- **common**(포니테일·스코프·`.meta`·Shell·C#)은 그대로 적용한다.
 - 작업 프레임: [`development-process.mdc`](development-process.mdc) (스킬 진행 · 닫기).
 - QA·스모크 제안: [`verification-qa-defaults.mdc`](verification-qa-defaults.mdc).
-- personal 프로필 규칙과 **동시에 필수로 적용하지 마세요.**
+- personal 프로필 규칙과 **동시에 필수로 적용하지 않는다.**
 
 ## 문서 · Assets · 경계
 
@@ -23,4 +23,4 @@ alwaysApply: false
 
 ## 타이틀 전용
 
-경로·asmdef 이름·도메인 규칙은 **이 게임 repo**의 `AGENTS.md` · `.cursor/rules/<title>/`만 따르세요. Kit game에 타이틀 특수 규칙을 넣지 마세요.
+경로·asmdef 이름·도메인 규칙은 **이 게임 repo**의 `AGENTS.md` · `.cursor/rules/<title>/`만 따른다. Kit game에 타이틀 특수 규칙을 넣지 않는다.

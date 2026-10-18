@@ -9,7 +9,7 @@ alwaysApply: false
 `profile: game`일 때. 정본: [`docs/game/Documentation.md`](../../../docs/game/Documentation.md)  
 (`Docs/` 대문자 경로 타이틀에도 동일 원칙.)
 
-열린 프로젝트 루트 `AGENTS.md`의 `profile:`이 이 규칙과 같을 때만 적용하세요. 다른 프로필이거나, 이 Kit 저장소(`unity-studio-kit/docs`, `unity-studio-kit` 자체)를 고칠 때는 이 파일을 무시하세요.
+열린 프로젝트 루트 `AGENTS.md`의 `profile:`이 이 규칙과 같을 때만 적용한다. 다른 프로필이거나, 이 Kit 저장소(`unity-studio-kit/docs`, `unity-studio-kit` 자체)를 고칠 때는 이 파일을 무시한다.
 
 ## 위키 계약
 
