@@ -1,5 +1,5 @@
 ---
-description: C# 코딩 규칙 (casing·init·partial·성능·주석)
+description: C# 코딩 규칙 (casing·init·partial·성능·코드 주석 금지)
 globs: "**/*.cs"
 alwaysApply: false
 ---
@@ -44,7 +44,7 @@ public readonly struct Foo
 - Inspector: `[SerializeField] private`
 - 플레이어 UI 텍스트: `TextMeshProUGUI`만 (레거시 `UnityEngine.UI.Text` 금지)
 - 개발·데모 IMGUI (**선택**): [`dev-imgui.mdc`](dev-imgui.mdc) · personal Demo는 [`../personal/demo-gui.mdc`](../personal/demo-gui.mdc)
-- 비즈니스/게임 로직 메서드 위: 목적 **한 줄 한국어** 주석 (단순 getter/래퍼는 생략 가능)
+- **코드 주석을 추가하지 않는다** — 설명·목적용 주석(한 줄 한국어 포함) 금지. 의도는 이름·구조로 드러낸다.
 
 ## partial class
 
