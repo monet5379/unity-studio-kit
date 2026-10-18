@@ -33,6 +33,7 @@ Kit의 `.cursor/rules` · `docs/` · `templates/` · `.cursor/skills`를 한 바
 | 범위 (Kit만 / Kit+프로젝트명) | |
 | 막고 싶은 실패 (예: `.meta` 수정, 과잉 Plan) | |
 | 사용 프로필 (`personal` / `game` / 둘 다 트랙) | |
+| 배선 확인 (새 채팅에서 소비 프로젝트 파일을 Read한 뒤 첨부된 규칙을 관찰. frontmatter 추론으로 대신하지 않음) | |
 
 ---
 
@@ -42,7 +43,7 @@ Kit의 `.cursor/rules` · `docs/` · `templates/` · `.cursor/skills`를 한 바
 |----|-------------|------|------|
 | 1.1 | [README.md](../../README.md) — 3층·멀티 루트·skill 위치 | | |
 | 1.2 | [docs/common/README.md](README.md) — common 목록 | | |
-| 1.3 | [templates/README.md](../../templates/README.md) · `AGENTS.*.md` — override | | |
+| 1.3 | [templates/README.md](../../templates/README.md) · `AGENTS.*.md` — override · 복사 후 Kit 참조 유효 | | |
 
 ---
 
@@ -61,7 +62,7 @@ Kit의 `.cursor/rules` · `docs/` · `templates/` · `.cursor/skills`를 한 바
 
 | ID | `.mdc` | `docs/` 정본 | 트리거 | 등급 | 메모 |
 |----|--------|--------------|--------|------|------|
-| 3.1 | [commit-messages.mdc](../../.cursor/rules/common/commit-messages.mdc) | [CommitMessages.md](CommitMessages.md) | 커밋 시 | | |
+| 3.1 | [commit-messages.mdc](../../.cursor/rules/common/commit-messages.mdc) | [CommitMessages.md](CommitMessages.md) | 커밋 요청 시 (description · unity-basics 요약) | | |
 | 3.2 | [csharp-standards.mdc](../../.cursor/rules/common/csharp-standards.mdc) | [Csharp.md](Csharp.md) | `**/*.cs` | | |
 | 3.3 | [naming-semantics.mdc](../../.cursor/rules/common/naming-semantics.mdc) | Csharp (보완) | `**/*.cs` | | |
 | 3.4 | [writing-guide.mdc](../../.cursor/rules/common/writing-guide.mdc) | [WritingGuide.md](WritingGuide.md) | docs·AGENTS | | |
@@ -137,6 +138,8 @@ Kit의 `.cursor/rules` · `docs/` · `templates/` · `.cursor/skills`를 한 바
 | 7.1 | 프로젝트 `AGENTS.md` (`profile:` · scope · override) | | |
 | 7.2 | `.cursor/rules/<title>/` (있다면) | | |
 | 7.3 | Kit common + profile + 타이틀 **충돌 없음** | | |
+| 7.4 | Kit 참조가 clone 위치와 무관 (텍스트 경로 `unity-studio-kit/...` · 드라이브 루트를 거치는 상대 링크 금지) | | |
+| 7.5 | Kit와 다른 값이 모두 override 표에 있음 (예: C# const, 커밋 scope) | | |
 
 ---
 

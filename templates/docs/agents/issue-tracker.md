@@ -1,6 +1,6 @@
 # 이슈 트래커
 
-스펙·구현 티켓의 정본 경로이다. GitHub Issues가 아니다. 절차는 Kit [DevelopmentProcess](../../../docs/game/DevelopmentProcess.md)를 본다.
+스펙·구현 티켓의 정본 경로이다. GitHub Issues가 아니다. 절차는 Kit DevelopmentProcess (`unity-studio-kit/docs/game/DevelopmentProcess.md`)를 본다.
 
 ## 관례
 

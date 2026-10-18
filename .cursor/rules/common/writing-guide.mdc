@@ -1,6 +1,6 @@
 ---
 description: Kit docs·AGENTS 글쓰기 — 유형·lead·한다체·docs/rules 이원화
-globs: "**/docs/**/*.md"
+globs: "**/docs/**/*.md,**/AGENTS*.md,**/templates/**/*.md"
 alwaysApply: false
 ---
 

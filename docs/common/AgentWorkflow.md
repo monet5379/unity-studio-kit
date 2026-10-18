@@ -16,6 +16,11 @@ personal · game 공통으로, 에이전트가 **어디까지 손대고 어떻�
 - `ThirdParty/` · `Plugins/` · 벤더 Assets는 **직접 수정하지 않는다** (어댑터만 프로젝트 코드에).
 - 다른 저장소의 공유 패키지 소스·캐시는 이 워크스페이스에서 수정하지 않는다. 소비 프로젝트는 manifest pin·호출 코드만 두고, 구현은 그 패키지 정본 repo에서 한다.
 
+## 정본 우선순위
+
+- 프로젝트 `AGENTS.md` override > Kit profile(personal / game) > Kit common. override는 AGENTS의 override 표에 적힌 값만 해당한다.
+- 코드 > 프로젝트 정본 문서 (game: Architecture ≥ 설계 정본 · personal: README Invariants). game의 스킬·규칙 사다리는 [DevelopmentProcess](../game/DevelopmentProcess.md#스킬·규칙-우선순위).
+
 ## 포니테일
 
 이해한 뒤 **최소 diff**. YAGNI · 기존 헬퍼 재사용 · 표준 라이브러리 우선.  

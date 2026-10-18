@@ -47,7 +47,7 @@ Kit Assets·문서 관례: `unity-studio-kit/docs/game/AssetsLayout.md` · `Docu
 - 글쓰기 WritingGuide · 형식 Documentation(Architecture 골격·ADR·설계 정본).
 - 구조·계약 변경 시 해당 Architecture · 설계 정본 · (크면) Plan. Optimization은 추적 필요할 때만. 티켓 Record는 바뀐 페이지만.
 - 스모크·QA **제안·실행**은 사용자 요청 전 금지. behavioral SC는 코드 리뷰만으로 pass 금지.
-- 커밋은 사용자 **명시 요청** 시에만. Kit [CommitMessages](../docs/common/CommitMessages.md) — `type(scope): 한글 제목` + **본문(why) 필수**
+- 커밋은 사용자 **명시 요청** 시에만. Kit CommitMessages (`unity-studio-kit/docs/common/CommitMessages.md`) — `type(scope): 한글 제목` + **본문(why) 필수**
 
 ### 코딩
 
@@ -55,6 +55,8 @@ Kit Assets·문서 관례: `unity-studio-kit/docs/game/AssetsLayout.md` · `Docu
 - 네임스페이스: 주변·아래 override에 맞춤.
 
 ## 이 타이틀 override (채울 것)
+
+Kit 규약과 다른 값은 반드시 이 표(또는 아래 커밋 표)에 적는다. 표에 없는 값은 Kit를 따른다.
 
 | 항목 | 값 |
 |------|-----|
@@ -76,7 +78,7 @@ Kit Assets·문서 관례: `unity-studio-kit/docs/game/AssetsLayout.md` · `Docu
 
 ### 커밋 (이 repo)
 
-Kit [CommitMessages](../docs/common/CommitMessages.md)를 따르고, 아래만 이 repo에서 정한다.
+Kit CommitMessages (`unity-studio-kit/docs/common/CommitMessages.md`)를 따르고, 아래만 이 repo에서 정한다.
 
 | 항목 | 값 |
 |------|-----|

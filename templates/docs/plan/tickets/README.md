@@ -2,7 +2,7 @@
 
 `/to-spec` · `/to-tickets` · `/implement`용 로컬 마크다운 트래커이다. 설계 정본과 Architecture를 대체하지 않는다.
 
-트래커 조작: [`docs/agents/issue-tracker.md`](../../agents/issue-tracker.md). 운영 규칙은 Kit [DevelopmentProcess](../../../../docs/game/DevelopmentProcess.md)이다.
+트래커 조작: [`docs/agents/issue-tracker.md`](../../agents/issue-tracker.md). 운영 규칙은 Kit DevelopmentProcess (`unity-studio-kit/docs/game/DevelopmentProcess.md`)이다.
 
 ## Layout
 

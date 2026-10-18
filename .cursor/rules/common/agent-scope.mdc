@@ -14,6 +14,11 @@ alwaysApply: true
 - **대규모 리팩터·구조 변경**은 Plan과 구현을 분리한다 (game 프로필·프로젝트 규칙이 Plan을 요구할 때).
 - 소규모 수정은 [ponytail](ponytail.mdc) 원칙을 따른다.
 
+## 정본 우선순위
+
+- 프로젝트 `AGENTS.md` override > Kit profile(personal / game) > Kit common. override는 AGENTS의 override 표에 적힌 값만 해당한다.
+- 코드 > 프로젝트 정본 문서 (game: Architecture ≥ 설계 정본 · personal: README Invariants). game의 스킬·규칙 사다리는 [DevelopmentProcess](../../../docs/game/DevelopmentProcess.md#스킬·규칙-우선순위).
+
 ## In Scope
 
 - 현재 작업 요청과 **직접 관련된** 도메인·파일만 수정한다.
