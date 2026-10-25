@@ -33,9 +33,9 @@ alwaysApply: true
 
 - [`shell-destructive-ops.mdc`](shell-destructive-ops.mdc) (cmd 삭제 전면 금지)
 
-## 코딩 철학
+## Build (선택)
 
-- [`ponytail.mdc`](ponytail.mdc)
+- 최소 diff·YAGNI는 프로젝트 `.cursor/skills/ponytail/` — 필요할 때 `/ponytail`. 사람용 요약: [`AgentWorkflow.md`](../../../docs/common/AgentWorkflow.md) §포니테일.
 
 ## 문서
 

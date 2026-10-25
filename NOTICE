@@ -1,10 +1,12 @@
 # Third-party notices
 
-## ponytail
+## DietrichGebert/ponytail
 
-`.cursor/rules/common/ponytail.mdc` is adapted from
+Kit does **not** ship ponytail under `.cursor/rules/` or `.cursor/skills/`.
+Projects may vendor `.cursor/skills/ponytail/` from
 [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
-(Cursor ruleset), used under the MIT License.
+(Cursor ruleset), used under the MIT License. Human summary:
+`docs/common/AgentWorkflow.md` §포니테일.
 
 MIT License
 

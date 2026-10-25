@@ -3,7 +3,7 @@
 personal · game 공통으로, 에이전트가 **어디까지 손대고 어떻게 최소로 고칠지**를 정한다. 
 프로필별 Plan·Architecture 무게는 personal / game 문서를 따른다.
 
-규칙: [`agent-scope.mdc`](../../.cursor/rules/common/agent-scope.mdc) · [`ponytail.mdc`](../../.cursor/rules/common/ponytail.mdc)
+규칙: [`agent-scope.mdc`](../../.cursor/rules/common/agent-scope.mdc)
 
 ## 스코프
 
@@ -27,7 +27,7 @@ personal · game 공통으로, 에이전트가 **어디까지 손대고 어떻�
 비 trivial 로직 뒤에는 깨지면 실패하는 **실행 가능한 검증 하나**(작은 assert/테스트; 무거운 fixture 불필요)를 남긴다.  
 이 검증은 코드 안의 assert·작은 테스트이다. Play·스모크·QA 제안은 game이면 [DevelopmentProcess](../game/DevelopmentProcess.md) §Verify를 따른다.
 
-규칙 문구는 [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) Cursor 규칙을 한국어로 각색한 것이다 (MIT). 고지: [`NOTICE`](../../NOTICE).
+에이전트용 전문은 Kit가 배포하지 않는다. 프로젝트 `.cursor/skills/ponytail/`(`/ponytail`)로 [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)을 각색·설치한다 (MIT). 고지: [`NOTICE`](../../NOTICE).
 
 ## 검증
 

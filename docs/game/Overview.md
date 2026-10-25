@@ -19,7 +19,7 @@
 | | personal | game |
 |---|----------|------|
 | 문서 | README (계약) + Architecture | Architecture · Plan · Optimization |
-| 프로세스 | ponytail 위주 | 스킬 진행 · 닫기 (Verify·Record·Recovery) |
+| 프로세스 | `/ponytail`(선택)·최소 diff | 스킬 진행 · 닫기 (Verify·Record·Recovery) |
 | Assets | 복사 단위 + Demo | `Project/` · Addressables |
 | 공유 패키지 | 복사·단독 | manifest pin · 소스 직접 수정 금지 |
 

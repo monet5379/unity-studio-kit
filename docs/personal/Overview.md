@@ -19,7 +19,7 @@
 | | personal | game |
 |---|----------|------|
 | 문서 | README (계약) + `Architecture_*` | Architecture / Plan / Optimization |
-| 프로세스 | ponytail·최소 diff | 스킬 진행·닫기 |
+| 프로세스 | `/ponytail`(선택)·최소 diff | 스킬 진행·닫기 |
 | 레이아웃 | `Assets/<Package>/` + 선택 Demo | `Project/` · Addressables |
 | Plan | 기본 불필요 | 구조 변경 시 |
 

@@ -21,7 +21,7 @@ Cursor: [`development-process.mdc`](../../.cursor/rules/game/development-process
 
 `/implement`는 `/tdd`로 합의된 seam을 한 조각씩 만들고, `/code-review`(Standards · Spec)로 닫는다. 커밋은 타이틀 `AGENTS.md`를 따른다.
 
-common **ponytail**은 Build 스타일(최소 diff)이다.
+Build 스타일(최소 diff)은 프로젝트 **`/ponytail`** 또는 AgentWorkflow §포니테일이다.
 
 스펙·티켓 경로와 스킬 우선순위는 아래를 따르고, 타이틀 `AGENTS.md`가 경로를 override한다.
 

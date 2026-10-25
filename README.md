@@ -19,7 +19,7 @@ Unity 프로젝트를 열 때마다 규칙을 복사하지 않도록, **공통 C
 
 | 층 | 언제 | 문서 무게 |
 |----|------|-----------|
-| **common** | 모든 Unity 작업 | `.meta`, C#, ponytail, Shell, 커밋 |
+| **common** | 모든 Unity 작업 | `.meta`, C#, 스코프, Shell, 커밋 |
 | **personal** | 공개 패키지·실험·데모 | README (계약) + Architecture |
 | **game** | 출시·팀 타이틀 | Architecture · Plan · 개발 프로세스 |
 
@@ -81,7 +81,7 @@ DOTS·Entities는 위 DOTS skill을 쓰고, hybrid·system group·Entities pin�
 [MIT](LICENSE) © 2026 Seunghyeon
 
 제3자 ([`NOTICE`](NOTICE)):
-- 포니테일 — [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) (MIT)
+- 포니테일(프로젝트 선택) — [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) (MIT)
 - 글쓰기 가이드 — [toss/technical-writing](https://github.com/toss/technical-writing) (CC BY-NC-SA 4.0)
 - DOTS skill — [wshobson/agents — unity-ecs-patterns](https://github.com/wshobson/agents/tree/main/plugins/game-development/skills/unity-ecs-patterns) (MIT)
 - 빌드 skill — [gamedev-skills/awesome-gamedev-agent-skills — unity-build-pipeline](https://github.com/gamedev-skills/awesome-gamedev-agent-skills/tree/main/skills/unity/unity-build-pipeline) (Apache-2.0)

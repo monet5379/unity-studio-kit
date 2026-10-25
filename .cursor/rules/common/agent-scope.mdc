@@ -12,7 +12,7 @@ alwaysApply: true
 - 변경 전 **In Scope / Out of Scope**를 확인한다.
 - 작업 전 영향 범위(관련 타입·씬·프리팹·테스트)를 조사한다.
 - **대규모 리팩터·구조 변경**은 Plan과 구현을 분리한다 (game 프로필·프로젝트 규칙이 Plan을 요구할 때).
-- 소규모 수정은 [ponytail](ponytail.mdc) 원칙을 따른다.
+- 소규모 수정은 요청 범위 안에서 **최소 diff**로 진행한다. Build 스타일이 필요하면 프로젝트 `/ponytail` 스킬을 호출한다.
 
 ## 정본 우선순위
 
@@ -35,7 +35,7 @@ alwaysApply: true
 
 - 가능한 한 **작은 단위**로 진행한다.
 - 변경 후 관련 asmdef **컴파일**만 확인한다.
-- 인라인 검증은 [`ponytail.mdc`](ponytail.mdc). Play·스모크·QA 제안은 프로필 규칙 (game: [`../game/verification-qa-defaults.mdc`](../game/verification-qa-defaults.mdc)).
+- 인라인 검증은 [`AgentWorkflow.md`](../../../docs/common/AgentWorkflow.md) §포니테일·§검증. 프로젝트에 `/ponytail` 스킬이 있으면 그 스킬을 따른다. Play·스모크·QA 제안은 프로필 규칙 (game: [`../game/verification-qa-defaults.mdc`](../game/verification-qa-defaults.mdc)).
 
 ## Documentation
 

@@ -52,7 +52,7 @@ Kit의 `.cursor/rules` · `docs/` · `templates/` · `.cursor/skills`를 한 바
 | ID | `.mdc` | `docs/` 정본 | 등급 | 메모 |
 |----|--------|--------------|------|------|
 | 2.1 | [agent-scope.mdc](../../.cursor/rules/common/agent-scope.mdc) | [AgentWorkflow.md](AgentWorkflow.md) §스코프 | | |
-| 2.2 | [ponytail.mdc](../../.cursor/rules/common/ponytail.mdc) | AgentWorkflow §포니테일·§검증 | | |
+| 2.2 | (프로젝트) `.cursor/skills/ponytail/` | AgentWorkflow §포니테일·§검증 | | |
 | 2.3 | [unity-basics.mdc](../../.cursor/rules/common/unity-basics.mdc) | [UnityBasics.md](UnityBasics.md) | | |
 | 2.4 | [shell-destructive-ops.mdc](../../.cursor/rules/common/shell-destructive-ops.mdc) | [ShellSafety.md](ShellSafety.md) | | |
 

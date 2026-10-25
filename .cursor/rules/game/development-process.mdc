@@ -7,7 +7,7 @@ alwaysApply: false
 
 `profile: game`일 때. 정본: [`docs/game/DevelopmentProcess.md`](../../../docs/game/DevelopmentProcess.md)
 
-스킬 폴더가 있으면 그 체인으로 진행한다. 없으면 같은 닫기 조건을 대화로 수행한다. 산출물은 규모에 비례한다. [`ponytail`](../common/ponytail.mdc)은 Build 최소 diff이다.
+스킬 폴더가 있으면 그 체인으로 진행한다. 없으면 같은 닫기 조건을 대화로 수행한다. 산출물은 규모에 비례한다. Build 최소 diff는 프로젝트 `/ponytail`(있을 때) 또는 [`AgentWorkflow.md`](../../../docs/common/AgentWorkflow.md) §포니테일이다.
 
 | 상황 | 스킬 |
 |------|------|
