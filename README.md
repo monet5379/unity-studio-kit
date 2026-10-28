@@ -58,7 +58,7 @@ unity-studio-kit/
 └── templates/          ← AGENTS 복사본
 ```
 
-`common` 중 기본·스코프·포니테일·Shell은 `alwaysApply`. C#·네이밍·글쓰기는 glob.  
+`common` 중 기본·스코프·포니테일·Shell·Unity CLI(에이전트)는 `alwaysApply`. C#·네이밍·글쓰기는 glob.  
 personal / game은 `alwaysApply: false` — `profile:`에 맞는 것만 따른다.
 
 | 문서 | 링크 |

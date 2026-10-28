@@ -10,6 +10,7 @@ personal · game **양쪽**에 쓰는 정본이다. 프로필 차이는 `docs/pe
 | [CommitMessages.md](CommitMessages.md) | 참조 | 커밋 시 | Conventional Commits·한글·본문(why) 필수·프로젝트 override |
 | [Csharp.md](Csharp.md) | 참조 | C# 작성·수정 시 | 네이밍·프로퍼티·partial·hot path |
 | [ShellSafety.md](ShellSafety.md) | 참조 | 항상 | Shell 삭제 안전 |
+| [UnityCliAgent.md](UnityCliAgent.md) | 참조 | 항상 | Unity headless — 에이전트 Shell 금지, 로컬 래퍼 안내 |
 | [AgentWorkflow.md](AgentWorkflow.md) | 프로세스 | 항상 | 스코프·포니테일·검증 · 스킬은 요청·단계 시에만 |
 | [RulesEvaluationScorecard.md](RulesEvaluationScorecard.md) | 프로세스 | Kit·규칙 점검 시 | 블록별 등급·메모·횡단 패스 |
 | [DevImgui.md](DevImgui.md) | 참조 | **선택** · IMGUI 작업 시 | 개발용 Title/Content/Button |

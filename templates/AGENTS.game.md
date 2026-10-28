@@ -75,6 +75,8 @@ Kit 규약과 다른 값은 반드시 이 표(또는 아래 커밋 표)에 적�
 | asmdef (Game 등) | `<…>` |
 | 공유 Core 패키지 id | `<com.example.core>` (없으면 —) |
 | 네임스페이스 루트 | `<…>` |
+| Unity CLI 진입점 | 예: `scripts/unity-test.bat` · `—`(에디터만) — Kit [UnityCliAgent](unity-studio-kit/docs/common/UnityCliAgent.md) |
+| Unity CLI 정본 문서 | 예: `scripts/README.md` · `Architecture_Testing` · — |
 
 ### 커밋 (이 repo)
 

@@ -41,6 +41,15 @@ profile: personal
 - 커밋은 사용자 **명시 요청** 시에만. Kit CommitMessages (`unity-studio-kit/docs/common/CommitMessages.md`) — `type(scope): 한글 제목` + **본문(why) 필수** (영어 필요 시 아래 override)
 - Demo를 출시 스키마·필수 설치 경로로 취급하지 않음.
 
+## 이 repo override (선택)
+
+Kit [UnityCliAgent](unity-studio-kit/docs/common/UnityCliAgent.md) — 에이전트 Shell Unity headless 금지. 진입점만 이 repo에 적는다.
+
+| 항목 | 값 |
+|------|-----|
+| Unity CLI 진입점 | 예: `scripts/verify.ps1` · `—` |
+| Unity CLI 정본 문서 | 예: README §verify · `docs/architecture/Architecture_*.md` · — |
+
 ## 이 repo만의 메모 (선택)
 
 - Kit와 다른 규약: <항목 — Kit 값을 override> (없으면 —)

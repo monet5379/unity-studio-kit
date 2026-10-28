@@ -37,4 +37,5 @@ personal · game 공통으로, 에셋·워크스페이스·커밋에서 **항상
 - [`.cursor/rules/common/unity-basics.mdc`](../../.cursor/rules/common/unity-basics.mdc)
 - 커밋 메시지: [CommitMessages.md](CommitMessages.md) · [`.cursor/rules/common/commit-messages.mdc`](../../.cursor/rules/common/commit-messages.mdc)
 - Shell 삭제: [ShellSafety.md](ShellSafety.md)
+- Unity headless (에이전트): [UnityCliAgent.md](UnityCliAgent.md) · [`.cursor/rules/common/unity-cli-agent.mdc`](../../.cursor/rules/common/unity-cli-agent.mdc)
 

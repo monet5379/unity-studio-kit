@@ -33,6 +33,10 @@ alwaysApply: true
 
 - [`shell-destructive-ops.mdc`](shell-destructive-ops.mdc) (cmd 삭제 전면 금지)
 
+## Unity CLI (에이전트)
+
+- headless Unity는 Shell 금지 · 로컬 래퍼 안내: [`unity-cli-agent.mdc`](unity-cli-agent.mdc) · [`UnityCliAgent.md`](../../../docs/common/UnityCliAgent.md)
+
 ## Build (선택)
 
 - 최소 diff·YAGNI는 프로젝트 `.cursor/skills/ponytail/` — 필요할 때 `/ponytail`. 사람용 요약: [`AgentWorkflow.md`](../../../docs/common/AgentWorkflow.md) §포니테일.

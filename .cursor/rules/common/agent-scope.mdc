@@ -34,7 +34,7 @@ alwaysApply: true
 ## Quality Gates
 
 - 가능한 한 **작은 단위**로 진행한다.
-- 변경 후 관련 asmdef **컴파일**만 확인한다.
+- 변경 후 관련 asmdef **컴파일**만 확인한다 (Unity batch 실행으로 대체하지 않음 — [`unity-cli-agent.mdc`](unity-cli-agent.mdc)).
 - 인라인 검증은 [`AgentWorkflow.md`](../../../docs/common/AgentWorkflow.md) §포니테일·§검증. 프로젝트에 `/ponytail` 스킬이 있으면 그 스킬을 따른다. Play·스모크·QA 제안은 프로필 규칙 (game: [`../game/verification-qa-defaults.mdc`](../game/verification-qa-defaults.mdc)).
 
 ## Documentation

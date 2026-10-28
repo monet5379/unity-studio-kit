@@ -32,6 +32,7 @@ Unity 6 LTS 플레이어 빌드를 설정·스크립트·자동화한다. 씬 �
 워크스페이스에 `AGENTS.md`·Architecture·기존 Editor 빌드 스크립트가 있으면:
 
 - Unity 프로젝트 루트, 씬 경로, Addressables 프로필, 타깃 플랫폼(예: Switch → Win64 proxy)은 **프로젝트가 이긴다**
+- 에이전트 Shell에서 `-batchmode` 실행 금지 · 로컬 래퍼 안내: Kit [UnityCliAgent.md](../../../docs/common/UnityCliAgent.md)
 - 이 스킬은 **범용 빌드 패턴**만 제공한다. 샘플 씬/`MyGameRuntime` 이름을 도메인 확인 없이 복사하지 않는다
 
 ## 핵심 워크플로

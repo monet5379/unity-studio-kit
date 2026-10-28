@@ -55,6 +55,7 @@ Kit의 `.cursor/rules` · `docs/` · `templates/` · `.cursor/skills`를 한 바
 | 2.2 | (프로젝트) `.cursor/skills/ponytail/` | AgentWorkflow §포니테일·§검증 | | |
 | 2.3 | [unity-basics.mdc](../../.cursor/rules/common/unity-basics.mdc) | [UnityBasics.md](UnityBasics.md) | | |
 | 2.4 | [shell-destructive-ops.mdc](../../.cursor/rules/common/shell-destructive-ops.mdc) | [ShellSafety.md](ShellSafety.md) | | |
+| 2.5 | [unity-cli-agent.mdc](../../.cursor/rules/common/unity-cli-agent.mdc) | [UnityCliAgent.md](UnityCliAgent.md) | | |
 
 ---
 
@@ -129,6 +130,7 @@ Kit의 `.cursor/rules` · `docs/` · `templates/` · `.cursor/skills`를 한 바
 | personal — Architecture + 코드 | | ☐ | |
 | game — Architecture 한 장 + 티켓 | | ☐ | |
 | Shell로 `Assets/` 정리 시도 | | ☐ | |
+| «EditMode 테스트 실행해줘» | unity-cli-agent · 래퍼 안내만 | | ☐ | |
 
 ---
 

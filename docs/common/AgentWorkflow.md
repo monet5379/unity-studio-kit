@@ -32,7 +32,8 @@ personal · game 공통으로, 에이전트가 **어디까지 손대고 어떻�
 ## 검증
 
 - 가능한 한 작은 단위로 진행한다.
-- C# 변경 후 관련 asmdef가 컴파일되는지만 확인한다.
+- C# 변경 후 관련 asmdef가 컴파일되는지만 확인한다 (코드·리뷰 수준 — Unity batch로 대체하지 않음).
+- Unity headless CLI는 에이전트 Shell에서 실행하지 않는다. [UnityCliAgent.md](UnityCliAgent.md).
 - 비 trivial 로직의 인라인 검증(assert·작은 테스트)은 포니테일을 따른다.
 - Play·스모크·QA 러너·「테스트해 보라」 제안은 프로필 규칙을 따른다. game은 DevelopmentProcess §Verify다.
 - 큰 구조 변경 시 프로젝트 문서(있으면 Architecture 등)를 같이 맞춘다. 문서 형식의 상세는 personal / game 프로필을 따른다.
