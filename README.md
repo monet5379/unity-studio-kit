@@ -82,7 +82,7 @@ DOTS·Entities는 위 DOTS skill을 쓰고, hybrid·system group·Entities pin�
 
 제3자 ([`NOTICE`](NOTICE)):
 - 포니테일(프로젝트 선택) — [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) (MIT)
-- 글쓰기 가이드 — [toss/technical-writing](https://github.com/toss/technical-writing) (CC BY-NC-SA 4.0)
+- 글쓰기 가이드 — [toss/technical-writing](https://github.com/toss/technical-writing) (CC BY-NC-SA 4.0) · AI 초안 문체 — [epoko77-ai/im-not-ai](https://github.com/epoko77-ai/im-not-ai) (MIT)
 - DOTS skill — [wshobson/agents — unity-ecs-patterns](https://github.com/wshobson/agents/tree/main/plugins/game-development/skills/unity-ecs-patterns) (MIT)
 - 빌드 skill — [gamedev-skills/awesome-gamedev-agent-skills — unity-build-pipeline](https://github.com/gamedev-skills/awesome-gamedev-agent-skills/tree/main/skills/unity/unity-build-pipeline) (Apache-2.0)
 - 리뷰·Design·아키텍처 스킬 — [mattpocock/skills](https://github.com/mattpocock/skills) (MIT)

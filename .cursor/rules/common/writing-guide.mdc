@@ -1,5 +1,5 @@
 ---
-description: Kit docs·AGENTS 글쓰기 — 유형·lead·한다체·docs/rules 이원화
+description: Kit docs·AGENTS 글쓰기 — 유형·lead·한다체·AI 초안·docs/rules 이원화
 globs: "**/docs/**/*.md,**/AGENTS*.md,**/templates/**/*.md"
 alwaysApply: false
 ---
@@ -8,7 +8,7 @@ alwaysApply: false
 
 정본: [`docs/common/WritingGuide.md`](../../../docs/common/WritingGuide.md)  
 `docs/**` · 루트 README · `templates/` · 프로젝트 `AGENTS.md`를 쓰거나 고칠 때 적용한다. (사이트 notes·Jekyll 규칙 아님)  
-출처: [toss/technical-writing](https://github.com/toss/technical-writing) (CC BY-NC-SA 4.0) — [`NOTICE`](../../../NOTICE)
+출처: [toss/technical-writing](https://github.com/toss/technical-writing) (CC BY-NC-SA 4.0) · AI 초안 문체는 [im-not-ai](https://github.com/epoko77-ai/im-not-ai) (MIT) — [`NOTICE`](../../../NOTICE)
 
 ## Must
 
@@ -21,6 +21,7 @@ alwaysApply: false
 - **한 페이지 한 주제.** 주 유형 하나: 시작하기 / 개념 / 참조 / How-to / 프로세스.
 - 주어 분명. 표는 스캔용 — 표만으로 끝내지 않음.
 - personal DocsLite ↔ game Documentation·DevelopmentProcess 충돌 시 각 프로필 문서가 이김 (personal도 Architecture 골격은 game Documentation과 동일).
+- **AI 초안:** 경로·수치·`Must` 문구·서법 강도는 유지한다. 티가 있는 문장만 고친다. 상세는 WritingGuide 「에이전트·AI 초안」.
 
 ## Must not
 
@@ -28,6 +29,9 @@ alwaysApply: false
 - 모든 참조 문서를 에세이로 팽창
 - personal과 game 규칙을 동시에 필수로 강제하는 서술
 - 신규·수정 구간에 **합니다체·해요체** (톤 예외 경로 제외). 손댄 구간은 주변 레거시 톤을 닮지 않는다.
+- 본편 lead·본문에 의의 과장, `~은 명확하다` 반복, `~를 넘어`, `지평을 열다` 류를 새로 넣기
+- 참조·Architecture의 표·불릿을 산문으로 통째 해체
+- 페이지의 약 절반을 문체만으로 다시 쓰기. `했` → `하였` 치환
 
 ## 골격 힌트
 

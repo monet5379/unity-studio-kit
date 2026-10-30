@@ -5,7 +5,7 @@ personal · game **양쪽**에 쓰는 정본이다. 프로필 차이는 `docs/pe
 
 | 문서 | 유형 | 적용 | 내용 |
 |------|------|------|------|
-| [WritingGuide.md](WritingGuide.md) | 프로세스 | docs·AGENTS 작성 시 | 유형·lead·한다체 · 타이틀 적용·톤 예외 |
+| [WritingGuide.md](WritingGuide.md) | 프로세스 | docs·AGENTS 작성 시 | 유형·lead·한다체 · AI 초안 문체 · 타이틀 적용·톤 예외 |
 | [UnityBasics.md](UnityBasics.md) | 참조 | 항상 | `.meta`, 씬 YAML 정본, 워크스페이스, 커밋 |
 | [CommitMessages.md](CommitMessages.md) | 참조 | 커밋 시 | Conventional Commits·한글·본문(why) 필수·프로젝트 override |
 | [Csharp.md](Csharp.md) | 참조 | C# 작성·수정 시 | 네이밍·프로퍼티·partial·hot path |
