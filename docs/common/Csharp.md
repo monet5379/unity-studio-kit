@@ -50,7 +50,7 @@ public readonly struct Foo
 
 ## Unity / C# 관례
 
-- 네임스페이스는 **주변 코드·프로젝트 관례**에 맞추한다.
+- 네임스페이스는 **주변 코드·프로젝트 관례**에 맞춘다.
 - Inspector: `[SerializeField] private` (+ 필요 시 읽기 전용 프로퍼티)
 - **플레이어 대면** UI 텍스트: `TextMeshProUGUI`만 — 레거시 `UnityEngine.UI.Text` 금지
 - **개발·데모 IMGUI** (**선택**, 오버레이 작업 시): [DevImgui.md](DevImgui.md) · personal은 [DemoGui.md](../personal/DemoGui.md)

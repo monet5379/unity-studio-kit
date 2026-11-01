@@ -54,11 +54,11 @@ unity-studio-kit/
 ├── docs/common|personal|game/
 ├── .cursor/
 │   ├── rules/common|personal|game/
-│   └── skills/         ← Cursor Agent skill (리뷰·Design·DOTS·빌드)
+│   └── skills/         ← Cursor Agent skill (DOTS·빌드)
 └── templates/          ← AGENTS 복사본
 ```
 
-`common` 중 기본·스코프·포니테일·Shell·Unity CLI(에이전트)는 `alwaysApply`. C#·네이밍·글쓰기는 glob.  
+`common` 중 스코프·Shell·Unity 기본·Unity CLI(에이전트)는 `alwaysApply`. C#·네이밍·글쓰기는 glob. 커밋 메시지는 커밋할 때 따른다.  
 personal / game은 `alwaysApply: false` — `profile:`에 맞는 것만 따른다.
 
 | 문서 | 링크 |

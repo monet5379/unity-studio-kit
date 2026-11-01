@@ -12,10 +12,12 @@ alwaysApply: false
 - 사용자 **명시 요청** 시에만 커밋
 - `<type>(<scope>): <제목>` — Conventional Commits
 - 제목·설명 **기본 한글** (코드명·API·로그는 영어 OK). `AGENTS.md` 언어 override 우선
-- 주된 의도 type 하나: feat, fix, docs, style, refactor, perf, test, chore
+- 주된 의도 type 하나: feat, fix, docs, style, refactor, perf, test, chore, revert. 목록 가감은 override로 바꾸지 않음
+- `revert`는 본문에 되돌린 커밋을 적는다
 - 제목 권장 50자 전후·최대 72자. 마침표·버전 접두어(`v0.1.30:`) 금지
 - scope는 선택. **허용 목록은 프로젝트 `AGENTS.md`**
 - **본문 필수** — why 중심 1문장 이상. 제목과 빈 줄로 구분. Breaking은 `BREAKING CHANGE:`
+- 이슈 참조 기본은 footer (`Closes #n`). 제목 `(#n)`은 AGENTS 커밋 표에 행이 있을 때만
 
 ## Must not
 

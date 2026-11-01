@@ -26,7 +26,7 @@ IMGUI 기본 skin만 쓰면 제목·본문·버튼이 같은 크기로 보인다
 
 - 스타일·버튼/창 크기는 **한 객체 또는 한 `Ensure*Styles`** 에서만 만든다.
 - `OnGUI`마다 `new GUIStyle(...)` 를 반복하지 않는다. 캐시하거나 `RefreshStyle` 한 번으로 둔다.
-- Label/Button을 그릴 때 **역할에 맞는 스타일**을 넘기한다. skin 기본값에만 기대지 않는다.
+- Label/Button을 그릴 때 **역할에 맞는 스타일**을 넘긴다. skin 기본값에만 기대지 않는다.
 - 플레이어 HUD·팝업 등 **출시 UI**에 IMGUI 스타일 규칙을 적용하지 않는다. 그쪽은 TMP / Canvas이다.
 - 개발 전용 GUI는 에디터·Development 빌드에서만 켜는 패턴을 권장한다. (강제 매크로는 프로젝트 몫)
 

@@ -18,7 +18,7 @@
 ## 규칙
 
 - **설치 단위**는 `Assets/<PackageName>/` 한 덩어리이다. asmdef가 있으면 유지한 채 복사한다.
-- **`Assets/Demo/`** 는 참고·재생용이다. README에 “Demo는 설치하지 않음”을 밝혀 주한다.
+- **`Assets/Demo/`** 는 참고·재생용이다. README에 “Demo는 설치하지 않음”을 밝혀 둔다.
 - Demo에 출시 스키마·도메인 enum·타이틀 전용 래퍼를 넣지 않는다. 필요하면 소비 쪽 게임에 둔다.
 - Demo F1·IMGUI 스타일은 **선택** (Demo 작업 시) — [DemoGui.md](DemoGui.md)
 - 벤더 `ThirdParty/` · `Plugins/` 는 직접 수정하지 않는다 (common과 동일).

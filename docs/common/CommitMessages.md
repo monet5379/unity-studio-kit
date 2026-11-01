@@ -19,7 +19,7 @@ personal · game 공통으로, [Conventional Commits](https://www.conventionalco
 ```
 
 - 제목은 **권장 50자 전후, 최대 72자**.
-- `scope`는 선택이다. 변경 영역이 분명할 때만 붙이다.
+- `scope`는 선택이다. 변경 영역이 분명할 때만 붙인다.
 - **본문은 필수**이다. **왜** 바꿨는지를 1–2문장으로 적는다. 제목과 본문 사이에 빈 줄을 넣는다.
 - 커밋은 사용자가 **명시적으로 요청할 때만** 만든다. ([UnityBasics](UnityBasics.md))
 
@@ -37,6 +37,7 @@ personal · game 공통으로, [Conventional Commits](https://www.conventionalco
 | `perf` | 성능 개선 |
 | `test` | 테스트 추가·수정 |
 | `chore` | 빌드·설정·잡무 (기능 변경 아님). CI는 보통 `chore(ci):` |
+| `revert` | 이전 커밋을 되돌림. 본문에 되돌린 커밋을 적는다 |
 
 한 커밋에 성격이 섞이면 **주된 의도**의 type 하나를 고른다.  
 예: 기능 추가 + 문서 갱신이면 `feat`, 문서만이면 `docs`.
@@ -88,7 +89,8 @@ fix: 타이틀 복귀 시 페이즈가 꼬이던 문제 수정
 - 최소 1문장. 제목과 같은 문장을 반복하지 않는다
 - 빈 줄로 제목과 본문을 구분한다
 - Breaking change가 있으면 본문 또는 footer에 `BREAKING CHANGE:`로 명시한다
-- 이슈 닫기는 footer 예: `Closes #12`
+- 이슈 참조의 기본은 footer이다. 예: `Closes #12`
+- 제목 끝 `(#n)`은 프로젝트 `AGENTS.md` 커밋 표에 그 행이 있을 때만 쓴다. 표에 없으면 제목에 이슈 번호를 붙이지 않는다.
 
 ---
 
@@ -150,7 +152,7 @@ refactor(save): 백업 경로 조합을 한 헬퍼로 모음
 
 ## 프로젝트에 둘 것
 
-각 소비 repo의 `AGENTS.md`(또는 타이틀 docs)에 적어 두한다. 템플릿: [`templates/AGENTS.game.md`](../../templates/AGENTS.game.md) · [`templates/AGENTS.personal.md`](../../templates/AGENTS.personal.md)
+각 소비 repo의 `AGENTS.md`(또는 타이틀 docs)에 적어 둔다. 템플릿: [`templates/AGENTS.game.md`](../../templates/AGENTS.game.md) · [`templates/AGENTS.personal.md`](../../templates/AGENTS.personal.md)
 
 ```text
 ## 커밋 (이 repo)
@@ -160,9 +162,10 @@ refactor(save): 백업 경로 조합을 한 헬퍼로 모음
 - scope (정본): <짧은 표 — 예: ui, save, docs, ci>
 
 (선택) 패치노트·버전 표기 경로: <docs/…>
+(선택) 제목 이슈 번호: `(#n)` 접미사 | 없음(footer만)
 ```
 
-에이전트·사람은 **형식·type·작성법**은 Kit를, **scope·언어·패치노트**는 이 표만 보면 된다.
+에이전트·사람은 **형식·type·작성법**은 Kit를, **scope·언어·패치노트·제목 이슈 번호**는 이 표만 보면 된다. type 가감은 이 표로 바꾸지 않는다.
 
 ---
 

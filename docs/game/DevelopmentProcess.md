@@ -1,6 +1,6 @@
 # 개발 프로세스 (game)
 
-game 작업에서 어떻게 진행하고, 언제 닫는지이다. 스킬이 있으면 그 체인으로 진행하고, Define·Design·DoD·Build·Verify·Record·Recovery는 닫기 어휘이다. 산출물 무게는 규모에 비례한다.
+game 작업에서 어떻게 진행하고, 언제 닫는지이다. 스킬이 있으면 그 체인으로 진행하고, Define·Design·착수·DoD·Build·Verify·Record·Recovery는 닫기 어휘이다. 산출물 무게는 규모에 비례한다.
 
 Cursor: [`development-process.mdc`](../../.cursor/rules/game/development-process.mdc) · [`verification-qa-defaults.mdc`](../../.cursor/rules/game/verification-qa-defaults.mdc)  
 관련: [Documentation.md](Documentation.md) · [AgentWorkflow](../common/AgentWorkflow.md)
@@ -21,11 +21,13 @@ Cursor: [`development-process.mdc`](../../.cursor/rules/game/development-process
 
 `/implement`는 `/tdd`로 합의된 seam을 한 조각씩 만들고, `/code-review`(Standards · Spec)로 닫는다. 커밋은 타이틀 `AGENTS.md`를 따른다.
 
+`/tdd`의 red/green 실행은 사용자가 래퍼나 Test Runner로 하고 결과를 넘긴다. 에이전트는 테스트 코드를 작성하고 asmdef 컴파일만 확인한다. 실행 결과가 없어도 Build는 여기까지 닫는다. behavioral 통과는 Verify에서, 사용자가 넘긴 결과로만 판정한다.
+
 Build 스타일(최소 diff)은 프로젝트 **`/ponytail`** 또는 AgentWorkflow §포니테일이다.
 
 스펙·티켓 경로와 스킬 우선순위는 아래를 따르고, 타이틀 `AGENTS.md`가 경로를 override한다.
 
-## 스킬·규칙 우선순위
+## 스킬 규칙 우선순위
 
 멀티 루트(타이틀 + 이 Kit)에서 이름이 겹치면 아래 순서이다. 위가 이긴다.
 
@@ -39,7 +41,7 @@ Matt engineering 스킬(`code-review`, `codebase-design`, `improve-codebase-arch
 
 ## Issue tracker
 
-GitHub Issues는 필수가 아니다. 사용자가 명시하기 전에는 `gh issue create`로 스펙을 올리지 않는다.
+GitHub Issues는 필수가 아니다. 사용자가 명시하기 전에는 `gh issue create`로 스펙을 올리지 않는다. 로컬 티켓과 GitHub 이슈를 쌍으로 요구하려면 타이틀 `AGENTS.md` override 표에 그 모드를 적는다. 표에 없으면 쌍은 필수가 아니다.
 
 | 모드 | 경로 | 적합한 때 |
 |------|------|-----------|
@@ -58,7 +60,7 @@ docs/plan/tickets/<feature-slug>/
 - 기능당 디렉터리 하나. 티켓은 파일 하나 (합본 금지).
 - 번호는 `01`부터. `Blocked by: NN`으로 의존을 적는다.
 - `00`은 사람 선행만. 뒤 티켓을 막지 않는다.
-- triage는 티켓 상단 `Status:` ([템플릿](../../templates/docs/agents/triage-labels.md)).
+- triage와 수명주기 `Status:`는 티켓 상단 ([템플릿](../../templates/docs/agents/triage-labels.md)). triage 5종의 오른쪽 열만 프로젝트 말로 바꿀 수 있다. `in-progress`·`done`은 그대로 쓴다.
 - 대화·Play 결과는 `## Comments`.
 - `plan/Schedule.md` · `schedule/`은 macro(목표·완료 기준), `tickets/`는 `/implement` 단위이다.
 
@@ -89,8 +91,8 @@ behavioral seam(어떤 씬 Play인지)은 타이틀 `AGENTS.md`에 적는다. �
 |------|------|
 | `/implement` 종료 | `/code-review`. 스킬이 없으면 변경 대조 |
 | Verify | 그 작업의 Success Criteria와 「확인」. static은 리뷰. behavioral은 런타임 대조 |
-| Record | 구조·계약이 바뀌면 해당 Architecture·설계 정본. Plan·티켓이 있으면 상태. 계약이 바뀐 페이지만 |
-| 작업 완료 | 그 작업의 Verify. 구조가 바뀌었으면 Record까지 |
+| Record | 구조·계약이 바뀌면 해당 Architecture·설계 정본. Plan·티켓이 있으면 `Status: done`. 계약이 바뀐 페이지만 |
+| 작업 완료 | 그 작업의 Verify. 구조가 바뀌었으면 Record까지. 티켓이 있으면 `Status: done` |
 
 ## Verify
 
@@ -100,6 +102,7 @@ behavioral seam(어떤 씬 Play인지)은 타이틀 `AGENTS.md`에 적는다. �
 | **behavioral** | Plan「확인」·런타임. 코드 리뷰만으로 pass하지 않는다 |
 
 - Verify(대조)는 그 작업의 Success Criteria가 있으면 한다.
+- Plan「확인」은 그 작업의 behavioral 완료 기준이다. 티켓에 그 기준을 적는 것은 허용한다. `Tests`·`QA`·수동 시나리오·`Test plan` 절은 사용자 요청 없이 만들지 않는다.
 - 스모크·QA 러너·「테스트해 보라」제안·실행은 사용자 명시 요청 전 금지다.
 - Build 중 asmdef 컴파일 등 최소 기술 확인은 한다.
 
@@ -125,8 +128,9 @@ Record 한 줄 형식: `Recovery: 컨텍스트 — 원인: … — 조치: …`
 |------|------|------|
 | Define | `/grill-with-docs`, 스펙의 Problem·Stories·Out of Scope | 사용자와 이해가 같음. 작은 수정은 대화 한 줄 |
 | Design | `/to-spec`의 Implementation Decisions, Architecture | 구조 문서가 현재와 같음. 구조가 그대로면 생략 |
-| DoD | 티켓 acceptance 또는 Success Criteria, `.meta` | 티켓이 있으면 `Status: ready-for-agent` |
-| Build | `/implement`, `/tdd` | diff와 seam 테스트 |
-| Verify | `/code-review`와 그 작업의 「확인」 | Spec 축과 Success Criteria |
-| Record | 커밋은 타이틀 규칙. 구조·계약이 바뀌면 해당 Architecture·설계 정본·Plan | 바뀐 페이지만. archive 또는 Completed |
+| 착수 | 티켓 acceptance 또는 Success Criteria, `.meta` | 티켓이 있으면 `Status: ready-for-agent` |
+| DoD | Verify. 구조·계약이 바뀌었으면 Record | 티켓이 있으면 `Status: done` |
+| Build | `/implement`, `/tdd` | diff와 테스트 코드. asmdef 컴파일 확인까지. red/green은 사용자가 실행해 넘긴다 |
+| Verify | `/code-review`와 그 작업의 「확인」 | Spec 축과 Success Criteria. behavioral은 사용자가 넘긴 실행 결과 |
+| Record | 커밋은 타이틀 규칙. 구조·계약이 바뀌면 해당 Architecture·설계 정본·Plan | 바뀐 페이지만. 티켓 `Status:`는 `done`. archive는 폴더를 치우는 동작 |
 | Recovery | `/grill-with-docs`(방향), Architecture 재배치(구조) | 컨텍스트·방향·구조만 Record 한 줄 |

@@ -11,7 +11,7 @@ personal · game 공통으로, 에이전트가 **어디까지 손대고 어떻�
 - 작업 전에 관련 타입·씬·프리팹·테스트를 조사한다.
 - 요청과 **직접 관련된** 파일만 수정한다. 무관한 리팩터·포맷 일괄 변경은 금지다.
 - 범위를 넓힐 때는 사용자 확인을 받거나, Plan에 확장 근거를 적는다.
-- 큰 리팩터·구조 변경은 Plan과 구현을 나눠요. game 프로필·프로젝트 규칙이 Plan을 요구할 때이다.
+- 큰 리팩터·구조 변경은 Plan과 구현을 나눈다. game 프로필·프로젝트 규칙이 Plan을 요구할 때이다.
 - 명시 요청 없는 public API 시그니처 변경은 금지다.
 - `ThirdParty/` · `Plugins/` · 벤더 Assets는 **직접 수정하지 않는다** (어댑터만 프로젝트 코드에).
 - 다른 저장소의 공유 패키지 소스·캐시는 이 워크스페이스에서 수정하지 않는다. 소비 프로젝트는 manifest pin·호출 코드만 두고, 구현은 그 패키지 정본 repo에서 한다.
@@ -19,7 +19,24 @@ personal · game 공통으로, 에이전트가 **어디까지 손대고 어떻�
 ## 정본 우선순위
 
 - 프로젝트 `AGENTS.md` override > Kit profile(personal / game) > Kit common. override는 AGENTS의 override 표에 적힌 값만 해당한다.
-- 코드 > 프로젝트 정본 문서 (game: Architecture ≥ 설계 정본 · personal: Architecture ≥ README Invariants). game의 스킬·규칙 사다리는 [DevelopmentProcess](../game/DevelopmentProcess.md#스킬·규칙-우선순위).
+- 코드 > 프로젝트 정본 문서 (game: Architecture ≥ 설계 정본 · personal: Architecture ≥ README Invariants). game의 스킬 규칙 사다리는 [DevelopmentProcess](../game/DevelopmentProcess.md#스킬-규칙-우선순위).
+
+override 표(또는 커밋 표)에 적었을 때 Kit와 달라도 되는 항목이다.
+
+| 항목 | 적을 곳 |
+|------|---------|
+| Unity 루트·문서 루트·GDD·설계 정본·Assets·asmdef·네임스페이스 | override 표 |
+| scope·언어·패치노트 경로 | 커밋 표 |
+| 제목 이슈 번호 `(#n)` | 커밋 표. 행이 없으면 footer만 |
+| triage 5종의 `Status:` 오른쪽 열 | override 표. 수명주기 `in-progress`·`done`은 제외 |
+| Issue tracker 경로 | override 표 |
+| Issue tracker를 Kit보다 엄격히 (로컬+GitHub 쌍 등) | override 표의 모드 행. 없으면 GitHub는 필수가 아니다 |
+| Unity CLI 진입점·정본 문서 | override 표 |
+| const 등 네이밍 delta | override 표. 근거를 같이 적는다 |
+| 톤 예외 경로 | override 표 |
+| behavioral seam | override 표 |
+
+스킬 루트는 `.agents/skills/`만이다. type은 [CommitMessages](CommitMessages.md)의 9종만이다. 이 둘은 override 표에 다른 값을 적어도 바뀌지 않는다.
 
 ## 포니테일
 

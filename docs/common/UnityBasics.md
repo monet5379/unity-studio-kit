@@ -28,8 +28,7 @@ personal · game 공통으로, 에셋·워크스페이스·커밋에서 **항상
 ## Git / 커밋
 
 - 커밋은 사용자가 **명시적으로 요청할 때만** 한다.
-- 형식·type·제목·**본문(why) 필수**: [CommitMessages.md](CommitMessages.md) ([Conventional Commits](https://www.conventionalcommits.org/))
-- 제목·본문 **기본 한글**. scope 목록·언어 override·패치노트는 프로젝트 `AGENTS.md`
+- 형식·type·본문: [CommitMessages.md](CommitMessages.md). scope·언어·패치노트·제목 이슈 번호는 프로젝트 `AGENTS.md`.
 - 요청 없이 `git config` 변경·force push·hard reset 등 파괴적 git 명령을 쓰지 않는다.
 
 ## 관련 규칙

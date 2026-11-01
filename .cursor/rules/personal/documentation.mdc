@@ -30,4 +30,4 @@ game Documentation [Architecture Must](../game/documentation.mdc)와 동일: `# 
 
 ## README 허브
 
-repo 루트 README = 제품·설치·계약. `docs/architecture/README.md` = Architecture 목차만 (game [README 허브](../game/Documentation.md#readme-허브)와 동일 원칙).
+repo 루트 README = 제품·설치·계약. `docs/architecture/README.md` = Architecture 목차만 (game [README 허브](../../../docs/game/Documentation.md#readme-허브)와 동일 원칙).

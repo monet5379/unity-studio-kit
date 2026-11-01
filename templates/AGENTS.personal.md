@@ -4,13 +4,13 @@
 profile: personal
 ```
 
-공개 패키지·실험용이다. Cursor는 **이 repo + unity-studio-kit** 멀티 루트로 여한다.
+공개 패키지·실험용이다. Cursor는 **이 repo + unity-studio-kit** 멀티 루트로 연다.
 
 | Kit | 경로 |
 |-----|------|
-| 공통 | `unity-studio-kit/docs/common/` · `.cursor/rules/common/` |
+| 공통 | `unity-studio-kit/docs/common/` · `unity-studio-kit/.cursor/rules/common/` |
 | 글쓰기 | `unity-studio-kit/docs/common/WritingGuide.md` |
-| 프로필 | `unity-studio-kit/docs/personal/` · `.cursor/rules/personal/` |
+| 프로필 | `unity-studio-kit/docs/personal/` · `unity-studio-kit/.cursor/rules/personal/` |
 
 ## 프로젝트 개요
 
@@ -43,7 +43,7 @@ profile: personal
 
 ## 이 repo override (선택)
 
-Kit [UnityCliAgent](unity-studio-kit/docs/common/UnityCliAgent.md) — 에이전트 Shell Unity headless 금지. 진입점만 이 repo에 적는다.
+정본 `unity-studio-kit/docs/common/UnityCliAgent.md`. 에이전트 Shell Unity headless 금지. 진입점만 이 repo에 적는다.
 
 | 항목 | 값 |
 |------|-----|
@@ -65,3 +65,4 @@ Kit CommitMessages (`unity-studio-kit/docs/common/CommitMessages.md`)를 따르�
 |------|-----|
 | 언어 | 한글 (Kit 기본) · 공개 패키지면 `영어`로 override |
 | scope (정본) | 예: `package`, `demo`, `docs`, `ci` |
+| 제목 이슈 번호 | 없음 (footer만) · 또는 `(#n)` |

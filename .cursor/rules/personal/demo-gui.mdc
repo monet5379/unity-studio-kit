@@ -27,5 +27,5 @@ alwaysApply: false
 - Runtime 패키지에 Demo IMGUI·스타일 헬퍼를 넣고 소비자에게 강제
 - `GUI.skin` 전역 변조
 - Title/Content를 한 스타일로 통일
-- Dragon `TSGUIData`/`TSGUIEx`/`TSColors` 전체를 personal 필수로 이식
+- 특정 타이틀의 IMGUI 헬퍼·색 상수 전체를 personal 필수로 이식
 - 플레이어 TMP/Canvas 규칙과 혼동 (TMP는 출시 UI)

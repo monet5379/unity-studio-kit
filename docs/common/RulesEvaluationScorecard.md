@@ -3,7 +3,7 @@
 Kit의 `.cursor/rules` · `docs/` · `templates/` · `.cursor/skills`를 한 바퀴 돌며 **일관성·적용 가능성·정본 사다리**를 점검할 때 쓴다. 블록마다 정본 링크를 열고, 아래 등급과 메모 칸을 채운 뒤 §횡단 패스에서 충돌만 모아서 정리한다.
 
 **대상:** unity-studio-kit 저장소 자체, 또는 **프로젝트 + Kit 멀티 루트**에서 Kit 규칙이 실제로 어떻게 켜지는지 확인할 때.  
-**프로필:** personal / game은 **각각 한 트랙**으로 평간다 (동시 필수 아님).  
+**프로필:** personal / game은 **각각 한 트랙**으로 평가한다 (동시 필수 아님).  
 **타이틀:** 프로젝트 `AGENTS.md` · `.cursor/rules/<title>/`는 §7 레이어로 같은 체크리스트를 적용한다.
 
 관련: [AgentWorkflow.md](AgentWorkflow.md) · [WritingGuide.md](WritingGuide.md) · [루트 README](../../README.md)

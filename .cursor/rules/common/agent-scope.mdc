@@ -16,8 +16,9 @@ alwaysApply: true
 
 ## 정본 우선순위
 
-- 프로젝트 `AGENTS.md` override > Kit profile(personal / game) > Kit common. override는 AGENTS의 override 표에 적힌 값만 해당한다.
-- 코드 > 프로젝트 정본 문서 (game: Architecture ≥ 설계 정본 · personal: Architecture ≥ README Invariants). game의 스킬·규칙 사다리는 [DevelopmentProcess](../../../docs/game/DevelopmentProcess.md#스킬·규칙-우선순위).
+- 프로젝트 `AGENTS.md` override > Kit profile(personal / game) > Kit common. override는 AGENTS의 override 표에 적힌 값만 해당한다. 항목 표: [`AgentWorkflow.md`](../../../docs/common/AgentWorkflow.md) §정본 우선순위.
+- 코드 > 프로젝트 정본 문서 (game: Architecture ≥ 설계 정본 · personal: Architecture ≥ README Invariants). game의 스킬 규칙 사다리는 [DevelopmentProcess](../../../docs/game/DevelopmentProcess.md#스킬-규칙-우선순위).
+- 스킬 루트(`.agents/skills/`)와 type 목록은 override 표에 적어도 바뀌지 않는다.
 
 ## In Scope
 

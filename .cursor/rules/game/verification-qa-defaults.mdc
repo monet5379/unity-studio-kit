@@ -17,7 +17,8 @@ alwaysApply: false
 
 ## Plan
 
-- Plan에 Tests·QA·수동 시나리오 섹션을 **요청 없이** 추가·강조하지 않음
+- Plan「확인」은 그 작업의 behavioral 완료 기준이다. 티켓에 그 기준을 적는 것은 허용한다
+- Plan에 Tests·QA·수동 시나리오·Test plan 섹션을 **요청 없이** 추가·강조하지 않음
 
 ## 예외
 

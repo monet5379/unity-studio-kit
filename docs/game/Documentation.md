@@ -2,7 +2,7 @@
 
 타이틀에서 어떤 문서를 만들고, Architecture와 Optimization을 어떻게 나눌지 정한다. Kit 글쓰기 공통 규칙은 [WritingGuide](../common/WritingGuide.md). **Architecture 작성 규약**은 personal [`Architecture_*`](../personal/DocsLite.md#architecture)에도 동일하게 적용한다. personal README 계약은 [DocsLite](../personal/DocsLite.md)를 본다.
 
-**왜 나누는가:** 현재 구조(Architecture)와 변경 이력·회귀(Optimization)를 한 파일에 섞으면, “지금 코드가 어떤지”와 “언제 왜 바뀌었는지”가 흐려집니다. Plan archive는 스프린트 이관용이라 기능 Changelog를 대체하지 않는다.
+**왜 나누는가:** 현재 구조(Architecture)와 변경 이력·회귀(Optimization)를 한 파일에 섞으면, “지금 코드가 어떤지”와 “언제 왜 바뀌었는지”가 흐려진다. Plan archive는 스프린트 이관용이라 기능 Changelog를 대체하지 않는다.
 
 이 문서는 **글쓰기·기능 문서 형식**의 정본이다. 별도 프레임워크 process 문서(Assets·Namespace 등)를 쓰는 타이틀은 그쪽 문서를 **추가** 정본으로 둘 수 있다. 형식·2분류·골격은 여기(Kit)를 우선한다.
 
@@ -22,6 +22,18 @@ Cursor: [`documentation.mdc`](../../.cursor/rules/game/documentation.mdc). 규�
 **불일치:** 코드와 문서가 다르면 **코드가 이긴다**. 문서를 맞추거나 “현재 구현은 계약을 충족하지 않음”을 Architecture에 명시한다.
 
 Write-back(Verify/Record·Investigation 이관)은 [DevelopmentProcess](DevelopmentProcess.md) Record를 따르고, 경로·목차는 타이틀 `docs/**/README.md` · `AGENTS.md`가 정본이다.
+
+### 작업 유형별 읽기
+
+먼저 읽을 **문서 종류**는 이 표가 정한다. 타이틀은 `AGENTS.md`나 허브 README에 **경로만** 채운다. 종류를 줄이거나 다른 종류로 바꾸지 않는다. 경로가 없으면 그 칸은 건너뛴다.
+
+| 작업 | 먼저 읽을 종류 |
+|------|----------------|
+| 버그 수정 | 해당 `Architecture_*`. 티켓이 있으면 그 티켓 `## Comments` |
+| 리팩터 | 해당 `Architecture_*`. 진행 중 설계가 있으면 Plan의 `Refactoring_*` |
+| 밸런스·데이터 | 설계 정본(GDD `locked` 또는 Technical Design)과 해당 `Architecture_*` |
+| 신규 기능 | 설계 정본, 이웃 `Architecture_*`, 필요하면 Plan |
+| 부트·로딩 | 부트·로딩 `Architecture_*`와 씬 흐름이 적힌 문서 |
 
 ## 문서 종류
 
@@ -74,7 +86,7 @@ Refactoring 문서는 `architecture/`에 두지 않는다. `Architecture_*` 접�
 
 ## 결정 기록 라우팅
 
-ADR 규칙은 이 절에만 둔다. Kit 기본은 **Architecture**와 타이틀 설계 문서(`ClassStructure`, GDD 등)로 결정을 남깁니다.
+ADR 규칙은 이 절에만 둔다. Kit 기본은 **Architecture**와 타이틀 설계 문서(`ClassStructure`, GDD 등)로 결정을 남긴다.
 
 | 질문 | Architecture (Kit 기본) | ADR (`docs/adr/`, 타이틀 옵션) |
 |------|-------------------------|--------------------------------|
@@ -82,10 +94,10 @@ ADR 규칙은 이 절에만 둔다. Kit 기본은 **Architecture**와 타이틀 
 | 언제 쓰나 | 구현·경계가 바뀔 때 | 되돌리기 어렵고, 맥락 없으면 놀랍고, 대안이 있었을 때 |
 
 - `docs/adr/`와 `CONTEXT.md`는 Kit가 만들지 않는다. 타이틀에 domain-modeling 스킬(`.agents/skills/`)이 있을 때만 타이틀 repo에 lazy로 생기고, 폴더는 첫 ADR 때 만든다.
-- 타이틀에 `docs/adr/` · `CONTEXT.md`가 있으면 작업 전 해당 영역 ADR을 읽는다. 작성·형식은 타이틀 `docs/agents/domain.md`와 `.agents/skills/domain-modeling/`(`ADR-FORMAT`)을 따릅니다.
-- ADR은 짧아도 된다. 한 단락으로 “무엇을, 왜”만 적어도 충분한다.
+- 타이틀에 `docs/adr/` · `CONTEXT.md`가 있으면 작업 전 해당 영역 ADR을 읽는다. 작성·형식은 타이틀 `docs/agents/domain.md`와 `.agents/skills/domain-modeling/`(`ADR-FORMAT`)을 따른다.
+- ADR은 짧아도 된다. 한 단락으로 “무엇을, 왜”만 적어도 충분하다.
 - Investigation은 아직 열린 질문, ADR은 이미 닫힌 결정이다.
-- ADR이 없는 타이틀은 구조적 거절·주의를 Architecture **불변조건과 주의점**에 한 줄로 남깁니다.
+- ADR이 없는 타이틀은 구조적 거절·주의를 Architecture **불변조건과 주의점**에 한 줄로 남긴다.
 
 ## 기능 문서 2분류
 
@@ -95,7 +107,7 @@ ADR 규칙은 이 절에만 둔다. Kit 기본은 **Architecture**와 타이틀 
 | **Optimization** | Changelog(SSOT)·회귀·Go/No-go — 구조 전체 복사 **하지 않음** |
 
 - 단순·안정 기능은 Architecture만 둔다 (Optimization 억지 생성 금지).
-- 구조·계약 변경과 성능 변경의 갱신 순서는 [Optimization 운영](#optimization-운영)을 따릅니다.
+- 구조·계약 변경과 성능 변경의 갱신 순서는 [Optimization 운영](#optimization-운영)을 따른다.
 
 ## Architecture 작성 규약
 
@@ -103,6 +115,8 @@ ADR 규칙은 이 절에만 둔다. Kit 기본은 **Architecture**와 타이틀 
 
 **소제목**은 `## 한글 (English)` 형식이다. Kit 영문 식별자는 괄호 안에 둔다.  
 **목적 설명**은 각 `##` 골격 소제목 바로 아래에 **이탤릭 한 줄**로 적는다. `### 포함 범위`/`### 제외 범위`에는 넣지 않는다. 본문 lead·불릿과 구분하는 용도이다.
+
+아래 골격의 이탤릭은 자리 표시이다. 새 Architecture를 만들 때 각 줄을 **그 문서의 목적 문장**으로 다시 쓴다. 자리 표시를 그대로 두면 그 절은 미완성이다.
 
 ### 골격 (이 순서). 에디터 흐름과 관련 문서는 없으면 생략한다.
 
@@ -133,7 +147,7 @@ ADR 규칙은 이 절에만 둔다. Kit 기본은 **Architecture**와 타이틀 
 
 ## 불변조건과 주의점 (Invariants & Gotchas)
 
-*깨지면 버그인 계약과 자주 터지는 함정을 모읍니다.*
+*깨지면 버그인 계약과 자주 터지는 함정을 모은다.*
 
 ## 변경 가이드 (Change Guidelines)
 
@@ -171,7 +185,7 @@ ADR 규칙은 이 절에만 둔다. Kit 기본은 **Architecture**와 타이틀 
 | 기능 | `Optimization_<Feature>.md` | Changelog·hot path·회귀 — Architecture와 1:1 필수는 아님 |
 | 횡단 | `Optimization_Budgets` · `Optimization_ProfilingPlaybook` 등 | 팀 공통 예산·측정법 |
 
-어느 파일에 쓸지는 [결정 트리](#어디에-쓸지-결정-트리)를 따릅니다.
+어느 파일에 쓸지는 [결정 트리](#어디에-쓸지-결정-트리)를 따른다.
 
 ### 권장 섹션 · 갱신
 

@@ -89,7 +89,7 @@ Unity -batchmode -nographics \
 
 - `-logFile -`로 로그를 stdout에 보내 CI가 수집하게 한다.
 - exit code는 메서드 안 `EditorApplication.Exit(code)`가 신뢰할 만한다. `-quit`만 쓰면 로그에 에러가 있어도 0이 나올 수 있다.
-- 클린 러너에서는 빌드 전에 Unity 라이선스 활성화(`-username`/`-password`/`-serial` 또는 라이선스 파일)를 **별 단계**로 두한다.
+- 클린 러너에서는 빌드 전에 Unity 라이선스 활성화(`-username`/`-password`/`-serial` 또는 라이선스 파일)를 **별 단계**로 둔다.
 
 ## Addressables 콘텐츠 빌드 (쓸 때)
 

@@ -33,10 +33,10 @@ Cursor: [`demo-gui.mdc`](../../.cursor/rules/personal/demo-gui.mdc)
 
 - 오버레이 한 클래스 안에 `EnsureGuiStyles()` 로 캐시하거나, Demo 전용 작은 `*GuiStyles` / `*GuiData` 타입 하나를 둔다.
 - 섹션 헤더 → `Title`, 정보·status → `Content`, 클릭 가능 행 → `Button`.
-- 창 너비·버튼 크기가 있으면 스타일과 **같은 객체**에 두한다 (`RefreshSize` 패턴).
+- 창 너비·버튼 크기가 있으면 스타일과 **같은 객체**에 둔다 (`RefreshSize` 패턴).
 
 ```csharp
-// 개념 예 — 프로젝트 이름·네임스페이스에 맞추한다
+// 개념 예 — 프로젝트 이름·네임스페이스에 맞춘다
 _titleStyle = new GUIStyle(GUI.skin.label)
 {
     fontStyle = FontStyle.Bold,
@@ -60,11 +60,11 @@ _buttonStyle = new GUIStyle(GUI.skin.button)
 ## 규칙
 
 - Demo IMGUI는 **설치 패키지 경로 밖** (`Assets/Demo/`)에만 둔다.
-- README에 Demo는 설치하지 않는다고 밝혀 두한다.
+- README에 Demo는 설치하지 않는다고 밝혀 둔다.
 - 공통 [DevImgui](../common/DevImgui.md)의 Must not(전역 skin 변조, OnGUI마다 new Style)을 그대로 지킨다.
 
 ## 하지 않는 것
 
 - Demo 스타일 헬퍼를 Runtime asmdef에 넣고 소비 게임에 강제하기
-- Dragon `TSGUIData` / `TSGUIEx` / Odin / `TSColors` 를 personal Kit 필수로 복사하기
-- Title 없이 Content만으로 섹션을 나누기 (스캔이 어려워져요)
+- 특정 타이틀의 IMGUI 헬퍼·색 상수를 personal Kit 필수로 복사하기
+- Title 없이 Content만으로 섹션을 나누기 (스캔이 어려워진다)

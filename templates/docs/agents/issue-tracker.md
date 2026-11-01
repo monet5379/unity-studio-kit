@@ -7,10 +7,10 @@
 - 기능당 디렉터리: `docs/plan/tickets/<feature-slug>/`
 - 스펙: `docs/plan/tickets/<feature-slug>/spec.md`
 - 구현 티켓: `docs/plan/tickets/<feature-slug>/issues/<NN>-<slug>.md` (`01`부터, 합본 금지)
-- Triage: 티켓 상단 `Status:` ([triage-labels.md](triage-labels.md))
+- Triage·수명주기: 티켓 상단 `Status:` ([triage-labels.md](triage-labels.md))
 - 댓글: 파일 하단 `## Comments`
 
-한 세션 실험만이면 `.scratch/<feature-slug>/`를 쓴다. 그때는 이 파일을 그 경로로 고치한다.
+한 세션 실험만이면 `.scratch/<feature-slug>/`를 쓴다. 그때는 이 파일을 그 경로로 고친다.
 
 ## 스킬이 "publish to the issue tracker"라고 할 때
 

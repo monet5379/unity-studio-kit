@@ -25,8 +25,8 @@ Game을 Core와 나누면 **“다음 프로젝트에 가져갈 코드”**와 *
 `Project/Editor/`(또는 Core UPM 안 `Editor/`)에 **Editor asmdef**(`includePlatforms: Editor`)를 둔다.
 
 - **빌드·API 경계:** Runtime asmdef(Core·Game)는 `UnityEditor`·에디터 전용 패키지를 references에 두지 않는다. 에디터 툴·CustomEditor·빌드/검증 메뉴는 Editor asmdef에만 둔다.
-- **컴파일 단위:** 부모 asmdef 아래 `Editor/` 폴더만 쓰면 스크립트는 빌드에서 빠질 수 있지만, **같은 asmdef에 Runtime과 묶인 채** 재컴파일되는 경우가 많아요. Editor asmdef를 쪼개면 툴 수정과 게임 Runtime 수정의 영향 범위를 나눌 수 있다.
-- **참조 방향:** Editor asmdef → Core·Game(Runtime) 참조는 흔한다. **Runtime → Editor asmdef 참조는 금지**이다.
+- **컴파일 단위:** 부모 asmdef 아래 `Editor/` 폴더만 쓰면 스크립트는 빌드에서 빠질 수 있지만, **같은 asmdef에 Runtime과 묶인 채** 재컴파일되는 경우가 많다. Editor asmdef를 쪼개면 툴 수정과 게임 Runtime 수정의 영향 범위를 나눌 수 있다.
+- **참조 방향:** Editor asmdef → Core·Game(Runtime) 참조는 흔하다. **Runtime → Editor asmdef 참조는 금지**이다.
 
 에디터에서 씬·프리팹을 Setup 스크립트로 생성·배선하지 않는 규칙은 [UnityBasics](../common/UnityBasics.md)이다. Editor asmdef는 그 **역할(검증·빌드·임포트·툴링)** 과 맞춘다.
 

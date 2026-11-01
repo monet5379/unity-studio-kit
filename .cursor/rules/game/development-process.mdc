@@ -21,21 +21,24 @@ alwaysApply: false
 
 ## 우선순위
 
-`AGENTS.md` override → 타이틀 오버레이(예: `docs/plan/tickets/README.md`) → `.agents/skills/` → Kit game → Kit common. 같은 이름 스킬은 타이틀 `.agents/skills/`. Kit 본문은 타이틀에서 수정하지 않음.
+`AGENTS.md` override → 타이틀 오버레이(예: `docs/plan/tickets/README.md`) → `.agents/skills/` → Kit game → Kit common. 같은 이름 스킬은 타이틀 `.agents/skills/`. 스킬 루트는 이 경로만이고 override로 바꾸지 않는다. Kit 본문은 타이틀에서 수정하지 않음.
 
 ## Issue tracker
 
-- GitHub Issues 필수 아님. 명시 전 `gh issue create` 금지.
+- GitHub Issues 필수 아님. 명시 전 `gh issue create` 금지. 로컬+GitHub 쌍은 AGENTS override 표에 모드가 있을 때만.
 - 임시 `.scratch/<feature>/` · 추적 `docs/plan/tickets/<feature>/` (`spec.md` + `issues/01-*.md`).
-- `Status:` · `Blocked by:` · `## Comments`. `00`은 사람 선행, 블로킹 아님.
+- `Status:`는 triage 5종과 수명주기 `in-progress`·`done` ([triage-labels](../../../templates/docs/agents/triage-labels.md)). 오른쪽 열 override는 triage 5종만. `Blocked by:` · `## Comments`. `00`은 사람 선행, 블로킹 아님.
 - 계약 변경은 풀 그릴. 버그는 Comments, 새 스펙 아님. 다음 티켓은 behavioral 완료 후. Record는 바뀐 페이지만.
 
 ## 닫기
 
+- 착수: 티켓이 있으면 `Status: ready-for-agent`
+- DoD: Verify 통과. 구조가 바뀌었으면 Record. 티켓이 있으면 `Status: done`
+- Build: 테스트 코드와 asmdef 컴파일까지. red/green 실행은 사용자가 하고 결과를 넘긴다. 결과가 없어도 Build는 여기까지 닫는다
 - `/implement` 종료 = `/code-review`
 - **static** — 코드·문서·asmdef 리뷰
-- **behavioral** — Plan「확인」·런타임. 코드 리뷰만으로 pass 금지
-- Record는 구조·계약이 바뀔 때만. 해당 Architecture·설계 정본·Plan. 바뀐 페이지만
+- **behavioral** — Plan「확인」(그 작업의 완료 기준)·런타임. 코드 리뷰만으로 pass 금지. 판정은 사용자가 넘긴 실행 결과
+- Record는 구조·계약이 바뀔 때만. 해당 Architecture·설계 정본·Plan. 바뀐 페이지만. 티켓 `Status:`는 `done`
 - 스모크·QA **제안·실행**은 [`verification-qa-defaults.mdc`](verification-qa-defaults.mdc)
 
 ## Recovery

@@ -10,8 +10,8 @@ description: >-
 # Unity Build Pipeline
 
 Unity 6 LTS 플레이어 빌드를 설정·스크립트·자동화한다. 씬 목록, 플랫폼 타깃,
-스크립팅 백엔드, stripping, headless/CI를 다뤄요. API는 **Unity 6 (6000.x)** 기준이다.
-타이틀이 pin한 에디터 버전이 있으면 그쪽을 따릅니다.
+스크립팅 백엔드, stripping, headless/CI를 다룬다. API는 **Unity 6 (6000.x)** 기준이다.
+타이틀이 pin한 에디터 버전이 있으면 그쪽을 따른다.
 
 ## 사용할 때
 

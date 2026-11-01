@@ -1,6 +1,6 @@
 # Personal 프로필
 
-공개 유틸 패키지나 짧은 Unity 실험에는 **가벼운 규칙**만 필요한다. 이 문서는 personal을 고를지, game으로 올릴지 정할 때 읽는다.
+공개 유틸 패키지나 짧은 Unity 실험에는 **가벼운 규칙**만 필요하다. 이 문서는 personal을 고를지, game으로 올릴지 정할 때 읽는다.
 
 출시 타이틀·팀 Plan·스프린트 Record가 필요하면 [game Overview](../game/Overview.md)로 간다.
 

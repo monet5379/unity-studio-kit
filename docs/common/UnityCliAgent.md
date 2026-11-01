@@ -22,6 +22,7 @@ personal · game 공통으로, Unity **headless CLI**(`-batchmode`, `unity test`
 - 래퍼가 **없으면**(`AGENTS` override `—`) Unity **에디터**(Test Runner·문서화된 메뉴) 절차를 안내한다.
 - 사용자가 exit code · `Logs/` · `logs/verify/` 등 **산출물**을 주면 그걸로 디버깅·문서 write-back한다.
 - C# 변경 후 “확인”은 [AgentWorkflow.md](AgentWorkflow.md) §검증(코드·asmdef·인라인 assert)을 따르고, Unity batch로 컴파일·테스트를 **대체하지 않는다**.
+- `/tdd`·seam 테스트의 red/green은 사용자가 래퍼나 Test Runner로 실행하고 결과를 넘긴다. 에이전트는 테스트 코드를 작성하고 asmdef가 컴파일되는지만 확인한다. 실행 결과가 없어도 Build는 그 지점까지 닫는다. behavioral 통과는 그 결과로 Verify에서 판정한다.
 
 ## 예외
 

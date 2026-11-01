@@ -32,7 +32,7 @@ profile: game
 ```
 
 템플릿: [`templates/AGENTS.game.md`](../../templates/AGENTS.game.md)  
-타이틀 전용 경로·도메인은 **이 게임 repo**의 `AGENTS.md` · `.cursor/rules/<title>/`에만 두한다.
+타이틀 전용 경로·도메인은 **이 게임 repo**의 `AGENTS.md` · `.cursor/rules/<title>/`에만 둔다.
 
 ## Kit에 두는 것 / 안 두는 것
 

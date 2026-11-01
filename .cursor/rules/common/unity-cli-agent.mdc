@@ -17,6 +17,7 @@ alwaysApply: true
 
 - 검증·빌드·스모크가 필요하면 **실행하지 않고** `AGENTS.md` override · README · `scripts/README` · Architecture에 있는 **진입점 한 줄**을 채팅에 안내한다 (Windows: **`.bat` 우선**)
 - asmdef·코드 리뷰로 “컴파일 확인” — Unity batch로 대체하지 않음 ([`agent-scope.mdc`](agent-scope.mdc))
+- `/tdd`·seam의 red/green은 사용자가 실행하고 결과를 넘긴다. 에이전트는 테스트 작성과 asmdef 컴파일 확인까지. 결과가 없어도 Build는 거기까지 닫고, behavioral 판정은 Verify에서 한다
 - 사용자가 로그·exit code·결과 XML/JSON을 주면 그걸로 follow-up
 
 ## 예외

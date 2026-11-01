@@ -4,13 +4,13 @@
 profile: game
 ```
 
-출시·팀 타이틀용이다. Cursor는 **이 repo + unity-studio-kit** 멀티 루트로 여한다.
+출시·팀 타이틀용이다. Cursor는 **이 repo + unity-studio-kit** 멀티 루트로 연다.
 
 | Kit | 경로 |
 |-----|------|
-| 공통 | `unity-studio-kit/docs/common/` · `.cursor/rules/common/` |
+| 공통 | `unity-studio-kit/docs/common/` · `unity-studio-kit/.cursor/rules/common/` |
 | 글쓰기 | `unity-studio-kit/docs/common/WritingGuide.md` |
-| 프로필 | `unity-studio-kit/docs/game/` · `.cursor/rules/game/` |
+| 프로필 | `unity-studio-kit/docs/game/` · `unity-studio-kit/.cursor/rules/game/` |
 
 타이틀 전용 규칙·경로는 **이 파일**과 (있으면) `.cursor/rules/<title>/`에만 둔다. Kit를 수정하지 않는다.
 
@@ -43,6 +43,8 @@ Kit Assets·문서 관례: `unity-studio-kit/docs/game/AssetsLayout.md` · `Docu
 ### 프로세스 · 문서
 
 - 진행·닫기: `unity-studio-kit/docs/game/DevelopmentProcess.md`. 스킬이 있으면 그 체인으로 진행하고, 없으면 같은 닫기 조건을 대화로 수행한다.
+- 착수·DoD·Status: `unity-studio-kit/templates/docs/agents/triage-labels.md`. 착수는 `ready-for-agent`. 완료는 Verify(구조가 바뀌었으면 Record)와 `done`.
+- 작업 종류별 읽기: `unity-studio-kit/docs/game/Documentation.md` §작업 유형별 읽기. 이 repo는 경로만 채운다.
 - 산출물은 규모에 비례한다. 작은 수정은 대화 한 줄로 Define한다. Plan·Architecture는 구조가 바뀔 때만 갱신한다.
 - 글쓰기 WritingGuide · 형식 Documentation(Architecture 골격·ADR·설계 정본).
 - 구조·계약 변경 시 해당 Architecture · 설계 정본 · (크면) Plan. Optimization은 추적 필요할 때만. 티켓 Record는 바뀐 페이지만.
@@ -51,7 +53,7 @@ Kit Assets·문서 관례: `unity-studio-kit/docs/game/AssetsLayout.md` · `Docu
 
 ### 코딩
 
-- Kit common C#·네이밍·포니테일.
+- Kit common C#·네이밍. 최소 diff는 프로젝트 `/ponytail`(있을 때).
 - 네임스페이스: 주변·아래 override에 맞춤.
 
 ## 이 타이틀 override (채울 것)
@@ -69,13 +71,15 @@ Kit 규약과 다른 값은 반드시 이 표(또는 아래 커밋 표)에 적�
 | GDD 경로 | 예: `docs/project/gdd/` 또는 — |
 | 설계 정본 (Technical Design) | 예: `docs/design/ClassStructure.md` 또는 — |
 | Issue tracker | `.scratch/<feature>/` 또는 `docs/plan/tickets/<feature>/` |
+| Issue tracker 모드 | 예: 로컬 티켓만 · 로컬+GitHub 쌍 · — (없으면 GitHub 비필수) |
+| Status 어휘 | triage 5종 오른쪽 열만. 수명주기 `in-progress`·`done`은 Kit 고정 |
 | Optimization | 추적 시 `docs/.../optimization/` · 소규모면 — |
 | behavioral seam | 예: `Demo.unity` Play 또는 — |
 | 측정·「완료」제약 | (타이틀이 채움, 없으면 —) |
 | asmdef (Game 등) | `<…>` |
 | 공유 Core 패키지 id | `<com.example.core>` (없으면 —) |
 | 네임스페이스 루트 | `<…>` |
-| Unity CLI 진입점 | 예: `scripts/unity-test.bat` · `—`(에디터만) — Kit [UnityCliAgent](unity-studio-kit/docs/common/UnityCliAgent.md) |
+| Unity CLI 진입점 | 예: `scripts/unity-test.bat` · `—`(에디터만). 정본 `unity-studio-kit/docs/common/UnityCliAgent.md` |
 | Unity CLI 정본 문서 | 예: `scripts/README.md` · `Architecture_Testing` · — |
 
 ### 커밋 (이 repo)
@@ -87,6 +91,7 @@ Kit CommitMessages (`unity-studio-kit/docs/common/CommitMessages.md`)를 따르�
 | 언어 | 한글 (Kit 기본) |
 | scope (정본) | 예: `ui`, `save`, `docs`, `ci` — 레이아웃에 맞게 채움 |
 | 패치노트·버전 경로 | (선택) 예: `docs/patch-note/` |
+| 제목 이슈 번호 | 없음 (footer만) · 또는 `(#n)` |
 
 ### 자주 쓰는 경로
 
