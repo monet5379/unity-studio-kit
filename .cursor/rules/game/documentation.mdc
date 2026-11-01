@@ -25,7 +25,7 @@ alwaysApply: false
 | ADR | `adr/000N-<slug>.md` | 닫힌 결정. 조사는 `investigations/` |
 | 설계 정본 | GDD `gdd/` 또는 Technical Design (`design/`, 파일명은 타이틀) | Architecture에 전문 복사 금지 |
 
-- Architecture에 Phase·주차·티켓 이력 넣지 않음. 진행 상태는 architecture README 또는 Plan·티켓.
+- Architecture에 Phase·주차·티켓 이력 넣지 않음. 진행 상태는 architecture README, Plan, 또는 스펙 이슈.
 - Optimization에 구조 전체 복사 금지.
 - Plan archive ≠ 기능 Changelog.
 - 코드 ≥ Architecture ≥ 설계 정본. 외부 PDF·브리프는 비정본.

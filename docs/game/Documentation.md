@@ -29,7 +29,7 @@ Write-back(Verify/Record·Investigation 이관)은 [DevelopmentProcess](Developm
 
 | 작업 | 먼저 읽을 종류 |
 |------|----------------|
-| 버그 수정 | 해당 `Architecture_*`. 티켓이 있으면 그 티켓 `## Comments` |
+| 버그 수정 | 해당 `Architecture_*`. 티켓 이슈가 있으면 그 이슈 코멘트 |
 | 리팩터 | 해당 `Architecture_*`. 진행 중 설계가 있으면 Plan의 `Refactoring_*` |
 | 밸런스·데이터 | 설계 정본(GDD `locked` 또는 Technical Design)과 해당 `Architecture_*` |
 | 신규 기능 | 설계 정본, 이웃 `Architecture_*`, 필요하면 Plan |
@@ -239,7 +239,7 @@ ADR 규칙은 이 절에만 둔다. Kit 기본은 **Architecture**와 타이틀 
 - **금지:** 주제만 `UI.md` / `Combat.md`. **파일이 하나뿐인 폴더**에 본편을 전부 `README.md`로 두기.
 - **단일 본편 폴더:** README 없이 본편만 두고, 상위 허브는 그 파일에 **직링크**한다.
 - **분할 폴더(본편 2+):** `README.md` = 허브만.
-- Architecture **본편**에 Phase·일차·티켓 이력 표를 넣지 않는다. 진행 상태가 필요하면 `architecture/README.md` 허브의 짧은 상태표, 또는 Plan·티켓에 둔다.
+- Architecture **본편**에 Phase·일차·티켓 이력 표를 넣지 않는다. 진행 상태가 필요하면 `architecture/README.md` 허브의 짧은 상태표, 또는 Plan·스펙 이슈에 둔다.
 
 ### 예외
 

@@ -29,8 +29,8 @@ override 표(또는 커밋 표)에 적었을 때 Kit와 달라도 되는 항목�
 | scope·언어·패치노트 경로 | 커밋 표 |
 | 제목 이슈 번호 `(#n)` | 커밋 표. 행이 없으면 footer만 |
 | triage 5종의 `Status:` 오른쪽 열 | override 표. 수명주기 `in-progress`·`done`은 제외 |
-| Issue tracker 경로 | override 표 |
-| Issue tracker를 Kit보다 엄격히 (로컬+GitHub 쌍 등) | override 표의 모드 행. 없으면 GitHub는 필수가 아니다 |
+| Issue tracker 경로 | override 표. game에서 없으면 이 repo의 GitHub Issues (스펙 라벨 `spec`, 티켓 라벨 `ticket`) |
+| Issue tracker 모드 | override 표. game에서 없으면 GitHub가 정본. `로컬 티켓만`처럼 다를 때만 적는다 |
 | Unity CLI 진입점·정본 문서 | override 표 |
 | const 등 네이밍 delta | override 표. 근거를 같이 적는다 |
 | 톤 예외 경로 | override 표 |

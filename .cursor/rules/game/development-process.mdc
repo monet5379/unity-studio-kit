@@ -25,20 +25,20 @@ alwaysApply: false
 
 ## Issue tracker
 
-- GitHub Issues 필수 아님. 명시 전 `gh issue create` 금지. 로컬+GitHub 쌍은 AGENTS override 표에 모드가 있을 때만.
-- 임시 `.scratch/<feature>/` · 추적 `docs/plan/tickets/<feature>/` (`spec.md` + `issues/01-*.md`).
-- `Status:`는 triage 5종과 수명주기 `in-progress`·`done` ([triage-labels](../../../templates/docs/agents/triage-labels.md)). 오른쪽 열 override는 triage 5종만. `Blocked by:` · `## Comments`. `00`은 사람 선행, 블로킹 아님.
-- 계약 변경은 풀 그릴. 버그는 Comments, 새 스펙 아님. 다음 티켓은 behavioral 완료 후. Record는 바뀐 페이지만.
+- 정본은 이 repo의 GitHub Issues. 스펙은 라벨 `spec`, 티켓은 라벨 `ticket`과 `Parent: #n`. publish는 `gh issue create`, fetch는 `gh issue view`.
+- override 표에 모드가 없으면 GitHub. `로컬 티켓만`일 때만 로컬 파일. 한 세션은 `.scratch/<feature>/`.
+- 라벨은 triage 5종과 `in-progress`·`done` ([triage-labels](../../../templates/docs/agents/triage-labels.md)). 이름 override는 triage 5종만. `Blocked by: #n`. `ready-for-human`은 사람 선행, 블로킹 아님. `done`은 라벨 후 이슈를 닫는다.
+- 계약 변경은 풀 그릴. 버그는 티켓 코멘트, 새 스펙 아님. 다음 티켓은 behavioral 완료 후. Record는 바뀐 페이지만. Architecture·설계 정본은 레포에 둔다.
 
 ## 닫기
 
-- 착수: 티켓이 있으면 `Status: ready-for-agent`
-- DoD: Verify 통과. 구조가 바뀌었으면 Record. 티켓이 있으면 `Status: done`
+- 착수: 티켓 이슈가 있으면 라벨 `ready-for-agent`
+- DoD: Verify 통과. 구조가 바뀌었으면 Record. 티켓 이슈가 있으면 라벨 `done` 후 닫기
 - Build: 테스트 코드와 asmdef 컴파일까지. red/green 실행은 사용자가 하고 결과를 넘긴다. 결과가 없어도 Build는 여기까지 닫는다
 - `/implement` 종료 = `/code-review`
 - **static** — 코드·문서·asmdef 리뷰
 - **behavioral** — Plan「확인」(그 작업의 완료 기준)·런타임. 코드 리뷰만으로 pass 금지. 판정은 사용자가 넘긴 실행 결과
-- Record는 구조·계약이 바뀔 때만. 해당 Architecture·설계 정본·Plan. 바뀐 페이지만. 티켓 `Status:`는 `done`
+- Record는 구조·계약이 바뀔 때만. 해당 Architecture·설계 정본·Plan. 바뀐 페이지만. 티켓 이슈는 라벨 `done` 후 닫기. archive는 스펙 이슈를 닫기
 - 스모크·QA **제안·실행**은 [`verification-qa-defaults.mdc`](verification-qa-defaults.mdc)
 
 ## Recovery

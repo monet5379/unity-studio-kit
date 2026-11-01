@@ -6,9 +6,9 @@
 |------|--------|
 | [AGENTS.personal.md](AGENTS.personal.md) | 공개 패키지·실험 |
 | [AGENTS.game.md](AGENTS.game.md) | 출시·팀 타이틀 |
-| [docs/agents/issue-tracker.md](docs/agents/issue-tracker.md) | game · 추적 티켓을 쓸 때 |
-| [docs/agents/triage-labels.md](docs/agents/triage-labels.md) | game · `Status:` 매핑 |
-| [docs/plan/tickets/README.md](docs/plan/tickets/README.md) | game · 티켓 폴더 허브 |
+| [docs/agents/issue-tracker.md](docs/agents/issue-tracker.md) | game · GitHub 스펙·티켓 발행 |
+| [docs/agents/triage-labels.md](docs/agents/triage-labels.md) | game · 이슈 라벨 |
+| [docs/plan/tickets/README.md](docs/plan/tickets/README.md) | game · 티켓에 더하는 타이틀 제약 |
 
 ## 쓰는 순서
 

@@ -70,9 +70,9 @@ Kit 규약과 다른 값은 반드시 이 표(또는 아래 커밋 표)에 적�
 | 톤 예외 경로 | 예: `docs/interview/` · `Docs/notes/` 또는 — |
 | GDD 경로 | 예: `docs/project/gdd/` 또는 — |
 | 설계 정본 (Technical Design) | 예: `docs/design/ClassStructure.md` 또는 — |
-| Issue tracker | `.scratch/<feature>/` 또는 `docs/plan/tickets/<feature>/` |
-| Issue tracker 모드 | 예: 로컬 티켓만 · 로컬+GitHub 쌍 · — (없으면 GitHub 비필수) |
-| Status 어휘 | triage 5종 오른쪽 열만. 수명주기 `in-progress`·`done`은 Kit 고정 |
+| Issue tracker | 이 repo의 GitHub Issues. 스펙 라벨 `spec`, 티켓 라벨 `ticket` · `Parent: #n` |
+| Issue tracker 모드 | GitHub (Kit 기본). 로컬 파일만 쓰려면 `로컬 티켓만` |
+| Status 어휘 | triage 5종 라벨 이름만. 수명주기 `in-progress`·`done`은 Kit 고정 |
 | Optimization | 추적 시 `docs/.../optimization/` · 소규모면 — |
 | behavioral seam | 예: `Demo.unity` Play 또는 — |
 | 측정·「완료」제약 | (타이틀이 채움, 없으면 —) |
