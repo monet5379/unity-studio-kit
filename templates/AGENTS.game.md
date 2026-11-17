@@ -67,6 +67,7 @@ Kit 규약과 다른 값은 반드시 이 표(또는 아래 커밋 표)에 적�
 | 문서 루트 | 예: `Docs/<title>/` 또는 `docs/project/` |
 | Kit 글쓰기 | `unity-studio-kit/docs/common/WritingGuide.md` |
 | Kit 문서 정책 | `unity-studio-kit/docs/game/Documentation.md` |
+| Architecture 형식 | `골격`(Kit 기본) 또는 `짧은` + 적용 경로 (Documentation §짧은 형식) |
 | 톤 예외 경로 | 예: `docs/interview/` · `Docs/notes/` 또는 — |
 | GDD 경로 | 예: `docs/project/gdd/` 또는 — |
 | 설계 정본 (Technical Design) | 예: `docs/design/ClassStructure.md` 또는 — |
